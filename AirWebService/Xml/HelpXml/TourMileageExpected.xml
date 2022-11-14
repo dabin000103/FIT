@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--## 투어마일리지 예상 적립액 ##-->
+<!--Repeat:1-->
+<!--@version:(필수)(number) 버전정보-->
+<!--@timeStamp:(필수)(datetime)(YYYY-MM-DD HH:MM) 출력일시-->
+<TourMileage version="1.0.0" timeStamp="">
+	<!--품목코드-->
+	<!--Repeat:1-->
+	<!--NodeValue:(필수)(string) 품목코드-->
+	<item></item>
+	<!--마일리지 적립액-->
+	<!--Repeat:1-->
+	<mileage>
+		<!--성인-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(number) 성인 마일리지 적립액-->
+		<adult></adult>
+		<!--소아-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(number) 소아 마일리지 적립액-->
+		<child></child>
+		<!--유아-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(number) 유아 마일리지 적립액-->
+		<infant></infant>
+	</mileage>
+</TourMileage>

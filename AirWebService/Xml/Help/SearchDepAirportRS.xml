@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[출발지 공항리스트]]></Summary>
+	<Return Type="XmlElement"><![CDATA[출발지 공항리스트 XML]]></Return>
+	<Items SubTitle="">
+		<Item Param="SNM" Type="number" format="" Required="true" DefaultValue="" ExampleValue="2"><![CDATA[웹사이트 번호]]></Item>
+	</Items>
+</Help>

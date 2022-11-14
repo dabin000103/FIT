@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResponseDetails version="1.0.0" timeStamp="">
+  <cardList>
+    <card>
+      <airlineCode></airlineCode>
+      <cardCode></cardCode>
+      <cardName></cardName>
+      <easypayCode></easypayCode>
+    </card>
+  </cardList>
+</ResponseDetails>

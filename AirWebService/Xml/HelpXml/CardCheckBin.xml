@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--## CardCheckBin 결과 ##-->
+<!--Repeat:1-->
+<cardInfo>
+  <!--카드 정보-->
+  <!--Repeat:1-->
+  <card>
+    <!--카드번호-->
+    <!--Repeat:1-->
+    <!--NodeValue:(필수)(string) 카드번호-->
+    <cardNumber></cardNumber>
+    <!--카드사-->
+    <!--Repeat:1-->
+    <!--NodeValue:(필수)(string) 카드사-->
+    <cardCompany></cardCompany>
+    <!--카드사번호-->
+    <!--Repeat:1-->
+    <!--NodeValue:(필수)(number) 카드사번호-->
+    <companyNumber></companyNumber>
+    <!--구분-->
+    <!--Repeat:1-->
+    <!--NodeValue:(옵션)(string) 구분코드-->
+    <binTypeCode></binTypeCode>
+    <!--구분-->
+    <!--Repeat:1-->
+    <!--NodeValue:(옵션)(string) 구분명-->
+    <binType></binType>
+    <!--개인기업구분-->
+    <!--Repeat:1-->
+    <!--NodeValue:(옵션)(string) 개인기업구분코드-->
+    <ownerTypeCode></ownerTypeCode>
+    <!--개인기업구분-->
+    <!--Repeat:1-->
+    <!--NodeValue:(옵션)(string) 개인기업구분명-->
+    <ownerType></ownerType>
+    <!--브랜드-->
+    <!--Repeat:1-->
+    <!--NodeValue:(옵션)(string) 브랜드-->
+    <brand></brand>
+    <!--공동이용구분-->
+    <!--Repeat:1-->
+    <!--NodeValue:(옵션)(string) 공동이용구분-->
+    <jointUse></jointUse>
+    <!--할부가능여부-->
+    <!--Repeat:1-->
+    <!--NodeValue:(옵션)(string) 할부가능여부-->
+    <installment></installment>
+    <!--카드CODE-->
+    <!--Repeat:1-->
+    <!--NodeValue:(옵션)(string) 카드CODE-->
+    <cardCode></cardCode>
+    <!--마일리지 카드 여부-->
+    <!--Repeat:1-->
+    <!--NodeValue:(옵션)(string) 마일리지 카드 여부(Y|N)-->
+    <cardCode></cardCode>
+  </card>
+</cardInfo>

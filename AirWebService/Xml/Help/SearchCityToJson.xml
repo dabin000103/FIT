@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[도시검색]]></Summary>
+	<Return Type="JSON|STRING"><![CDATA[도시검색 결과 JSON 또는 STRING]]></Return>
+	<Items SubTitle="">
+		<Item Param="SHT" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[검색어]]></Item>
+		<Item Param="CTU" Type="string" format="Y|N" Required="false" DefaultValue="N" ExampleValue=""><![CDATA[Y:JSON으로 출력, N:JSON형태의 STRING으로 출력]]></Item>
+		<Item Param="TNV" Type="string" format="Y|N" Required="false" DefaultValue="Y" ExampleValue=""><![CDATA[JSON형태로 출력시 최상위에 테이블명을 추가하여 출력할지 여부]]></Item>
+	</Items>
+</Help>

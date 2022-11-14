@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Command_Cryptic>
+	<messageAction>
+		<messageFunctionDetails>
+			<messageFunction>M</messageFunction>
+		</messageFunctionDetails>
+	</messageAction>
+	<longTextString>
+		<textStringDetails></textStringDetails>
+	</longTextString>
+</Command_Cryptic>

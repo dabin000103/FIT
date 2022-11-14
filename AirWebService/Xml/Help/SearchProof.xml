@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[증빙서류 조회]]></Summary>
+	<Return Type="string"><![CDATA[증빙서류 내용]]></Return>
+	<Items SubTitle="">
+		<Item Param="OID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[모두투어 주문번호]]></Item>
+		<Item Param="PID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[예약자번호(PTID)]]></Item>
+	</Items>
+</Help>

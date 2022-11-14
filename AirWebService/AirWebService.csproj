@@ -1,0 +1,792 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4B106F10-3B1D-45E1-B51D-8E563450DD36}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AirWebService</RootNamespace>
+    <AssemblyName>AirWebService</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AirService3.asmx" />
+    <Content Include="ETicket\ETicketGroup.aspx" />
+    <Content Include="ETicket\ETicket.aspx" />
+    <Content Include="ETicket\ETicketEmailPage.aspx" />
+    <Content Include="ETicket\Invoice.aspx" />
+    <Content Include="ETicket\Itinerary.aspx" />
+    <Content Include="ETicket\Receipt.aspx" />
+    <Content Include="ETicket\ReceiptEmailPage.aspx" />
+    <Content Include="SabreAirService.asmx" />
+    <Content Include="AirService2.asmx" />
+    <Content Include="Services\Amadeus\Fare_InstantTravelBoardSearch.asmx" />
+    <Content Include="Services\Amadeus\Fare_PricePNRWithBookingClassKEPricing.asmx" />
+    <Content Include="Services\Sabre\PaymentService.asmx" />
+    <Content Include="TopasAirService.asmx" />
+    <Content Include="AirService.asmx" />
+    <Content Include="AllianceService.asmx" />
+    <Content Include="AmadeusAirService.asmx" />
+    <Content Include="App_Data\Config.xml" />
+    <Content Include="GalileoAirService.asmx" />
+    <Content Include="Services\Amadeus\Fare_MasterPricerTravelBoardSearchSoap4.asmx" />
+    <Content Include="Services\Amadeus\MiniRule_GetFromPricing.asmx" />
+    <Content Include="Services\Amadeus\Queue_CountTotal.asmx" />
+    <Content Include="Services\Amadeus\Queue_List.asmx" />
+    <Content Include="Services\Amadeus\Queue_MoveItem.asmx" />
+    <Content Include="Services\Amadeus\Queue_PlacePNR.asmx" />
+    <Content Include="Services\Amadeus\Queue_RemoveItem.asmx" />
+    <Content Include="Services\Modetour\InicisWEB.asmx" />
+    <Content Include="Temp\Naver.aspx" />
+    <Content Include="Temp\NaverLanding.aspx" />
+    <Content Include="QueueService.asmx" />
+    <Content Include="ServiceCheck.aspx" />
+    <Content Include="Services\Abacus\AbacusWebService.asmx" />
+    <Content Include="Services\Amadeus\Security_Authenticate.asmx" />
+    <Content Include="Services\Amadeus\Air_FlightInfo.asmx" />
+    <Content Include="Services\Amadeus\Fare_MasterPricerTravelBoardSearch.asmx" />
+    <Content Include="Services\Amadeus\Air_MultiAvailability.asmx" />
+    <Content Include="Services\Amadeus\Air_SellFromRecommendation.asmx" />
+    <Content Include="Services\Amadeus\Security_SignOut.asmx" />
+    <Content Include="Services\Amadeus\PNR_AddMultiElements.asmx" />
+    <Content Include="Services\Amadeus\Fare_GetRulesOfPricedItinerary.asmx" />
+    <Content Include="Services\Amadeus\Fare_MasterPricerCalendar.asmx" />
+    <Content Include="Services\Amadeus\Fare_SellByFareCalendar.asmx" />
+    <Content Include="Services\Amadeus\Fare_SellByFareSearch.asmx" />
+    <Content Include="Services\Amadeus\Fare_InformativePricingWithoutPNR.asmx" />
+    <Content Include="Services\Amadeus\Fare_PricePNRWithBookingClass.asmx" />
+    <Content Include="Services\Amadeus\Command_Cryptic.asmx" />
+    <Content Include="Services\Amadeus\Ticket_CreateTSTFromPricing.asmx" />
+    <Content Include="Services\Amadeus\PNR_Retrieve.asmx" />
+    <Content Include="Services\Amadeus\PNR_Cancel.asmx" />
+    <Content Include="Services\Amadeus\Fare_CheckRules.asmx" />
+    <Content Include="Services\Amadeus\Ticket_ProcessEDoc.asmx" />
+    <Content Include="Services\Amadeus\Fare_InformativePricingWithoutPNRRule.asmx" />
+    <Content Include="Services\Amadeus\FOP_CreateFormOfPayment.asmx" />
+    <Content Include="Services\Amadeus\DocIssuance_IssueTicket.asmx" />
+    <Content Include="Services\Amadeus\Fare_PricePNRWithBookingClassPricing.asmx" />
+    <Content Include="Services\Amadeus\Ticket_DisplayQuota.asmx" />
+    <Content Include="Services\Amadeus\Air_RetrieveSeatMap.asmx" />
+    <Content Include="Services\Amadeus\Fare_InformativeBestPricingWithoutPNR.asmx" />
+    <Content Include="Services\Amadeus\Ticket_CancelDocument.asmx" />
+    <Content Include="Services\Amadeus\Ticket_DisplayTST.asmx" />
+    <None Include="Properties\PublishProfiles\AirWebService2.pubxml" />
+    <None Include="Web References\com.modetour.webservice.Air.Mode\Mode.wsdl" />
+    <None Include="Web References\com.modetour.webservice.Air.Mode\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\com.modetour.webservice.Air.Mode\Mode.disco" />
+    <Content Include="Xml\Abacus\AddRemarkLLS.xml" />
+    <Content Include="Xml\Abacus\AirTicketLLS.xml" />
+    <Content Include="Xml\Abacus\ArunkLLS.xml" />
+    <Content Include="Xml\Abacus\AirTicketRQ.xml" />
+    <Content Include="Xml\Abacus\EndTransactionLLS.xml" />
+    <Content Include="Xml\Abacus\OTA_AirAvailLLS.xml" />
+    <Content Include="Xml\Abacus\OTA_AirBookLLS.xml" />
+    <Content Include="Xml\Abacus\DesignatePrinterLLS.xml" />
+    <Content Include="Xml\Abacus\OTA_AirPriceLLS.xml" />
+    <Content Include="Xml\Abacus\OTA_CancelLLS.xml" />
+    <Content Include="Xml\Abacus\OTA_TravelItineraryReadLLS.xml" />
+    <Content Include="Xml\Abacus\SabreCommandLLS.xml" />
+    <Content Include="Xml\Abacus\SessionClose.xml" />
+    <Content Include="Xml\Abacus\SessionCreate.xml" />
+    <Content Include="Xml\Abacus\SpecialServiceLLS.xml" />
+    <Content Include="Xml\Abacus\SWSActions.xml" />
+    <Content Include="Xml\Abacus\TravelItineraryAddInfoLLS.xml" />
+    <Content Include="Xml\Abacus\GetReservationRQ.xml" />
+    <Content Include="Xml\Abacus\TravelItineraryReadRQ.xml" />
+    <Content Include="Xml\Amadeus\AddMultiElementsActionsRQ.xml" />
+    <Content Include="Xml\Amadeus\AddMultiElementsAPISRQ.xml" />
+    <Content Include="Xml\Amadeus\AddMultiElementsCommissionRQ.xml" />
+    <Content Include="Xml\Amadeus\AddMultiElementsDomesticRQ.xml" />
+    <Content Include="Xml\Amadeus\AddMultiElementsMEALRQ.xml" />
+    <Content Include="Xml\Amadeus\AddMultiElementsPaxDCRQ.xml" />
+    <Content Include="Xml\Amadeus\AddMultiElementsReceiveFromRQ.xml" />
+    <Content Include="Xml\Amadeus\AddMultiElementsRemarkRQ.xml" />
+    <Content Include="Xml\Amadeus\AddMultiElementsRQ.xml" />
+    <Content Include="Xml\Amadeus\AddMultiElementsTELRQ.xml" />
+    <Content Include="Xml\Amadeus\AddMultiElementsEndorsementRQ.xml" />
+    <Content Include="Xml\Amadeus\AddMultiElementsTourCodeRQ.xml" />
+    <Content Include="Xml\Amadeus\AuthenticateRQ.xml" />
+    <Content Include="Xml\Amadeus\AuthenticateRS.xml" />
+    <Content Include="Xml\Amadeus\CancelDocumentRQ.xml" />
+    <Content Include="Xml\Amadeus\CancelRQ.xml" />
+    <Content Include="Xml\Amadeus\CheckRulesAPRQ.xml" />
+    <Content Include="Xml\Amadeus\CheckRulesRQ.xml" />
+    <Content Include="Xml\Amadeus\CheckRulesTariffRQ.xml" />
+    <Content Include="Xml\Amadeus\CommandCrypticRQ.xml" />
+    <Content Include="Xml\Amadeus\CreateFormOfPaymentRQ.xml" />
+    <Content Include="Xml\Amadeus\CreateTSTFromPricingRQ.xml" />
+    <Content Include="Xml\Amadeus\DisplayQuotaRQ.xml" />
+    <Content Include="Xml\Amadeus\DisplayTSTRQ.xml" />
+    <Content Include="Xml\Amadeus\FlightInfoRQ.xml" />
+    <Content Include="Xml\Amadeus\GetRulesOfPricedItineraryRQ.xml" />
+    <Content Include="Xml\Amadeus\InformativeBestPricingWithoutPNRRQ.xml" />
+    <Content Include="Xml\Amadeus\InformativePricingWithoutPNRRQ.xml" />
+    <Content Include="Xml\Amadeus\InformativePricingWithoutPNRRuleRQ.xml" />
+    <Content Include="Xml\Amadeus\IssueTicketRQ.xml" />
+    <Content Include="Xml\Amadeus\MasterPricerCalendarRQ.xml" />
+    <Content Include="Xml\Amadeus\InstantTravelBoardSearchRQ.xml" />
+    <Content Include="Xml\Amadeus\MasterPricerTravelBoardSearchRQ.xml" />
+    <Content Include="Xml\Amadeus\MiniRuleGetFromPricingRQ.xml" />
+    <Content Include="Xml\Amadeus\MultiAvailabilityRQ.xml" />
+    <Content Include="Xml\Amadeus\PricePNRWithBookingClassPricingKERQ.xml" />
+    <Content Include="Xml\Amadeus\PricePNRWithBookingClassPricingRQ.xml" />
+    <Content Include="Xml\Amadeus\PricePNRWithBookingClassRQ.xml" />
+    <Content Include="Xml\Amadeus\ProcessEDocRQ.xml" />
+    <Content Include="Xml\Amadeus\QueueCountTotalRQ.xml" />
+    <Content Include="Xml\Amadeus\QueueListRQ.xml" />
+    <Content Include="Xml\Amadeus\QueueMoveItemRQ.xml" />
+    <Content Include="Xml\Amadeus\QueuePlacePNRRQ.xml" />
+    <Content Include="Xml\Amadeus\QueueRemoveItemRQ.xml" />
+    <Content Include="Xml\Amadeus\RetrieveRQ.xml" />
+    <Content Include="Xml\Amadeus\RetrieveSeatMapRQ.xml" />
+    <Content Include="Xml\Amadeus\SellByFareCalendarRQ.xml" />
+    <Content Include="Xml\Amadeus\SellByFareSearchRQ.xml" />
+    <Content Include="Xml\Amadeus\SellFromRecommendationRQ.xml" />
+    <Content Include="Xml\Amadeus\SignOutRQ.xml" />
+    <Content Include="Xml\HelpXml\AddBookingKeyRS.xml" />
+    <Content Include="Xml\HelpXml\AddBookingRS.xml" />
+    <Content Include="Xml\HelpXml\AddBookingSupplementaryService.xml" />
+    <Content Include="Xml\HelpXml\AddBookingSupplementaryServiceRequest.xml" />
+    <Content Include="Xml\HelpXml\AddBookingSupplementaryServiceRequestItem.xml" />
+    <Content Include="Xml\HelpXml\AutoTicketingCardRS.xml" />
+    <Content Include="Xml\HelpXml\AvailabilityRS.xml" />
+    <Content Include="Xml\HelpXml\CancelBookingRS.xml" />
+    <Content Include="Xml\HelpXml\CancelBookingSupplementaryService.xml" />
+    <Content Include="Xml\HelpXml\CardCheckBin.xml" />
+    <Content Include="Xml\HelpXml\CardCheckInicis.xml" />
+    <Content Include="Xml\HelpXml\CheckBookingInfoRS.xml" />
+    <Content Include="Xml\HelpXml\CheckRuleRS.xml" />
+    <Content Include="Xml\HelpXml\Config.xml" />
+    <Content Include="Xml\HelpXml\Errors.xml" />
+    <Content Include="Xml\HelpXml\FlightInfoRS.xml" />
+    <Content Include="Xml\HelpXml\GKPnrCreate.xml" />
+    <Content Include="Xml\HelpXml\GKTicketNumberUpdate.xml" />
+    <Content Include="Xml\HelpXml\SaveFareAvailInfoRS.xml" />
+    <Content Include="Xml\HelpXml\SaveFareAvailKeyRS.xml" />
+    <Content Include="Xml\HelpXml\SearchAirDiscountRS.xml" />
+    <Content Include="Xml\HelpXml\SearchAirQuoteTaxRS.xml" />
+    <Content Include="Xml\HelpXml\SearchArrAirportRS.xml" />
+    <Content Include="Xml\HelpXml\SearchAvailabilityRS.xml" />
+    <Content Include="Xml\HelpXml\SearchAvailCalendarRS.xml" />
+    <Content Include="Xml\HelpXml\SearchBaggagePNRRS.xml" />
+    <Content Include="Xml\HelpXml\SearchBaggageRS.xml" />
+    <Content Include="Xml\HelpXml\SearchBookingPriceRS.xml" />
+    <Content Include="Xml\HelpXml\SearchBookingRS.xml" />
+    <Content Include="Xml\HelpXml\SearchCityRS.xml" />
+    <Content Include="Xml\HelpXml\SearchDepAirportRS.xml" />
+    <Content Include="Xml\HelpXml\SearchETicketDocGroupPNRRS.xml" />
+    <Content Include="Xml\HelpXml\SearchETicketDocRS.xml" />
+    <Content Include="Xml\HelpXml\SearchETicketRS.xml" />
+    <Content Include="Xml\HelpXml\SearchFareAvailGrouping3RS.xml" />
+    <Content Include="Xml\HelpXml\SearchFareAvailabilityRS.xml" />
+    <Content Include="Xml\HelpXml\SearchFareAvailGalileoRS.xml" />
+    <Content Include="Xml\HelpXml\SearchFareAvailPaxTypeRS.xml" />
+    <Content Include="Xml\HelpXml\SearchFareAvailGroupingRS.xml" />
+    <Content Include="Xml\HelpXml\SearchFareAvail3RS.xml" />
+    <Content Include="Xml\HelpXml\SearchFareAvailRS.xml" />
+    <Content Include="Xml\HelpXml\SearchFareListRS.xml" />
+    <Content Include="Xml\HelpXml\SearchRule2RS.xml" />
+    <Content Include="Xml\HelpXml\SearchRule3RS.xml" />
+    <Content Include="Xml\HelpXml\SearchRuleRS.xml" />
+    <Content Include="Xml\HelpXml\SearchScheduleRS.xml" />
+    <Content Include="Xml\HelpXml\SearchScheduleSimpleRS.xml" />
+    <Content Include="Xml\HelpXml\SeatMapServiceKey.xml" />
+    <Content Include="Xml\HelpXml\SupplementaryServiceList.xml" />
+    <Content Include="Xml\HelpXml\TicketableAirlineRS.xml" />
+    <Content Include="Xml\HelpXml\TicketIssuingBefore.xml" />
+    <Content Include="Xml\HelpXml\AirMileageSavings.xml" />
+    <Content Include="Xml\HelpXml\TourMileageExpected.xml" />
+    <Content Include="Xml\Help\AddBookingRS.xml" />
+    <Content Include="Xml\Help\AddBookingSupplementaryService.xml" />
+    <Content Include="Xml\Help\AddBookingSupplementaryServiceRequest.xml" />
+    <Content Include="Xml\Help\AddBookingSupplementaryServiceRequestItem.xml" />
+    <Content Include="Xml\Help\APISContactUpdate.xml" />
+    <Content Include="Xml\Help\AirMileageSavings.xml" />
+    <Content Include="Xml\Help\APISUpdate.xml" />
+    <Content Include="Xml\Help\APISUpdateGalileo.xml" />
+    <Content Include="Xml\Help\AutoTicketAdminParameter.xml" />
+    <Content Include="Xml\Help\AutoTicketing01RS.xml" />
+    <Content Include="Xml\Help\AutoTicketing02RS.xml" />
+    <Content Include="Xml\Help\AutoTicketingCardRS.xml" />
+    <Content Include="Xml\Help\AvailabilityRS.xml" />
+    <Content Include="Xml\Help\BookingEMailSend.xml" />
+    <Content Include="Xml\Help\CancelBookingNonTicketedRS.xml" />
+    <Content Include="Xml\Help\CancelBookingPNRRS.xml" />
+    <Content Include="Xml\Help\CancelBookingRS.xml" />
+    <Content Include="Xml\Help\CancelBookingSupplementaryService.xml" />
+    <Content Include="Xml\Help\CardCheckBin.xml" />
+    <Content Include="Xml\Help\CardCheckInicis.xml" />
+    <Content Include="Xml\Help\CheckFareCondition.xml" />
+    <Content Include="Xml\Help\CheckFareConditionString.xml" />
+    <Content Include="Xml\Help\CheckRuleRS.xml" />
+    <Content Include="Xml\Help\Config.xml" />
+    <Content Include="Xml\Help\EMailSend.xml" />
+    <Content Include="Xml\Help\FlightInfoRS.xml" />
+    <Content Include="Xml\Help\GKPnrCreate.xml" />
+    <Content Include="Xml\Help\GKTicketNumberUpdate.xml" />
+    <Content Include="Xml\Help\Help.xml" />
+    <Content Include="Xml\Help\HelpXml.xml" />
+    <Content Include="Xml\Help\SaveFareAvailInfoRS.xml" />
+    <Content Include="Xml\Help\SaveFareAvailKeyRS.xml" />
+    <Content Include="Xml\Help\SearchAgentCoupon.xml" />
+    <Content Include="Xml\Help\SearchAirDiscountPrintRS.xml" />
+    <Content Include="Xml\Help\SearchAirDiscountRS.xml" />
+    <Content Include="Xml\Help\SearchAirQuoteTaxRS.xml" />
+    <Content Include="Xml\Help\SearchArrAirportRS.xml" />
+    <Content Include="Xml\Help\SearchAvailabilityRS.xml" />
+    <Content Include="Xml\Help\SearchAvailCalendarRS.xml" />
+    <Content Include="Xml\Help\SearchAvailRS.xml" />
+    <Content Include="Xml\Help\SearchBaggagePNRRS.xml" />
+    <Content Include="Xml\Help\SearchBaggageRS.xml" />
+    <Content Include="Xml\Help\SearchBookingPriceRS.xml" />
+    <Content Include="Xml\Help\SearchBookingPriceTSTRS.xml" />
+    <Content Include="Xml\Help\SearchBookingRS.xml" />
+    <Content Include="Xml\Help\SearchBookingRuleRS.xml" />
+    <Content Include="Xml\Help\SearchCityRS.xml" />
+    <Content Include="Xml\Help\SearchCityToJson.xml" />
+    <Content Include="Xml\Help\SearchDepAirportRS.xml" />
+    <Content Include="Xml\Help\SearchETicketDocGroupPNRRS.xml" />
+    <Content Include="Xml\Help\SearchETicketDocRS.xml" />
+    <Content Include="Xml\Help\SearchETicketRS.xml" />
+    <Content Include="Xml\Help\SearchFareAvailGroupingRS.xml" />
+    <Content Include="Xml\Help\SearchFareAvailabilityRS.xml" />
+    <Content Include="Xml\Help\SearchFareAvailPaxTypeRS.xml" />
+    <Content Include="Xml\Help\SearchFareAvailRS.xml" />
+    <Content Include="Xml\Help\SearchFareInfoRS.xml" />
+    <Content Include="Xml\Help\SearchFareListRS.xml" />
+    <Content Include="Xml\Help\SearchITR.xml" />
+    <Content Include="Xml\Help\SearchProof.xml" />
+    <Content Include="Xml\Help\SearchRule2RS.xml" />
+    <Content Include="Xml\Help\SearchRule3RS.xml" />
+    <Content Include="Xml\Help\SearchRuleGalileoRS.xml" />
+    <Content Include="Xml\Help\SearchRuleRS.xml" />
+    <Content Include="Xml\Help\SearchScheduleRS.xml" />
+    <Content Include="Xml\Help\SearchScheduleSimpleRS.xml" />
+    <Content Include="Xml\Help\SearchStoredETicketRS.xml" />
+    <Content Include="Xml\Help\SeatMapServiceKey.xml" />
+    <Content Include="Xml\Help\SeatMapServiceKeyToJson.xml" />
+    <Content Include="Xml\Help\SendETicketForm.xml" />
+    <Content Include="Xml\Help\SendReceiptForm.xml" />
+    <Content Include="Xml\Help\SendETicketDocRS.xml" />
+    <Content Include="Xml\Help\SendITR.xml" />
+    <Content Include="Xml\Help\SupplementaryServiceList.xml" />
+    <Content Include="Xml\Help\TicketableAirlineRS.xml" />
+    <Content Include="Xml\Help\TicketIssuingBefore.xml" />
+    <Content Include="Xml\Help\TicketIssuingPayment.xml" />
+    <Content Include="Xml\Help\TicketIssuingSemiAutoRS.xml" />
+    <Content Include="Xml\Help\TicketIssuingSemiAutoStringRS.xml" />
+    <Content Include="Xml\Help\TourMileageExpected.xml" />
+    <Content Include="Xml\Mode\AddBookingKeyRS.xml" />
+    <Content Include="Xml\Mode\AddBookingRS.xml" />
+    <Content Include="Xml\Mode\AddBookingSupplementaryService.xml" />
+    <Content Include="Xml\Mode\AirMileageSavings.xml" />
+    <Content Include="Xml\Mode\AutoTicketingCardRS.xml" />
+    <Content Include="Xml\Mode\AvailabilityRS.xml" />
+    <Content Include="Xml\Mode\CancelBookingRS.xml" />
+    <Content Include="Xml\Mode\CancelBookingSupplementaryService.xml" />
+    <Content Include="Xml\Mode\CheckRuleRS.xml" />
+    <Content Include="Xml\Mode\CheckRulesAPRS.xml" />
+    <Content Include="Xml\Mode\CheckRulesTariffRS.xml" />
+    <Content Include="Xml\Mode\CheckRunTime.xml" />
+    <Content Include="Xml\Mode\Config.xml" />
+    <Content Include="Xml\Mode\Errors.xml" />
+    <Content Include="Xml\Mode\FlightInfoRS.xml" />
+    <Content Include="Xml\Mode\MajorCities.xml" />
+    <Content Include="Xml\Mode\PassengerRQ.xml" />
+    <Content Include="Xml\Mode\SaveFareAvailInfoRS.xml" />
+    <Content Include="Xml\Mode\SaveFareAvailKeyRS.xml" />
+    <Content Include="Xml\Mode\SearchAirQuoteFareRS.xml" />
+    <Content Include="Xml\Mode\SearchAirQuoteTaxRS.xml" />
+    <Content Include="Xml\Mode\SearchAirTaxRS.xml" />
+    <Content Include="Xml\Mode\SearchAvailabilityRS.xml" />
+    <Content Include="Xml\Mode\SearchAvailCalendarRS.xml" />
+    <Content Include="Xml\Mode\SearchBaggagePNRRS.xml" />
+    <Content Include="Xml\Mode\SearchBaggageRS.xml" />
+    <Content Include="Xml\Mode\SearchBookingPriceRS.xml" />
+    <Content Include="Xml\Mode\SearchBookingRS.xml" />
+    <Content Include="Xml\Mode\SearchETicketDocGroupPNRRS.xml" />
+    <Content Include="Xml\Mode\SearchETicketDocRS.xml" />
+    <Content Include="Xml\Mode\SearchETicketRS.xml" />
+    <Content Include="Xml\Mode\SearchFareAvailGalileoRS.xml" />
+    <Content Include="Xml\Mode\SearchFareAvail3RS.xml" />
+    <Content Include="Xml\Mode\SearchFareAvailGrouping3RS.xml" />
+    <Content Include="Xml\Mode\SearchFareAvailSabreRS.xml" />
+    <Content Include="Xml\Mode\SearchFareAvailRS.xml" />
+    <Content Include="Xml\Mode\SearchRuleRS.xml" />
+    <Content Include="Xml\Mode\SeatMapServiceKey.xml" />
+    <Content Include="Xml\Mode\SupplementaryServiceList.xml" />
+    <Content Include="Xml\Mode\TicketableAirlineRS.xml" />
+    <Content Include="Xml\Mode\TourMileage.xml" />
+    <Content Include="Xml\Mode\_FP.xml" />
+    <Content Include="Xml\Mode\_MP.xml" />
+    <Content Include="Xml\Mode\_MPIS.xml" />
+    <Content Include="Xml\Mode\_PricingRS.xml" />
+    <Content Include="Xml\Mode\_RetrieveGalileoRS.xml" />
+    <Content Include="Xml\Mode\_RetrieveRS.xml" />
+    <Content Include="Xml\Sabre\CashReceiptRQ.xml" />
+    <Content Include="Xml\Sabre\CardApprovalRQ.xml" />
+    <Content Include="Xml\Topas\AirLineRequest.xml" />
+    <Content Include="Xml\Topas\ApprovalHistoryRequest.xml" />
+    <Content Include="Xml\Topas\ApprovalRequest.xml" />
+    <Content Include="Xml\Topas\InicisReceiptURLRequest.xml" />
+    <Content Include="WebService.asmx" />
+    <Content Include="AirDiscount.asmx" />
+    <Content Include="AbacusAirService.asmx" />
+    <Content Include="ModeService.asmx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ModeWebService.MailService\MailService.disco" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <None Include="Web References\ModeWebService.MailService\MailService.wsdl" />
+    <None Include="Web References\ModeWebService.MailService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AirService3.asmx.cs">
+      <DependentUpon>AirService3.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="App_Code\SearchSave.cs" />
+    <Compile Include="App_Code\SabreConfig.cs" />
+    <Compile Include="App_Code\SearchFareAvailGrouping2.cs" />
+    <Compile Include="App_Code\SearchFareAvailGrouping.cs" />
+    <Compile Include="ETicket\ETicketGroup.aspx.cs">
+      <DependentUpon>ETicketGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ETicket\ETicketGroup.aspx.designer.cs">
+      <DependentUpon>ETicketGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ETicket\ETicket.aspx.cs">
+      <DependentUpon>ETicket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ETicket\ETicket.aspx.designer.cs">
+      <DependentUpon>ETicket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ETicket\ETicketEmailPage.aspx.cs">
+      <DependentUpon>ETicketEmailPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ETicket\ETicketEmailPage.aspx.designer.cs">
+      <DependentUpon>ETicketEmailPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ETicket\Invoice.aspx.cs">
+      <DependentUpon>Invoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ETicket\Invoice.aspx.designer.cs">
+      <DependentUpon>Invoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ETicket\Itinerary.aspx.cs">
+      <DependentUpon>Itinerary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ETicket\Itinerary.aspx.designer.cs">
+      <DependentUpon>Itinerary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ETicket\Receipt.aspx.cs">
+      <DependentUpon>Receipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ETicket\Receipt.aspx.designer.cs">
+      <DependentUpon>Receipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ETicket\ReceiptEmailPage.aspx.cs">
+      <DependentUpon>ReceiptEmailPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ETicket\ReceiptEmailPage.aspx.designer.cs">
+      <DependentUpon>ReceiptEmailPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SabreAirService.asmx.cs">
+      <DependentUpon>SabreAirService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AirService2.asmx.cs">
+      <DependentUpon>AirService2.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="App_Code\SearchFareAvailCabin2.cs" />
+    <Compile Include="App_Code\TopasConfig.cs" />
+    <Compile Include="Services\Amadeus\Fare_InstantTravelBoardSearch.asmx.cs">
+      <DependentUpon>Fare_InstantTravelBoardSearch.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Fare_PricePNRWithBookingClassKEPricing.asmx.cs">
+      <DependentUpon>Fare_PricePNRWithBookingClassKEPricing.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Sabre\PaymentService.asmx.cs">
+      <DependentUpon>PaymentService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TopasAirService.asmx.cs">
+      <DependentUpon>TopasAirService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AirService.asmx.cs">
+      <DependentUpon>AirService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AllianceService.asmx.cs">
+      <DependentUpon>AllianceService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AmadeusAirService.asmx.cs">
+      <DependentUpon>AmadeusAirService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="App_Code\AbacusConfig.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="App_Code\AES256Cipher.cs" />
+    <Compile Include="App_Code\AmadeusConfig.cs" />
+    <Compile Include="App_Code\AirConfig.cs" />
+    <Compile Include="App_Code\GalileoConfig.cs" />
+    <Compile Include="App_Code\JsonConverter.cs" />
+    <Compile Include="AirDiscount.asmx.cs">
+      <DependentUpon>AirDiscount.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AbacusAirService.asmx.cs">
+      <DependentUpon>AbacusAirService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="App_Code\LogSave.cs" />
+    <Compile Include="App_Code\MWSExceptionMode.cs" />
+    <Compile Include="App_Code\SearchFareAvailCabin.cs" />
+    <Compile Include="GalileoAirService.asmx.cs">
+      <DependentUpon>GalileoAirService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Fare_MasterPricerTravelBoardSearchSoap4.asmx.cs">
+      <DependentUpon>Fare_MasterPricerTravelBoardSearchSoap4.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\MiniRule_GetFromPricing.asmx.cs">
+      <DependentUpon>MiniRule_GetFromPricing.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Queue_CountTotal.asmx.cs">
+      <DependentUpon>Queue_CountTotal.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Queue_List.asmx.cs">
+      <DependentUpon>Queue_List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Queue_MoveItem.asmx.cs">
+      <DependentUpon>Queue_MoveItem.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Queue_PlacePNR.asmx.cs">
+      <DependentUpon>Queue_PlacePNR.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Queue_RemoveItem.asmx.cs">
+      <DependentUpon>Queue_RemoveItem.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Modetour\InicisWEB.asmx.cs">
+      <DependentUpon>InicisWEB.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Temp\Naver.aspx.cs">
+      <DependentUpon>Naver.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Temp\Naver.aspx.designer.cs">
+      <DependentUpon>Naver.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Temp\NaverLanding.aspx.cs">
+      <DependentUpon>NaverLanding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Temp\NaverLanding.aspx.designer.cs">
+      <DependentUpon>NaverLanding.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModeService.asmx.cs">
+      <DependentUpon>ModeService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="App_Code\Common.cs" />
+    <Compile Include="App_Code\ModeConfig.cs" />
+    <Compile Include="App_Code\XmlRequest.cs" />
+    <Compile Include="App_Code\SearchFareAvailPaxType.cs" />
+    <Compile Include="QueueService.asmx.cs">
+      <DependentUpon>QueueService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Abacus\AbacusWebService.asmx.cs">
+      <DependentUpon>AbacusWebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Fare_GetRulesOfPricedItinerary.asmx.cs">
+      <DependentUpon>Fare_GetRulesOfPricedItinerary.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Fare_MasterPricerCalendar.asmx.cs">
+      <DependentUpon>Fare_MasterPricerCalendar.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Fare_SellByFareCalendar.asmx.cs">
+      <DependentUpon>Fare_SellByFareCalendar.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Fare_SellByFareSearch.asmx.cs">
+      <DependentUpon>Fare_SellByFareSearch.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Fare_InformativePricingWithoutPNR.asmx.cs">
+      <DependentUpon>Fare_InformativePricingWithoutPNR.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Fare_PricePNRWithBookingClass.asmx.cs">
+      <DependentUpon>Fare_PricePNRWithBookingClass.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Command_Cryptic.asmx.cs">
+      <DependentUpon>Command_Cryptic.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Ticket_CreateTSTFromPricing.asmx.cs">
+      <DependentUpon>Ticket_CreateTSTFromPricing.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\PNR_Retrieve.asmx.cs">
+      <DependentUpon>PNR_Retrieve.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\PNR_Cancel.asmx.cs">
+      <DependentUpon>PNR_Cancel.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Fare_CheckRules.asmx.cs">
+      <DependentUpon>Fare_CheckRules.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Ticket_ProcessEDoc.asmx.cs">
+      <DependentUpon>Ticket_ProcessEDoc.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Fare_InformativePricingWithoutPNRRule.asmx.cs">
+      <DependentUpon>Fare_InformativePricingWithoutPNRRule.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\FOP_CreateFormOfPayment.asmx.cs">
+      <DependentUpon>FOP_CreateFormOfPayment.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\DocIssuance_IssueTicket.asmx.cs">
+      <DependentUpon>DocIssuance_IssueTicket.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Fare_PricePNRWithBookingClassPricing.asmx.cs">
+      <DependentUpon>Fare_PricePNRWithBookingClassPricing.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Ticket_DisplayQuota.asmx.cs">
+      <DependentUpon>Ticket_DisplayQuota.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Air_RetrieveSeatMap.asmx.cs">
+      <DependentUpon>Air_RetrieveSeatMap.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Fare_InformativeBestPricingWithoutPNR.asmx.cs">
+      <DependentUpon>Fare_InformativeBestPricingWithoutPNR.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Ticket_CancelDocument.asmx.cs">
+      <DependentUpon>Ticket_CancelDocument.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Ticket_DisplayTST.asmx.cs">
+      <DependentUpon>Ticket_DisplayTST.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Web References\com.modetour.webservice.Air.Mode\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ModeWebService.MailService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\MWSException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Amadeus\Security_Authenticate.asmx.cs">
+      <DependentUpon>Security_Authenticate.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Air_FlightInfo.asmx.cs">
+      <DependentUpon>Air_FlightInfo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Fare_MasterPricerTravelBoardSearch.asmx.cs">
+      <DependentUpon>Fare_MasterPricerTravelBoardSearch.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Air_MultiAvailability.asmx.cs">
+      <DependentUpon>Air_MultiAvailability.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Air_SellFromRecommendation.asmx.cs">
+      <DependentUpon>Air_SellFromRecommendation.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Security_SignOut.asmx.cs">
+      <DependentUpon>Security_SignOut.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\PNR_AddMultiElements.asmx.cs">
+      <DependentUpon>PNR_AddMultiElements.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebService.asmx.cs">
+      <DependentUpon>WebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://mailservice.modetour.com/MailService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ModeWebService.MailService\</RelPath>
+      <UpdateFromURL>http://mailservice.modetour.com/MailService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>AirWebService_com_modetour_mailservice_MailService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://webservice.modetour.com/Air/Mode.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\com.modetour.webservice.Air.Mode\</RelPath>
+      <UpdateFromURL>http://webservice.modetour.com/Air/Mode.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>AirWebService_com_modetour_webservice_Air_Mode_Mode</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56993</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56993</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

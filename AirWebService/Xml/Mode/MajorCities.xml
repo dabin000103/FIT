@@ -1,0 +1,130 @@
+﻿<MajorCities>
+  <Group>
+    <Title>대한민국</Title>
+    <Cities>
+      <City AirportCode="SEL" AirportKName="서울" CityCode="SEL" CityKName="서울" CountryCode="KR" CountryKName="대한민국" AreaNum="7" AreaCode="ASIA" AreaName="아시아" DepCityCode="">인천/김포</City>
+      <City AirportCode="ICN" AirportKName="인천" CityCode="SEL" CityKName="서울" CountryCode="KR" CountryKName="대한민국" AreaNum="7" AreaCode="ASIA" AreaName="아시아" DepCityCode="">인천</City>
+      <City AirportCode="GMP" AirportKName="김포" CityCode="SEL" CityKName="서울" CountryCode="KR" CountryKName="대한민국" AreaNum="7" AreaCode="ASIA" AreaName="아시아" DepCityCode="">김포</City>
+      <City AirportCode="PUS" AirportKName="김해" CityCode="PUS" CityKName="부산" CountryCode="KR" CountryKName="대한민국" AreaNum="7" AreaCode="ASIA" AreaName="아시아" DepCityCode="">김해(부산)</City>
+      <City AirportCode="TAE" AirportKName="대구" CityCode="TAE" CityKName="대구" CountryCode="KR" CountryKName="대한민국" AreaNum="7" AreaCode="ASIA" AreaName="아시아" DepCityCode="">대구</City>
+      <City AirportCode="CJJ" AirportKName="청주" CityCode="CJJ" CityKName="청주" CountryCode="KR" CountryKName="대한민국" AreaNum="7" AreaCode="ASIA" AreaName="아시아" DepCityCode="">청주</City>
+      <City AirportCode="MWX" AirportKName="무안" CityCode="MWX" CityKName="무안" CountryCode="KR" CountryKName="대한민국" AreaNum="7" AreaCode="ASIA" AreaName="아시아" DepCityCode="">무안</City>
+      <City AirportCode="CJU" AirportKName="제주" CityCode="CJU" CityKName="제주" CountryCode="KR" CountryKName="대한민국" AreaNum="7" AreaCode="ASIA" AreaName="아시아" DepCityCode="">제주</City>
+    </Cities>
+  </Group>
+  <Group>
+    <Title>동남아</Title>
+    <Cities>
+      <City AirportCode="NHA" AirportKName="나트랑" CityCode="NHA" CityKName="나트랑" CountryCode="VN" CountryKName="베트남" AreaNum="7" AreaCode="ASIA" AreaName="아시아" DepCityCode="ICN,">나트랑</City>
+      <City AirportCode="DAD" AirportKName="다낭" CityCode="DAD" CityKName="다낭" CountryCode="VN" CountryKName="베트남" AreaNum="7" AreaCode="ASIA" AreaName="아시아" DepCityCode="ICN,">다낭</City>
+      <City AirportCode="MNL" AirportKName="마닐라" CityCode="MNL" CityKName="마닐라" CountryCode="PH" CountryKName="필리핀" AreaNum="7" AreaCode="ASIA" AreaName="아시아" DepCityCode="ICN,PUS,">마닐라</City>
+      <City AirportCode="BKK" AirportKName="수완나폼" CityCode="BKK" CityKName="방콕" CountryCode="TH" CountryKName="태국" AreaNum="7" AreaCode="ASIA" AreaName="아시아" DepCityCode="ICN,PUS,">방콕</City>
+      <City AirportCode="KLO" AirportKName="보라카이" CityCode="KLO" CityKName="보라카이" CountryCode="PH" CountryKName="필리핀" AreaNum="7" AreaCode="ASIA" AreaName="아시아" DepCityCode="ICN,">보라카이</City>
+      <City AirportCode="VTE" AirportKName="비엔티엔" CityCode="VTE" CityKName="비엔티엔" CountryCode="LA" CountryKName="라오스" AreaNum="7" AreaCode="ASIA" AreaName="아시아" DepCityCode="ICN,PUS,">비엔티엔</City>
+      <City AirportCode="SIN" AirportKName="창이공항" CityCode="SIN" CityKName="싱가포르" CountryCode="SG" CountryKName="싱가포르" AreaNum="7" AreaCode="ASIA" AreaName="아시아" DepCityCode="ICN,">싱가포르</City>
+      <City AirportCode="CEB" AirportKName="세부" CityCode="CEB" CityKName="세부" CountryCode="PH" CountryKName="필리핀" AreaNum="7" AreaCode="ASIA" AreaName="아시아" DepCityCode="ICN,PUS,">세부</City>
+      <City AirportCode="REP" AirportKName="씨엠립" CityCode="REP" CityKName="씨엠립" CountryCode="KH" CountryKName="캄보디아" AreaNum="7" AreaCode="ASIA" AreaName="아시아" DepCityCode="ICN,PUS,">씨엠립</City>
+      <City AirportCode="BKI" AirportKName="코타키나발루" CityCode="BKI" CityKName="코타키나발루" CountryCode="MY" CountryKName="말레이시아" AreaNum="7" AreaCode="ASIA" AreaName="아시아" DepCityCode="ICN,">코타키나발루</City>
+      <City AirportCode="KUL" AirportKName="쿠알라룸푸르" CityCode="KUL" CityKName="쿠알라룸푸르" CountryCode="MY" CountryKName="말레이시아" AreaNum="7" AreaCode="ASIA" AreaName="아시아" DepCityCode="ICN,">쿠알라룸푸르</City>
+      <City AirportCode="PPS" AirportKName="푸에르토프린세사" CityCode="PPS" CityKName="팔라완" CountryCode="PH" CountryKName="필리핀" AreaNum="7" AreaCode="ASIA" AreaName="아시아" DepCityCode="">팔라완</City>
+      <City AirportCode="HKT" AirportKName="푸켓" CityCode="HKT" CityKName="푸켓" CountryCode="TH" CountryKName="태국" AreaNum="7" AreaCode="ASIA" AreaName="아시아" DepCityCode="ICN,">푸켓</City>
+      <City AirportCode="HAN" AirportKName="하노이" CityCode="HAN" CityKName="하노이" CountryCode="VN" CountryKName="베트남" AreaNum="7" AreaCode="ASIA" AreaName="아시아" DepCityCode="ICN,PUS,">하노이</City>
+      <City AirportCode="SGN" AirportKName="호치민" CityCode="SGN" CityKName="호치민" CountryCode="VN" CountryKName="베트남" AreaNum="7" AreaCode="ASIA" AreaName="아시아" DepCityCode="ICN,PUS,">호치민</City>
+    </Cities>
+  </Group>
+  <Group>
+    <Title>일본</Title>
+    <Cities>
+      <City AirportCode="KOJ" AirportKName="가고시마" CityCode="KOJ" CityKName="가고시마" CountryCode="JP" CountryKName="일본" AreaNum="9" AreaCode="JPN" AreaName="일본" DepCityCode="ICN,">가고시마</City>
+      <City AirportCode="KMJ" AirportKName="구마모토" CityCode="KMJ" CityKName="구마모토" CountryCode="JP" CountryKName="일본" AreaNum="9" AreaCode="JPN" AreaName="일본" DepCityCode="ICN,">구마모토</City>
+      <City AirportCode="NGO" AirportKName="나고야" CityCode="NGO" CityKName="나고야" CountryCode="JP" CountryKName="일본" AreaNum="9" AreaCode="JPN" AreaName="일본" DepCityCode="ICN,GMP,PUS,CJU,">나고야</City>
+      <City AirportCode="NRT" AirportKName="나리타" CityCode="TYO" CityKName="도쿄" CountryCode="JP" CountryKName="일본" AreaNum="9" AreaCode="JPN" AreaName="일본" DepCityCode="ICN,PUS,CJU,">도쿄(나리타)</City>
+      <City AirportCode="HND" AirportKName="하네다" CityCode="TYO" CityKName="도쿄" CountryCode="JP" CountryKName="일본" AreaNum="9" AreaCode="JPN" AreaName="일본" DepCityCode="ICN,GMP,PUS,CJU,">도쿄(하네다)</City>
+      <City AirportCode="KMI" AirportKName="미야자키" CityCode="KMI" CityKName="미야자키" CountryCode="JP" CountryKName="일본" AreaNum="9" AreaCode="JPN" AreaName="일본" DepCityCode="ICN,">미야자키</City>
+      <City AirportCode="SPK" AirportKName="삿포로" CityCode="SPK" CityKName="삿포로" CountryCode="JP" CountryKName="일본" AreaNum="9" AreaCode="JPN" AreaName="일본" DepCityCode="ICN,PUS,">삿포로</City>
+      <City AirportCode="KIX" AirportKName="간사이" CityCode="OSA" CityKName="오사카" CountryCode="JP" CountryKName="일본" AreaNum="9" AreaCode="JPN" AreaName="일본" DepCityCode="ICN,GMP,PUS,CJU,CJJ,">오사카</City>
+      <City AirportCode="OIT" AirportKName="오이타" CityCode="OIT" CityKName="오이타" CountryCode="JP" CountryKName="일본" AreaNum="9" AreaCode="JPN" AreaName="일본" DepCityCode="ICN,">오이타</City>
+      <City AirportCode="OKA" AirportKName="오키나와" CityCode="OKA" CityKName="오키나와" CountryCode="JP" CountryKName="일본" AreaNum="9" AreaCode="JPN" AreaName="일본" DepCityCode="ICN,">오키나와</City>
+      <City AirportCode="IBR" AirportKName="이바라키" CityCode="IBR" CityKName="이바라키" CountryCode="JP" CountryKName="일본" AreaNum="9" AreaCode="JPN" AreaName="일본" DepCityCode="ICN,">이바라키</City>
+      <City AirportCode="KKJ" AirportKName="기타큐슈" CityCode="FUK" CityKName="후쿠오카" CountryCode="JP" CountryKName="일본" AreaNum="9" AreaCode="JPN" AreaName="일본" DepCityCode="">기타큐슈</City>
+      <City AirportCode="FUK" AirportKName="후쿠오카" CityCode="FUK" CityKName="후쿠오카" CountryCode="JP" CountryKName="일본" AreaNum="9" AreaCode="JPN" AreaName="일본" DepCityCode="ICN,PUS,TAE,MWX,CJU,">후쿠오카</City>
+    </Cities>
+  </Group>
+  <Group>
+    <Title>중국/홍콩/대만</Title>
+    <Cities>
+      <City AirportCode="CAN" AirportKName="광저우공항" CityCode="CAN" CityKName="광주" CountryCode="CN" CountryKName="중국" AreaNum="10" AreaCode="CHI" AreaName="중국" DepCityCode="ICN,PUS,">광주</City>
+      <City AirportCode="DLC" AirportKName="대련" CityCode="DLC" CityKName="대련" CountryCode="CN" CountryKName="중국" AreaNum="10" AreaCode="CHI" AreaName="중국" DepCityCode="ICN,">대련</City>
+      <City AirportCode="BJS" AirportKName="베이징" CityCode="BJS" CityKName="북경" CountryCode="CN" CountryKName="중국" AreaNum="10" AreaCode="CHI" AreaName="중국" DepCityCode="ICN,PUS,TAE,MWX,CJU,CJJ,">북경</City>
+      <City AirportCode="PVG" AirportKName="푸동" CityCode="SHA" CityKName="상해" CountryCode="CN" CountryKName="중국" AreaNum="10" AreaCode="CHI" AreaName="중국" DepCityCode="ICN,GMP,PUS,TAE,MWX,YNY,CJU,">상해(푸동)</City>
+      <City AirportCode="SHA" AirportKName="홍교" CityCode="SHA" CityKName="상해" CountryCode="CN" CountryKName="중국" AreaNum="10" AreaCode="CHI" AreaName="중국" DepCityCode="GMP,">상해(홍교)</City>
+      <City AirportCode="SHE" AirportKName="심양" CityCode="SHE" CityKName="심양" CountryCode="CN" CountryKName="중국" AreaNum="10" AreaCode="CHI" AreaName="중국" DepCityCode="ICN,PUS,TAE,YNY,">심양</City>
+      <City AirportCode="YNJ" AirportKName="연길" CityCode="YNJ" CityKName="연길" CountryCode="CN" CountryKName="중국" AreaNum="10" AreaCode="CHI" AreaName="중국" DepCityCode="ICN,">연길</City>
+      <City AirportCode="YNT" AirportKName="연태" CityCode="YNT" CityKName="연태" CountryCode="CN" CountryKName="중국" AreaNum="10" AreaCode="CHI" AreaName="중국" DepCityCode="ICN,CJU,">연태</City>
+      <City AirportCode="WEH" AirportKName="위해" CityCode="WEH" CityKName="위해" CountryCode="CN" CountryKName="중국" AreaNum="10" AreaCode="CHI" AreaName="중국" DepCityCode="ICN,PUS,">위해</City>
+      <City AirportCode="TSN" AirportKName="천진" CityCode="TSN" CityKName="천진" CountryCode="CN" CountryKName="중국" AreaNum="10" AreaCode="CHI" AreaName="중국" DepCityCode="ICN,CJU,">천진</City>
+      <City AirportCode="TAO" AirportKName="청도" CityCode="TAO" CityKName="청도" CountryCode="CN" CountryKName="중국" AreaNum="10" AreaCode="CHI" AreaName="중국" DepCityCode="ICN,">청도</City>
+      <City AirportCode="HKG" AirportKName="홍콩" CityCode="HKG" CityKName="홍콩" CountryCode="HK" CountryKName="홍콩" AreaNum="10" AreaCode="CHI" AreaName="중국" DepCityCode="ICN,PUS,CJJ,">홍콩</City>
+      <City AirportCode="TPE" AirportKName="타이페이" CityCode="TPE" CityKName="타이페이" CountryCode="TW" CountryKName="타이완(대만)" AreaNum="7" AreaCode="ASIA" AreaName="아시아" DepCityCode="ICN,">대만(타이페이)</City>
+      <City AirportCode="TSA" AirportKName="송산" CityCode="TPE" CityKName="송산" CountryCode="TW" CountryKName="타이완(대만)" AreaNum="7" AreaCode="ASIA" AreaName="아시아" DepCityCode="">대만(송산)</City>
+    </Cities>
+  </Group>
+  <Group>
+    <Title>유럽</Title>
+    <Cities>
+      <City AirportCode="LON" AirportKName="런던" CityCode="LON" CityKName="런던" CountryCode="GB" CountryKName="영국" AreaNum="12" AreaCode="EUR" AreaName="유럽" DepCityCode="ICN,PUS,">런던</City>
+      <City AirportCode="ROM" AirportKName="로마" CityCode="ROM" CityKName="로마" CountryCode="IT" CountryKName="이탈리아" AreaNum="12" AreaCode="EUR" AreaName="유럽" DepCityCode="ICN,PUS,">로마</City>
+      <City AirportCode="MAD" AirportKName="마드리드" CityCode="MAD" CityKName="마드리드" CountryCode="ES" CountryKName="스페인" AreaNum="12" AreaCode="EUR" AreaName="유럽" DepCityCode="ICN,PUS,">마드리드</City>
+      <City AirportCode="MOW" AirportKName="모스크바" CityCode="MOW" CityKName="모스크바" CountryCode="RU" CountryKName="러시아" AreaNum="12" AreaCode="EUR" AreaName="유럽" DepCityCode="">모스크바</City>
+      <City AirportCode="MIL" AirportKName="밀라노" CityCode="MIL" CityKName="밀라노" CountryCode="IT" CountryKName="이탈리아" AreaNum="12" AreaCode="EUR" AreaName="유럽" DepCityCode="ICN,PUS,">밀라노</City>
+      <City AirportCode="WAW" AirportKName="바르샤바" CityCode="WAW" CityKName="바르샤바" CountryCode="PL" CountryKName="폴란드" AreaNum="12" AreaCode="EUR" AreaName="유럽" DepCityCode="ICN,PUS,">바르샤바</City>
+      <City AirportCode="BCN" AirportKName="바르셀로나" CityCode="BCN" CityKName="바르셀로나" CountryCode="ES" CountryKName="스페인" AreaNum="12" AreaCode="EUR" AreaName="유럽" DepCityCode="ICN,PUS,">바르셀로나</City>
+      <City AirportCode="VVO" AirportKName="블라디보스톡" CityCode="VVO" CityKName="블라디보스톡" CountryCode="RU" CountryKName="러시아" AreaNum="12" AreaCode="EUR" AreaName="유럽" DepCityCode="ICN,">블라디보스톡</City>
+      <City AirportCode="AMS" AirportKName="암스테르담" CityCode="AMS" CityKName="암스텔담" CountryCode="NL" CountryKName="네덜란드" AreaNum="12" AreaCode="EUR" AreaName="유럽" DepCityCode="ICN,PUS,">암스텔담</City>
+      <City AirportCode="IST" AirportKName="아타튀르크" CityCode="IST" CityKName="이스탄불" CountryCode="TR" CountryKName="터키" AreaNum="12" AreaCode="EUR" AreaName="유럽" DepCityCode="ICN,">이스탄불</City>
+      <City AirportCode="ZRH" AirportKName="취리히" CityCode="ZRH" CityKName="취리히" CountryCode="CH" CountryKName="스위스" AreaNum="12" AreaCode="EUR" AreaName="유럽" DepCityCode="ICN,PUS,">취리히</City>
+      <City AirportCode="PAR" AirportKName="파리" CityCode="PAR" CityKName="파리" CountryCode="FR" CountryKName="프랑스" AreaNum="12" AreaCode="EUR" AreaName="유럽" DepCityCode="ICN,PUS,">파리</City>
+      <City AirportCode="PRG" AirportKName="프라하" CityCode="PRG" CityKName="프라하" CountryCode="CZ" CountryKName="체코공화국" AreaNum="12" AreaCode="EUR" AreaName="유럽" DepCityCode="ICN,">프라하</City>
+      <City AirportCode="FRA" AirportKName="프랑크푸르트" CityCode="FRA" CityKName="프랑크푸르트" CountryCode="DE" CountryKName="독일" AreaNum="12" AreaCode="EUR" AreaName="유럽" DepCityCode="ICN,PUS,">프랑크푸르트</City>
+      <City AirportCode="HEL" AirportKName="헬싱키" CityCode="HEL" CityKName="헬싱키" CountryCode="FI" CountryKName="핀란드" AreaNum="12" AreaCode="EUR" AreaName="유럽" DepCityCode="ICN,PUS,">헬싱키</City>
+    </Cities>
+  </Group>
+  <Group>
+    <Title>미주</Title>
+    <Cities>
+      <City AirportCode="NYC" AirportKName="뉴욕" CityCode="NYC" CityKName="뉴욕" CountryCode="US" CountryKName="미국" AreaNum="8" AreaCode="AMCA" AreaName="미주" DepCityCode="ICN,PUS,">뉴욕</City>
+      <City AirportCode="LAS" AirportKName="라스베이거스" CityCode="LAS" CityKName="라스베이거스" CountryCode="US" CountryKName="미국" AreaNum="8" AreaCode="AMCA" AreaName="미주" DepCityCode="ICN,PUS,">라스베이거스</City>
+      <City AirportCode="LAX" AirportKName="로스앤젤레스" CityCode="LAX" CityKName="로스앤젤레스" CountryCode="US" CountryKName="미국" AreaNum="8" AreaCode="AMCA" AreaName="미주" DepCityCode="ICN,PUS,">로스앤젤레스</City>
+      <City AirportCode="YVR" AirportKName="밴쿠버" CityCode="YVR" CityKName="밴쿠버" CountryCode="CA" CountryKName="캐나다" AreaNum="8" AreaCode="AMCA" AreaName="미주" DepCityCode="ICN,PUS,">밴쿠버</City>
+      <City AirportCode="SFO" AirportKName="샌프란시스코" CityCode="SFO" CityKName="샌프란시스코" CountryCode="US" CountryKName="미국" AreaNum="8" AreaCode="AMCA" AreaName="미주" DepCityCode="ICN,PUS,">샌프란시스코</City>
+      <City AirportCode="SEA" AirportKName="시애틀" CityCode="SEA" CityKName="시애틀" CountryCode="US" CountryKName="미국" AreaNum="8" AreaCode="AMCA" AreaName="미주" DepCityCode="ICN,PUS,">시애틀</City>
+      <City AirportCode="CHI" AirportKName="시카고" CityCode="CHI" CityKName="시카고" CountryCode="US" CountryKName="미국" AreaNum="8" AreaCode="AMCA" AreaName="미주" DepCityCode="ICN,PUS,">시카고</City>
+      <City AirportCode="ATL" AirportKName="애틀랜타" CityCode="ATL" CityKName="애틀랜타" CountryCode="US" CountryKName="미국" AreaNum="8" AreaCode="AMCA" AreaName="미주" DepCityCode="ICN,PUS,">애틀랜타</City>
+      <City AirportCode="WAS" AirportKName="워싱턴" CityCode="WAS" CityKName="워싱턴" CountryCode="US" CountryKName="미국" AreaNum="8" AreaCode="AMCA" AreaName="미주" DepCityCode="ICN,PUS,">워싱턴</City>
+      <City AirportCode="YTO" AirportKName="토론토" CityCode="YTO" CityKName="토론토" CountryCode="CA" CountryKName="캐나다" AreaNum="8" AreaCode="AMCA" AreaName="미주" DepCityCode="ICN,PUS,">토론토</City>
+      <City AirportCode="HNL" AirportKName="호놀룰루" CityCode="HNL" CityKName="호놀룰루" CountryCode="US" CountryKName="미국" AreaNum="8" AreaCode="AMCA" AreaName="미주" DepCityCode="ICN,PUS,">호놀룰루</City>
+      <City AirportCode="MSP" AirportKName="미네아폴리스" CityCode="MSP" CityKName="미네아폴리스" CountryCode="US" CountryKName="미국" AreaNum="8" AreaCode="AMCA" AreaName="미주" DepCityCode="ICN,PUS,">미네아폴리스</City>
+      <City AirportCode="DTW" AirportKName="디트로이트" CityCode="DTT" CityKName="디트로이트" CountryCode="US" CountryKName="미국" AreaNum="8" AreaCode="AMCA" AreaName="미주" DepCityCode="">디트로이트</City>
+    </Cities>
+  </Group>
+  <Group>
+    <Title>남태평양/괌/사이판</Title>
+    <Cities>
+      <City AirportCode="GUM" AirportKName="괌" CityCode="GUM" CityKName="괌" CountryCode="GU" CountryKName="괌" AreaNum="11" AreaCode="SOPA" AreaName="남태평양" DepCityCode="ICN,PUS,">괌</City>
+      <City AirportCode="MEL" AirportKName="멜버른" CityCode="MEL" CityKName="멜버른" CountryCode="AU" CountryKName="오스트레일리아(호주)" AreaNum="11" AreaCode="SOPA" AreaName="남태평양" DepCityCode="ICN,PUS,">멜버른</City>
+      <City AirportCode="BNE" AirportKName="브리즈번" CityCode="BNE" CityKName="브리즈번" CountryCode="AU" CountryKName="오스트레일리아(호주)" AreaNum="11" AreaCode="SOPA" AreaName="남태평양" DepCityCode="ICN,PUS,">브리즈번</City>
+      <City AirportCode="SPN" AirportKName="사이판" CityCode="SPN" CityKName="사이판" CountryCode="MP" CountryKName="북마리아나제도" AreaNum="11" AreaCode="SOPA" AreaName="남태평양" DepCityCode="ICN,PUS,">사이판</City>
+      <City AirportCode="SYD" AirportKName="시드니" CityCode="SYD" CityKName="시드니" CountryCode="AU" CountryKName="오스트레일리아(호주)" AreaNum="11" AreaCode="SOPA" AreaName="남태평양" DepCityCode="ICN,PUS,">시드니</City>
+      <City AirportCode="AKL" AirportKName="오클랜드" CityCode="AKL" CityKName="오클랜드" CountryCode="NZ" CountryKName="뉴질랜드" AreaNum="11" AreaCode="SOPA" AreaName="남태평양" DepCityCode="ICN,PUS,">오클랜드</City>
+    </Cities>
+  </Group>
+  <Group>
+    <Title>중동/아프리카</Title>
+    <Cities>
+      <City AirportCode="DOH" AirportKName="도하" CityCode="DOH" CityKName="도하" CountryCode="QA" CountryKName="카타르" AreaNum="16" AreaCode="ME" AreaName="중동" DepCityCode="ICN,">도하</City>
+      <City AirportCode="DXB" AirportKName="두바이" CityCode="DXB" CityKName="두바이" CountryCode="AE" CountryKName="아랍에미레이트연합국" AreaNum="16" AreaCode="ME" AreaName="중동" DepCityCode="ICN,">두바이</City>
+      <City AirportCode="AUH" AirportKName="아부다비" CityCode="AUH" CityKName="아부다비" CountryCode="AE" CountryKName="아랍에미레이트연합국" AreaNum="16" AreaCode="ME" AreaName="중동" DepCityCode="ICN,">아부다비</City>
+      <City AirportCode="ADD" AirportKName="아디스아바바" CityCode="ADD" CityKName="아디스아바바" CountryCode="ET" CountryKName="에티오피아" AreaNum="15" AreaCode="AF" AreaName="아프리카" DepCityCode="ICN,PUS,">아디스아바바</City>
+    </Cities>
+  </Group>
+</MajorCities>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AirTicketRQ ReturnHostCommand="true" NumResponses="1" Version="2.12.0" xmlns="http://webservices.sabre.com/sabreXML/2011/10">
+  <OptionalQualifiers>
+    <FlightQualifiers>
+      <VendorPrefs>
+        <Airline Code="OZ"/>
+      </VendorPrefs>
+    </FlightQualifiers>
+    <FOP_Qualifiers>
+      <!--현금-->
+      <BasicFOP Type="CA"/>
+      <!--카드-->
+      <BasicFOP>
+        <CC_Info>
+          <PaymentCard Code="AX" ExpireDate="2024-03" ExtendedPayment="3" Number="3710********162"/>
+        </CC_Info>
+      </BasicFOP>
+      <!--카드+현금 or 현금+카드-->
+      <BSP_Ticketing>
+        <!--카드+현금-->
+        <MultipleFOP>
+          <!--카드 결제 금액-->
+          <Fare Amount="100.00"/>
+          <FOP_One Type="CA"></FOP_One>
+          <FOP_Two>
+            <CC_Info Suppress="false">
+              <PaymentCard Code="AX" ExpireDate="2012-11" ExtendedPayment="12" Number="373912345621003"/>
+            </CC_Info>
+          </FOP_Two>
+        </MultipleFOP>
+        <!--현금+카드-->
+        <MultipleFOP>
+          <!--현금 결제 금액-->
+          <Fare Amount="100.00"/>
+          <FOP_One>
+            <CC_Info Suppress="false">
+              <PaymentCard Code="AX" ExpireDate="2012-11" ExtendedPayment="12" Number="373912345621003"/>
+            </CC_Info>
+          </FOP_One>
+          <FOP_Two Type="CA"></FOP_Two>
+        </MultipleFOP>
+      </BSP_Ticketing>
+      <!--카드+카드-->
+      <MultipleCC_FOP>
+        <!--두번째 카드 결제 금액-->
+        <Fare Amount="100.00"/>
+        <CC_One>
+          <CC_Info Suppress="false">
+            <PaymentCard Code="AX" ExpireDate="2016-11" ExtendedPayment="12" Number="373912345621003"/>
+          </CC_Info>
+        </CC_One>
+        <CC_Two>
+          <CC_Info Suppress="false">
+            <PaymentCard Code="VI" ExpireDate="2016-12" ExtendedPayment="12" Number="4537156488578956"/>
+          </CC_Info>
+        </CC_Two>
+      </MultipleCC_FOP>
+    </FOP_Qualifiers>
+    <MiscQualifiers>
+      <Commission Percent="0"/>
+      <Endorsement>
+        <Text>NON-ENDS</Text>
+      </Endorsement>
+      <Invoice ETReceipt="true"/>
+      <Ticket Type="ETR"/>
+      <TourCode>
+        <Text>TEST1212</Text>
+      </TourCode>
+    </MiscQualifiers>
+    <PricingQualifiers>
+      <NameSelect NameNumber="01.01" />
+    </PricingQualifiers>
+  </OptionalQualifiers>
+</AirTicketRQ>
+
+<!--
+카드 F*BC1234123412341234/2010*E03*Z12001011
+     F*카드2CODE카드번호/유효기간월년*E할부개원*Z승인번호
+
+카드+현금 F*BC1234123412341234/2010*E03*Z12001011*CASH/10000   
+          F*카드2CODE카드번호/유효기간월년*E할부개원*Z승인번호*CASH/금액
+-->

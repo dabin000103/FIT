@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="Queue_MoveItem.asmx.cs" Class="AirWebService.QueueMoveItem.AmadeusWebService" %>

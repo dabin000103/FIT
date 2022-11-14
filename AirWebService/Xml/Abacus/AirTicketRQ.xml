@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AirTicketRQ xmlns="http://services.sabre.com/sp/air/ticket/v1" version="1.2.0">
+  <DesignatePrinter>
+    <Profile Number="1"/>
+  </DesignatePrinter>
+  <Itinerary ID="VWKJJT"/>
+  <Ticketing>
+    <FlightQualifiers>
+      <VendorPrefs>
+        <Airline Code="XX"/>
+      </VendorPrefs>
+    </FlightQualifiers>
+    <FOP_Qualifiers>
+      <BSP_Ticketing>
+        <MultipleFOP>
+          <Fare Amount="100.00"/>
+          <FOP_One>
+            <CC_Info Suppress="true">
+              <PaymentCard Code="VI" ExpireDate="2016-11" ExtendedPayment="12" Number="573912345621003"/>
+            </CC_Info>
+          </FOP_One>
+          <FOP_Two Type="CK"/>
+        </MultipleFOP>
+      </BSP_Ticketing>
+    </FOP_Qualifiers>
+    <PricingQualifiers>
+      <PriceQuote>
+        <Record Number="1"/>
+      </PriceQuote>
+    </PricingQualifiers>
+  </Ticketing>
+  <PostProcessing>
+    <EndTransaction>
+      <Source ReceivedFrom="SPTEST"/>
+    </EndTransaction>
+  </PostProcessing>
+</AirTicketRQ>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[부가서비스 단품 예약(CRS용)]]></Summary>
+	<Return Type="XmlElement"><![CDATA[예약 조회 결과 XML]]></Return>
+	<Items SubTitle="">
+    <Item Param="SNM" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[사이트번호]]></Item>
+    <Item Param="OID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[모두투어 주문번호]]></Item>
+    <Item Param="SSCD" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[부가서비스 코드]]></Item>
+    <Item Param="RPC" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[대표자 연락처(휴대폰번호)]]></Item>
+    <Item Param="RQT" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청단말기(WEB/MOBILEWEB/MOBILEAPP/CRS/MODEWARE)]]></Item>
+    <Item Param="RQU" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청URL]]></Item>
+    <Item Param="RIP" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청자IP]]></Item>
+	</Items>
+</Help>

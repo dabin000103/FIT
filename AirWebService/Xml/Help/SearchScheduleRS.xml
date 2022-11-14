@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[Availability/Schedule/TimeTable 조회]]></Summary>
+	<Return Type="XmlElement"><![CDATA[]]></Return>
+	<Items SubTitle="">
+		<Item Param="SNM" Type="number" format="" Required="true" DefaultValue="" ExampleValue="2"><![CDATA[웹사이트 번호]]></Item>
+    <Item Param="FAC" Type="string" format="" Required="true" DefaultValue="" ExampleValue="44"><![CDATA[구분코드(44:Availability, 48:Schedule, 51:TimeTable)]]></Item>
+    <Item Param="DTD" Type="datetime" format="YYYYMMDD" Required="true" DefaultValue="" ExampleValue=""><![CDATA[출발일]]></Item>
+		<Item Param="DTT" Type="datetime" format="HHMM" Required="false" DefaultValue="" ExampleValue=""><![CDATA[출발시간]]></Item>
+		<Item Param="DLC" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[출발지 공항 코드]]></Item>
+		<Item Param="ALC" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[도착지 공항 코드]]></Item>
+		<Item Param="CLC" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[경유지 공항 코드(콤마로 구분)]]></Item>
+		<Item Param="SCD" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[서비스 클래스(콤마로 구분)]]></Item>
+		<Item Param="MCC" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[항공사 코드(콤마로 구분)]]></Item>
+		<Item Param="FLN" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[편명(콤마로 구분)]]></Item>
+		<Item Param="NOS" Type="number" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[좌석수]]></Item>
+    <Item Param="FLO" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[항공조회옵션(OD:direct only, ON:non-stop only, OC:connections only)(콤마로 구분)]]></Item>
+    <Item Param="TOR" Type="string" format="" Required="true" DefaultValue="" ExampleValue="TN"><![CDATA[요청타입(SF:Flight Specific, TA:By arrival time, TD:By departure time, TE:By elapsed time, TG:Group availability, TN:By neutral order, TT:Negociated space)]]></Item>
+    <Item Param="RQT" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청단말기(WEB/MOBILEWEB/MOBILEAPP/CRS/MODEWARE)]]></Item>
+	</Items>
+</Help>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SWSServices>
+	<service action="AddRemarkLLSRQ" node="AddRemarkRQ" type="SabreXml" value="AddRemark"/>
+	<service action="EndTransactionLLSRQ" node="EndTransactionRQ" type="SabreXml" value="EndTransaction"/>
+	<service action="OTA_AirAvailLLSRQ" node="OTA_AirAvailRQ" type="OTA" value="Air"/>
+	<service action="OTA_AirBookLLSRQ" node="OTA_AirBookRQ" type="OTA" value="Air"/>
+	<service action="OTA_AirPriceLLSRQ" node="OTA_AirPriceRQ" type="OTA" value="Air"/>
+	<service action="OTA_CancelLLSRQ" node="OTA_CancelRQ" type="OTA" value="Air"/>
+	<service action="OTA_TravelItineraryReadLLSRQ" node="OTA_TravelItineraryReadRQ" type="OTA" value="Air"/>
+  <service action="TravelItineraryReadRQ" node="TravelItineraryReadRQ" type="OTA" value="Air"/>
+	<service action="IMAP_AirSeatMapLLSRQ" node="IMAP_AirSeatMapRQ" type="OTA" value="Air"/>
+	<service action="SabreCommandLLSRQ" node="SabreCommandLLSRQ" type="SabreXml" value="SabreCommand"/>
+	<service action="SessionCreateRQ" node="SessionCreateRQ" type="SabreXml" value="SessionCreate"/>
+	<service action="SessionCloseRQ" node="SessionCloseRQ" type="SabreXml" value="SessionClose"/>
+	<service action="TravelItineraryAddInfoLLSRQ" node="TravelItineraryAddInfoRQ" type="SabreXml" value="TravelItineraryAddInfo"/>
+	<service action="TravelItineraryHistoryLLSRQ" node="TravelItineraryHistoryRQ" type="SabreXml" value="TravelItineraryHistory"/>
+	<service action="TravelItineraryModifyInfoLLSRQ" node="TravelItineraryModifyInfoRQ" type="SabreXml" value="TravelItineraryModifyInfo"/>
+	<service action="VerifyFlightDetailsLLSRQ" node="VerifyFlightDetailsRQ" type="SabreXml" value="VerifyFlightDetails"/>
+	<service action="SpecialServiceLLSRQ" node="SpecialServiceRQ" type="SabreXml" value="SpecialService"/>
+  <service action="ARUNK_LLSRQ" node="ArunkRQ" type="SabreXml" value="ARUNK_Service"/>
+  <service action="GetReservationRQ" node="GetReservationRQ" type="SabreXml" value="Air"/>
+  <service action="DesignatePrinterLLSRQ" node="DesignatePrinterRQ" type="SabreXml" value="Air"/>
+  <service action="AirTicketLLSRQ" node="AirTicketLLSRQ" type="SabreXml" value="Air"/>
+  <service action="AirTicketRQ" node="AirTicketRQ" type="SabreXml" value="Air"/>
+</SWSServices>

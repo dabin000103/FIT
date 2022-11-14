@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[카드사 BIN번호 조회]]></Summary>
+	<Return Type="string"><![CDATA[카드사 BIN번호 조회 결과 XML]]></Return>
+	<Items SubTitle="">
+		<Item Param="CardNumber" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[카드번호(하이픈 제외, 최대 앞 7자리까지)]]></Item>
+	</Items>
+</Help>

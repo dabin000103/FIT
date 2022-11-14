@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[자동발권(결제시스템 연동전 실행)]]></Summary>
+	<Return Type="XmlElement"><![CDATA[결제 가능 카드리스트]]></Return>
+	<Items SubTitle="">
+    <Item Param="SNM" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[사이트번호]]></Item>
+    <Item Param="OID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[모두투어 주문번호]]></Item>
+    <Item Param="PID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[예약자번호(PTID)]]></Item>
+    <Item Param="RQR" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청자번호(PTID)]]></Item>
+    <Item Param="RQT" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청단말기(WEB/MOBILEWEB/MOBILEAPP/CRS/MODEWARE)]]></Item>
+	</Items>
+</Help>

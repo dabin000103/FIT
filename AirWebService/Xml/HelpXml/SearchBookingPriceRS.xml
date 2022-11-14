@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--## 운임 및 텍스 조회 결과 ##-->
+<!--Repeat:1-->
+<!--@guid:(필수)(string) 로그참조번호-->
+<!--@version:(필수)(number) 버전정보-->
+<!--@timeStamp:(필수)(datetime)(YYYY-MM-DD HH:MM) 출력일시-->
+<ResponseDetails guid="" version="1.0.0" timeStamp="">
+	<!--탑승객별 요금 정보-->
+	<!--Repeat:1-->
+	<paxFareGroup>
+		<!--탑승객 구분-->
+		<!--Repeat:1~9-->
+		<!--@ptc:(필수)(string) 탑승객 구분 코드(ADT:성인, CHD:소아, INF:유아)-->
+		<!--@tstRef:(필수)(number) TST 참조번호-->
+		<paxFare ptc="" tstRef="">
+			<!--탑승객 타입별 종합 정보-->
+			<!--Repeat:1-->
+			<!--@fare:(필수)(number) 항공요금(1인)-->
+			<!--@disFare:(필수)(number) 항공할인요금(1인)-->
+			<!--@tax:(필수)(number) TAX(1인)-->
+			<!--@fsc:(필수)(number) 유류할증료(1인)-->
+      <!--@tasf:(필수)(number) TASF(발권 여행사 수수료)(1인)-->
+			<amount fare="" disFare="" tax="" fsc="" tasf=""/>
+			<!--텍스 상세 정보-->
+			<!--Repeat:1-->
+			<taxInfo>
+				<!--탑승객 참조번호-->
+				<!--Repeat:1~99-->
+				<!--@isoCountry:(필수)(string) 텍스종류-->
+				<!--@amount:(필수)(number) 금액-->
+				<tax isoCountry="" amount=""/>
+			</taxInfo>
+		</paxFare>
+	</paxFareGroup>
+	<!--프로모션 정보-->
+	<!--Repeat:0~1-->
+	<!--NodeValue:(옵션)(string) free-->
+	<promotionInfo>
+		<!--아이템-->
+		<!--Repeat:1-->
+		<item>
+			<!--프로모션 번호-->
+			<!--Repeat:1-->
+			<!--NodeValue:(필수)(number) 프로모션 번호-->
+			<promotionId></promotionId>
+			<!--항공사코드-->
+			<!--Repeat:1-->
+			<!--NodeValue:(옵션)(string) 항공사코드-->
+			<airCode></airCode>
+			<!--여정타입-->
+			<!--Repeat:1-->
+			<!--NodeValue:(옵션)(string) 여정타입-->
+			<tripType></tripType>
+			<!--Fare Type-->
+			<!--Repeat:1-->
+			<!--NodeValue:(옵션)(string) Fare Type-->
+			<fareType></fareType>
+			<!--Cabin Class-->
+			<!--Repeat:1-->
+			<!--NodeValue:(옵션)(string) Cabin Class-->
+			<cabinClass></cabinClass>
+			<!--Booking Class-->
+			<!--Repeat:1-->
+			<!--NodeValue:(옵션)(string) Booking Class-->
+			<bookingClass></bookingClass>
+			<!--PTC 코드-->
+			<!--Repeat:1-->
+			<!--NodeValue:(옵션)(string) PTC 코드-->
+			<paxType></paxType>
+      <!--디스카운트-->
+      <!--Repeat:1-->
+      <!--NodeValue:(옵션)(number) 디스카운트-->
+      <discount></discount>
+			<!--커미션할인-->
+			<!--Repeat:1-->
+			<!--NodeValue:(옵션)(number) 커미션할인-->
+			<commission></commission>
+			<!--요금할인-->
+			<!--Repeat:1-->
+			<!--NodeValue:(옵션)(number) 요금할인-->
+			<fareDiscount></fareDiscount>
+			<!--판매장려금-->
+			<!--Repeat:1-->
+			<!--NodeValue:(옵션)(number) 판매장려금-->
+			<incentive></incentive>
+			<!--판매장려금 코드-->
+			<!--Repeat:1-->
+			<!--NodeValue:(옵션)(string) 판매장려금 코드-->
+			<incentiveCode></incentiveCode>
+			<!--판매장려금명-->
+			<!--Repeat:1-->
+			<!--NodeValue:(옵션)(string) 판매장려금명-->
+			<incentiveName></incentiveName>
+			<!--프로모션명-->
+			<!--Repeat:1-->
+			<!--NodeValue:(옵션)(string) 프로모션명-->
+			<fareTarget></fareTarget>
+      <!--아동할인제외-->
+      <!--Repeat:1-->
+      <!--NodeValue:(필수)(string) 아동할인제외여부(Y:아동은 할인에서 제외)-->
+      <childDiscountYN></childDiscountYN>
+      <!--카드규정-->
+      <!--Repeat:1-->
+      <!--NodeValue:(옵션)(string) 항공운임규정 출력시 추가해야 하는 카드 규정-->
+      <cardRule></cardRule>
+		</item>
+	</promotionInfo>
+</ResponseDetails>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--## CardCheckInicis 결과 ##-->
+<!--Repeat:1-->
+<!--@xmlns:(필수)(uri) 네임스페이스-->
+<CardCheckInicisResponse xmlns="http://tempuri.org/">
+	<!--카드 인증 정보-->
+	<!--Repeat:1-->
+  <CardCheckInicisResult>
+    <!--카드 인증 정보-->
+    <!--Repeat:1-->
+    <!--@xmlns:(옵션)(uri) 네임스페이스-->
+    <INICIS xmlns="">
+      <!--결과 코드-->
+      <!--Repeat:1-->
+      <!--NodeValue:(필수)(string) 인증 결과 코드-->
+      <ResultCode></ResultCode>
+      <!--결과 내용-->
+      <!--Repeat:1-->
+      <!--NodeValue:(필수)(string) 인증 결과 내용-->
+      <ResultMsg></ResultMsg>
+      <!--인증키-->
+      <!--Repeat:1-->
+      <!--NodeValue:(필수)(string) 인증키-->
+      <Tid></Tid>
+    </INICIS>
+  </CardCheckInicisResult>
+</CardCheckInicisResponse>

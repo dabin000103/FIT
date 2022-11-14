@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PNR_AddMultiElements>
+	<pnrActions>
+		<optionCode>10</optionCode>
+	</pnrActions>
+	<dataElementsMaster>
+		<marker1/>
+		<dataElementsIndiv>
+			<elementManagementData>
+				<segmentName>RF</segmentName>
+			</elementManagementData>
+			<freetextData>
+				<freetextDetail>
+					<subjectQualifier>3</subjectQualifier>
+					<type>P22</type>
+				</freetextDetail>
+				<longFreetext>P</longFreetext>
+			</freetextData>
+		</dataElementsIndiv>
+	</dataElementsMaster>
+</PNR_AddMultiElements>

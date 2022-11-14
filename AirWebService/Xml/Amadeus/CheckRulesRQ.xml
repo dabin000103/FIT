@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Fare_CheckRules>
+	<msgType>
+		<messageFunctionDetails>
+			<messageFunction>712</messageFunction>
+		</messageFunctionDetails>
+	</msgType>
+	<itemNumber>
+		<itemNumberDetails>
+			<number>1</number>
+		</itemNumberDetails>
+		<itemNumberDetails>
+			<number>1</number>
+			<type>FC</type>
+		</itemNumberDetails>
+	</itemNumber>
+	<fareRule>
+		<tarifFareRule>
+			<ruleSectionId>AP</ruleSectionId>
+			<ruleSectionId>TF</ruleSectionId>
+			<ruleSectionId>DA</ruleSectionId>
+			<ruleSectionId>FL</ruleSectionId>
+			<ruleSectionId>MN</ruleSectionId>
+			<ruleSectionId>MX</ruleSectionId>
+			<ruleSectionId>SO</ruleSectionId>
+			<ruleSectionId>BO</ruleSectionId>
+			<ruleSectionId>SU</ruleSectionId>
+			<ruleSectionId>TR</ruleSectionId>
+			<ruleSectionId>SR</ruleSectionId>
+			<ruleSectionId>PE</ruleSectionId>
+			<ruleSectionId>CD</ruleSectionId>
+			<ruleSectionId>SE</ruleSectionId>
+			<ruleSectionId>EL</ruleSectionId>
+		</tarifFareRule>
+	</fareRule>
+</Fare_CheckRules>

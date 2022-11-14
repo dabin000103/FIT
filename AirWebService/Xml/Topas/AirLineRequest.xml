@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<top:AirLineRequestService  xmlns:top="http://TOPAS_GPS_Service_Library">
+  <top:airlineCode>KE</top:airlineCode>
+  <top:affilationNumber></top:affilationNumber>
+  <top:cardCode></top:cardCode>
+  <top:cardName></top:cardName>
+  <top:onOffGamang></top:onOffGamang>
+</top:AirLineRequestService>

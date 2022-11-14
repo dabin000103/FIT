@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[자동발권 가능 항공사 리스트]]></Summary>
+	<Return Type="XmlElement"><![CDATA[]]></Return>
+	<Items SubTitle="">
+		<Item Param="SNM" Type="number" format="" Required="true" DefaultValue="" ExampleValue="2"><![CDATA[웹사이트 번호]]></Item>
+		<Item Param="RQT" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청단말기(WEB/MOBILEWEB/MOBILEAPP/CRS/MODEWARE)]]></Item>
+	</Items>
+</Help>

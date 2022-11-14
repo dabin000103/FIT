@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResponseDetails version="1.0.0" timeStamp="">
+	<bookingInfo>
+		<gds></gds>
+		<bookingNo pnr=""></bookingNo>
+		<modeBookingNo></modeBookingNo>
+		<agentBookingNo></agentBookingNo>
+    <allianceBookingNo></allianceBookingNo>
+		<bookingCreationDate></bookingCreationDate>
+		<bookingClass code=""></bookingClass>
+		<paxName></paxName>
+		<ticketNumber></ticketNumber>
+	</bookingInfo>
+	<flightInfo>
+		<seg ref="" ddt="" ardt="" mcc="" occ="" fln="" eqt="" stn="" rbd="" rsc="" eft="">
+			<departureAirport code="" terminal="" terminalCode=""></departureAirport>
+			<arrivalAirport code="" terminal="" terminalCode=""></arrivalAirport>
+			<operatingAirline></operatingAirline>
+			<marketingAirline></marketingAirline>
+			<equipment></equipment>
+      <airlineRefNumber></airlineRefNumber>
+			<fare basis="" baggage="" nvb="" nva="" seat=""/>
+      <cabin code=""></cabin>
+      <ticketNumber></ticketNumber>
+			<legInfo>
+				<seg dlc="" alc="" ddt="" ardt="" eft="" gwt=""></seg>
+				<seg dlc="" alc="" ddt="" ardt="" eft="" gwt=""/>
+			</legInfo>
+		</seg>
+	</flightInfo>
+  <fareInfo>
+    <fare amount="" fare="" tax="" fsc="" tasf="" cnc=""/>
+    <payment cardNo=""></payment>
+  </fareInfo>
+  <agentInfo snm="" anm="">
+    <company></company>
+    <name></name>
+    <tel></tel>
+  </agentInfo>
+</ResponseDetails>

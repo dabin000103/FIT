@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[예약취소(미발권시에만 취소)(PNR + DB 모두 취소)]]></Summary>
+	<Return Type="XmlElement"><![CDATA[예약 취소 결과 XML]]></Return>
+	<Items SubTitle="">
+		<Item Param="OID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[모두투어 주문번호]]></Item>
+		<Item Param="PID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[예약자번호(PTID)]]></Item>
+		<Item Param="CID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[취소자번호(PTID)]]></Item>
+    <Item Param="RIP" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청자IP]]></Item>
+	</Items>
+</Help>

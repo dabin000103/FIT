@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--## 운임규정 ##-->
+<!--Repeat:1-->
+<!--@version:(필수)(number) 버전정보-->
+<!--@timeStamp:(필수)(datetime)(YYYY-MM-DD HH:MM) 출력일시-->
+<ResponseDetails version="1.0.0" timeStamp="">
+	<!--항공편정보-->
+	<!--Repeat:1~9-->
+	<!--@ref:(필수)(number) 참조번호-->
+	<flightDetails ref="">
+		<!--출도착지-->
+		<!--Repeat:1-->
+		<originDestination>
+			<!--출발지-->
+			<!--Repeat:1-->
+			<!--NodeValue:(필수)(string) 출발지 도시코드-->
+			<origin></origin>
+			<!--도착지-->
+			<!--Repeat:1-->
+			<!--NodeValue:(필수)(string) 도착지 도시코드-->
+			<destination></destination>
+		</originDestination>
+		<!--Rule ID-->
+		<!--Repeat:1-->
+		<!--@id:(옵션)(string) Rule ID-->
+		<rule id=""/>
+		<!--Tariff Number-->
+		<!--Repeat:1-->
+		<!--@id:(옵션)(string) Tariff Number-->
+		<tariff id=""/>
+	</flightDetails>
+</ResponseDetails>

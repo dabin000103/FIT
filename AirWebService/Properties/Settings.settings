@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AirWebService.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AirWebService_com_modetour_mailservice_MailService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://mailservice.modetour.com/MailService.asmx</Value>
+    </Setting>
+    <Setting Name="AirWebService_com_modetour_webservice_Air_Mode_Mode" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://webservice.modetour.com/Air/Mode.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

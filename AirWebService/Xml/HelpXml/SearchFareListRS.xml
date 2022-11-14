@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--## 항공운임 리스트 ##-->
+<!--Repeat:1-->
+<RealTime_Air>
+	<!--운임리스트-->
+	<!--Repeat:1~999-->
+	<AirFare>
+		<!--출발도시명-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(strnig) 출발도시명-->
+		<Start_City></Start_City>
+		<!--도착도시명-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(strnig) 도착도시명-->
+		<End_City></End_City>
+		<!--왕복/편도-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(strnig) OW:편도, RT:왕복-->
+		<Round_Yn></Round_Yn>
+		<!--출발일-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(datetime)(YYYYMMDD) 출발일-->
+		<Start_Dt></Start_Dt>
+		<!--귀국일-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(datetime)(YYYYMMDD) 귀국일-->
+		<End_Dt></End_Dt>
+		<!--귀국일미정여부-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(strnig)(Y|N) 귀국일미정여부-->
+		<Return_Cfm></Return_Cfm>
+		<!--성인수-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(number) 성인수-->
+		<ADT_Cnt></ADT_Cnt>
+		<!--소아수-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(number) 소아수-->
+		<CHD_Cnt></CHD_Cnt>
+		<!--유아수-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(number) 유아수-->
+		<INF_Cnt></INF_Cnt>
+		<!--좌석등급-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(strnig) Y:일반석, F:비즈니스석, C:일등석-->
+		<Seat_Kind></Seat_Kind>
+		<!--항공사명-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(strnig) 항공사명-->
+		<Air_NM></Air_NM>
+		<!--통화코드-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(strnig) 통화코드-->
+		<Air_PriceCurr></Air_PriceCurr>
+		<!--항공요금-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(number) 항공요금-->
+		<Air_Price></Air_Price>
+		<!--할인요금-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(number) 할인요금-->
+		<Air_DcPrice></Air_DcPrice>
+		<!--요금확정여부-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(strnig)(확정|미확정) 요금확정여부-->
+		<Price_Cfm_Yn></Price_Cfm_Yn>
+		<!--직항구분-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(strnig) 직항구분-->
+		<Air_Path></Air_Path>
+		<!--요금구분-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(strnig) 요금구분-->
+		<Price_Chk></Price_Chk>
+		<!--티켓유효기간-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(strnig) 티켓유효기간-->
+		<Ticket_Date></Ticket_Date>
+		<!--이티켓유무-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(strnig)(Y|N|E) 이티켓유무(E:해외출발)-->
+		<Eticket_Yn></Eticket_Yn>
+		<!--요금규정URL-->
+		<!--Repeat:0~1-->
+		<!--NodeValue:(옵션)(strnig) 요금규정URL-->
+		<Price_Rule></Price_Rule>
+		<!--여정-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(strnig) 여정-->
+		<Air_Plan></Air_Plan>
+		<!--Availability URL-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(strnig) Availability URL-->
+		<Seat_Link></Seat_Link>
+		<!--항공사영문로고-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(strnig) 항공사영문로고-->
+		<Air_Logo></Air_Logo>
+		<!--출국편 경유횟수-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(number) 출국편 경유횟수-->
+		<Air_ViaNm1></Air_ViaNm1>
+		<!--귀국편 경유횟수-->
+		<!--Repeat:0~1-->
+		<!--NodeValue:(옵션)(number) 귀국편 경유횟수-->
+		<Air_ViaNm2></Air_ViaNm2>
+		<!--상품번호-->
+		<!--Repeat:0~1-->
+		<!--NodeValue:(옵션)(strnig) 상품번호(그룹항공 패키지 상품번호)-->
+		<Filtering></Filtering>
+		<!--상품URL-->
+		<!--Repeat:0~1-->
+		<!--NodeValue:(옵션)(strnig) 상품URL-->
+		<Filtering_Desc></Filtering_Desc>
+		<!--TAX-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(number) TAX-->
+		<TAX></TAX>
+		<!--TAX URL-->
+		<!--Repeat:0~1-->
+		<!--NodeValue:(옵션)(strnig) TAX URL-->
+		<TAX_URL></TAX_URL>
+		<!--유류할증료-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(number) 유류할증료-->
+		<Fuel_Surcharge></Fuel_Surcharge>
+	</AirFare>
+</RealTime_Air>

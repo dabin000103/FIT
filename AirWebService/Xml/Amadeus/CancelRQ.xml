@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PNR_Cancel>
+	<reservationInfo>
+		<reservation>
+			<controlNumber></controlNumber>
+		</reservation>
+	</reservationInfo>
+	<pnrActions>
+		<optionCode>0</optionCode>
+	</pnrActions>
+	<cancelElements>
+		<entryType>I</entryType>
+		<element>
+			<identifier>X</identifier>
+		</element>
+	</cancelElements>
+</PNR_Cancel>

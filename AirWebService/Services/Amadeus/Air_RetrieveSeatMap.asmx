@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="Air_RetrieveSeatMap.asmx.cs" Class="AirWebService.RetrieveSeatMap.AmadeusWebService" %>

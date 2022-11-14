@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResponseDetails version="1.0.0" timeStamp="">
+	<bookingInfo>
+		<gds></gds>
+		<bookingNo pnr=""></bookingNo>
+		<modeBookingNo></modeBookingNo>
+		<agentBookingNo></agentBookingNo>
+    <allianceBookingNo pip="" piip=""></allianceBookingNo>
+		<bookingCreationDate></bookingCreationDate>
+    <bookingCancelDate></bookingCancelDate>
+		<bookingStatus code="" passport="" apis="" issue="" esta="" eta="" usa="" refund="" db=""></bookingStatus>
+		<bookingClass code=""></bookingClass>
+		<bookingAirline code=""></bookingAirline>
+		<bookingRtg type="" code=""></bookingRtg>
+    <bookingRuleId proof=""></bookingRuleId>
+		<paxType code="" card="" sign=""></paxType>
+		<expiryDate code=""></expiryDate>
+		<bookingTL ttl=""></bookingTL>
+		<bookingAmount price="" subPrice="" fare="" tax="" fsc="" disPartner="" tasf="" supplementaryService="" ucf="" ntf="" tau="" taud="" pcs=""/>
+	</bookingInfo>
+	<flightInfo>
+		<segGroup ref="" jrt="" eft="" ewt="">
+			<seg ref="" dlc="" dlcn="" duc="" alc="" alcn="" auc="" ddt="" ardt="" mcc="" mccn="" occ="" occn="" fln="" eqt="" stn="" etc="" rbd="" rsco="" rsc="" eft="" ewt="" ett="" gwt="" pnr="" dtc="" atc="">
+				<seg dlc="" dlcn="" duc="" alc="" alcn="" auc="" ddt="" ardt="" eft="" gwt=""/>
+			</seg>
+		</segGroup>
+	</flightInfo>
+	<travellerInfo>
+		<paxData>
+			<pax ref="" nsi="" pid="" phn="" psn="" pfn="" ptc="" ptl="" pbd="" pea="" ptn="" pmn="" gni="" cancel=""/>
+			<fare price="" subPrice="" fare="" tax="" fsc="" disPartner="" tasf="" tourMileage=""/>
+			<payment gross="" card="" bank="" balance="" date=""/>
+      <passport id="" expireDate="" issueCountry="" holderNationality="" writeDate=""/>
+			<ticket number=""/>
+      <membership carrier="" number=""/>
+      <tourMileage memberClass="" cardNumber="" request="" mileage=""/>
+      <refund cancelCode="" cancelDesc="" stateCode="" stateDesc=""/>
+		</paxData>
+	</travellerInfo>
+	<fareInfo>
+    <fare ptc="" price="" amount="" fare="" disFare="" tax="" fsc="" basis="" tkd="">
+      <seg ref="" baggage=""></seg>
+    </fare>
+	</fareInfo>
+  <supplementaryService></supplementaryService>
+  <attn rid="" rtl="" rhn="" rdb="" rea="" rtn="" rmn="">
+		<terminal></terminal>
+		<localTel></localTel>
+    <localAddress></localAddress>
+    <localZipcode></localZipcode>
+		<remark></remark>
+    <partnerMemberID></partnerMemberID>
+	</attn>
+	<agent snm="" anm="" aen="">
+		<company></company>
+		<name></name>
+		<email></email>
+		<tel></tel>
+		<fax></fax>
+    <share anm=""></share>
+	</agent>
+  <paymentReqInfo>
+    <cards>
+      <card nsi="" gross="" cardName="" cardNumber="" holder="" validThru="" installment="" date=""></card>
+    </cards>
+    <banks>
+      <bank nsi="" gross="" bankName="" accountNumber="" holder="" date=""></bank>
+    </banks>
+  </paymentReqInfo>
+	<paymentInfo>
+		<gross date=""></gross>
+		<cards>
+      <card nsi="" gross="" date="" installment="" cardName="" approvalNumber="" transactionNumber=""></card>
+		</cards>
+		<banks>
+      <bank nsi="" gross="" date="" remitter="" bankName=""></bank>
+		</banks>
+		<giftCertificates>
+      <giftCertificate nsi="" gross="" date=""></giftCertificate>
+		</giftCertificates>
+    <tourMileages>
+      <tourMileage nsi="" gross="" date=""></tourMileage>
+    </tourMileages>
+    <coupons>
+      <coupon nsi="" number="" gross="" date=""></coupon>
+    </coupons>
+    <etcs>
+      <etc nsi="" item="" gross="" date=""></etc>
+    </etcs>
+		<virtualAccountNumber>
+			<bank></bank>
+			<accountNumber></accountNumber>
+			<holder></holder>
+		</virtualAccountNumber>
+		<cashReceipt></cashReceipt>
+	</paymentInfo>
+</ResponseDetails>

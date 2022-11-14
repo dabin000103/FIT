@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--## SearchScheduleRS 결과 ##-->
+<!--Repeat:1-->
+<!--@version:(필수)(number) 버전정보-->
+<!--@timeStamp:(필수)(datetime)(YYYY-MM-DD HH:MM) 출력일시-->
+<ResponseDetails version="1.0.0" timeStamp="">
+	<!--기본 정보-->
+	<!--Repeat:1-->
+	<location>
+		<!--출발지-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 출발지 공항코드-->
+		<origin></origin>
+		<!--도착지-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 도착지 공항코드-->
+		<destination></destination>
+	</location>
+	<!--여정 정보-->
+	<!--Repeat:1-->
+	<flightInfo>
+		<!--Group of Segment-->
+		<!--Repeat:1~999-->
+		<!--@ref:(필수)(number) 참조번호-->
+		<!--@eft:(필수)(datetime)(HHMM) 소요시간-->
+		<segGroup ref="" eft="">
+			<!--Segment-->
+			<!--Repeat:1~4-->
+			<!--@dlc:(필수)(string) 출발지 공항코드-->
+			<!--@alc:(필수)(string) 도착지 공항코드-->
+			<!--@ddt:(필수)(datetime)(YYYY-MM-DD HH:MM) 출발일시-->
+			<!--@ardt:(필수)(datetime)(YYYY-MM-DD HH:MM) 도착일시-->
+			<!--@mcc:(필수)(string) 마케팅 항공사코드-->
+			<!--@occ:(필수)(string) 운항 항공사코드-->
+			<!--@fln:(필수)(number) 편명-->
+			<!--@eqt:(필수)(number) 기종-->
+			<!--@stn:(필수)(number) 경유 수(기착)-->
+			<seg dlc="" alc="" ddt="" ardt="" mcc="" occ="" fln="" eqt="" stn="">
+				<!--서비스클래스-->
+				<!--Repeat:1~999-->
+				<!--@rbd:(필수)(string) 서비스 클래스-->
+				<!--@avl:(필수)(number) 예약 가능 좌석수-->
+				<svcClass rbd="" avl=""/>
+			</seg>
+		</segGroup>
+	</flightInfo>
+</ResponseDetails>

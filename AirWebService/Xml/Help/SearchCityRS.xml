@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[도시검색]]></Summary>
+	<Return Type="XmlElement"><![CDATA[도시검색 결과 XML]]></Return>
+	<Items SubTitle="">
+		<Item Param="SHT" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[검색어]]></Item>
+	</Items>
+</Help>

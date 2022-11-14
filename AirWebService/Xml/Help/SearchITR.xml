@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[ITR(E-Ticket) 조회]]></Summary>
+	<Return Type="string"><![CDATA[E-Ticket URL]]></Return>
+	<Items SubTitle="">
+		<Item Param="OID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[모두투어 주문번호]]></Item>
+		<Item Param="PID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[예약자번호(PTID)]]></Item>
+		<Item Param="PAX" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[승객명(PNR에 기재된 것과 동일하게 입력)(ex: HONG/GILDONGMR, Title 포함)]]></Item>
+		<Item Param="SDate" Type="datetime" format="YYYY-MM-DD" Required="true" DefaultValue="" ExampleValue=""><![CDATA[여정의 첫번째 출발일]]></Item>
+		<Item Param="EML" Type="string" format="Y|N" Required="true" DefaultValue="" ExampleValue=""><![CDATA[ITR 발송 여부]]></Item>
+	</Items>
+</Help>

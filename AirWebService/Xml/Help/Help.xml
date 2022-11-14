@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[Request 도움말]]></Summary>
+	<Return Type="XmlElement"><![CDATA[웹서비스 입력 파라미터에 대한 설명 XML]]></Return>
+	<Items SubTitle="">
+		<Item Param="WebMethodName" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[웹서비스명]]></Item>
+	</Items>
+</Help>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResponseDetails ref="" guid="" version="3.0.0" timeStamp="">
+  <priceSummary>
+    <min airline="" price=""></min>
+  </priceSummary>
+  <flightInfo rot="" opn="">
+  </flightInfo>
+  <priceInfo>
+    <priceIndex ref="" ptc="" cabin="" minPrice="" pvc="" fareCount="">
+      <segGroup>
+        <seg>
+          <ref sgRef="" baggage="" rtg=""></ref>
+        </seg>
+      </segGroup>
+      <paxFareInfo></paxFareInfo>
+    </priceIndex>
+  </priceInfo>
+</ResponseDetails>

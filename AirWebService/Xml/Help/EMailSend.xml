@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[이메일 발송]]></Summary>
+	<Return Type="XmlElement"><![CDATA[이메일 발송 완료 XML]]></Return>
+	<Items SubTitle="">
+		<Item Param="SiteNo" Type="number" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[웹사이트 번호]]></Item>
+		<Item Param="FromAddr" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[발신자 이메일 주소]]></Item>
+		<Item Param="From" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[발신자 이름]]></Item>
+		<Item Param="ToAddr" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[수신자 이메일 주소]]></Item>
+		<Item Param="To" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[수신자 이름]]></Item>
+		<Item Param="Subject" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[이메일 제목]]></Item>
+		<Item Param="BodyText" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[TEXT 형태의 본문]]></Item>
+		<Item Param="BodyHtml" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[HTML 형태의 본문]]></Item>
+		<Item Param="BodyUrl" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[URL을 통한 본문 스크랩]]></Item>
+	</Items>
+</Help>

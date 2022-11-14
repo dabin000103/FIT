@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--## 운임규정 ##-->
+<!--Repeat:1-->
+<!--@version:(필수)(number) 버전정보-->
+<!--@timeStamp:(필수)(datetime)(YYYY-MM-DD HH:MM) 출력일시-->
+<ResponseDetails version="1.0.0" timeStamp="">
+	<!--운임규정-->
+	<!--Repeat:0~9-->
+	<!--@ref:(필수)(number) 참조번호-->
+	<rule ref="">
+		<!--규정-->
+		<!--Repeat:1~99-->
+		<!--@ref:(필수)(number) 참조번호-->
+		<item ref="">
+			<!--규정명칭-->
+			<!--Repeat:1-->
+			<!--NodeValue:(필수)(string) 규정명칭-->
+			<name></name>
+			<!--규정내용-->
+			<!--Repeat:1-->
+			<!--NodeValue:(필수)(strnig) 규정내용-->
+			<message><![CDATA[]]></message>
+		</item>
+	</rule>
+	<!--조건-->
+	<!--Repeat:1-->
+  <!--@gds:(필수)(string) GDS코드-->
+	<!--@ulc:(필수)(string) 언어코드-->
+  <fareInfos gds="" ulc="">
+		<!--조건-->
+		<!--Repeat:1~9-->
+		<!--@ref:(필수)(number) 참조번호-->
+		<fareInfo ref="">
+			<!--Fare Category-->
+			<!--Repeat:1-->
+			<!--NodeValue:(필수)(strnig) Fare Category-->
+			<item name="FareCategory"></item>
+			<!--Fare Class-->
+			<!--Repeat:1-->
+			<!--NodeValue:(필수)(strnig) Fare Class-->
+			<item name="FareClass"></item>
+			<!--Advanced Purchas-->
+			<!--Repeat:1-->
+			<!--NodeValue:(필수)(strnig) 사전발권조건(예약일기준)-->
+			<item name="AdvanceAfter"></item>
+			<!--Advanced Purchas-->
+			<!--Repeat:1-->
+			<!--NodeValue:(필수)(strnig) 사전발권조건(출발일기준)-->
+			<item name="AdvanceBefore"></item>
+			<!--Minimum Stay-->
+			<!--Repeat:1-->
+			<!--NodeValue:(필수)(strnig) Minimum Stay-->
+			<item name="MinStay"></item>
+			<!--Maximum Stay-->
+			<!--Repeat:1-->
+			<!--NodeValue:(필수)(strnig) Maximum Stay-->
+			<item name="MaxStay"></item>
+			<!--Fare Type-->
+			<!--Repeat:1-->
+			<!--NodeValue:(필수)(strnig) Fare Type-->
+			<item name="FareType"></item>
+			<!--Booking Class-->
+			<!--Repeat:1-->
+			<!--NodeValue:(필수)(strnig) Booking Class-->
+			<item name="BookingClass"></item>
+			<!--Rule Number-->
+			<!--Repeat:1-->
+			<!--NodeValue:(필수)(strnig) Rule Number-->
+			<item name="RuleNumber"></item>
+		</fareInfo>
+	</fareInfos>
+</ResponseDetails>

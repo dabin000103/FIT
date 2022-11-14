@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TravelItineraryAddInfoRQ xmlns="http://webservices.sabre.com/sabreXML/2003/07" EchoToken="String" TimeStamp="2001-12-17T09:30:47-05:00" Target="Production" Version="2003A.TsabreXML1.8.1" SequenceNmbr="1" PrimaryLangID="en-us" AltLangID="en-us">
+	<CustomerInfo>
+		<PersonName TravelerRefNumber="1.1">
+			<GivenName>JAEYOUNG</GivenName>
+			<Surname>KO</Surname>
+			<NameReference Text=""/>
+			<Infant Ind="true"/>
+		</PersonName>
+    <Telephone PhoneUseType="H" PhoneNumber="" CountryAccessCode="82" AreaCityCode="" TravelerRefNumber="1.1"/>
+    <Email EmailType="" EmailAddress="" TravelerRefNumber="1.1">
+      <Text></Text>
+    </Email>
+		<PassengerType Code="ADT" TravelerRefNumber="1.1"/>
+	</CustomerInfo>
+	<AgencyInfo>
+		<Ticketing TicketType="7TAW/" PseudoCityCode="K7M8" QueueNumber="55"/>
+	</AgencyInfo>
+</TravelItineraryAddInfoRQ>

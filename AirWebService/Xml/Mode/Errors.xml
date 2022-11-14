@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ErrorMessage version="1.0.0" timeStamp="">
+	<errorSource>
+		<gds></gds>
+		<method></method>
+    <service></service>
+		<server></server>
+		<requestAddr></requestAddr>
+    <orderNumber></orderNumber>
+    <itemBookingNumber></itemBookingNumber>
+	</errorSource>
+	<errorMessageText>
+		<description></description>
+	</errorMessageText>
+	<errorOriginal></errorOriginal>
+</ErrorMessage>

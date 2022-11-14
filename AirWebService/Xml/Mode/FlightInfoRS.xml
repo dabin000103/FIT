@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResponseDetails version="1.0.0" timeStamp="">
+	<flightInfo>
+		<flightIndex ref="1">
+			<general eqt="" fln="" occ="" mcc="" dtd="" alc="" dlc=""/>
+			<segGroup>
+        <seg dlc="" dlcn="" alc="" alcn="" ddt="" ardt="" eft="" gwt=""/>
+			</segGroup>
+		</flightIndex>
+	</flightInfo>
+</ResponseDetails>

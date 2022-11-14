@@ -1,0 +1,15 @@
+D:\Modetour\SVN_172.20.52.109\AirWebService\obj\Debug\AirWebService.csproj.CoreCompileInputs.cache
+D:\Modetour\SVN_172.20.52.109\AirWebService\bin\AirWebService.dll.config
+D:\Modetour\SVN_172.20.52.109\AirWebService\bin\AirWebService.dll
+D:\Modetour\SVN_172.20.52.109\AirWebService\bin\AirWebService.pdb
+D:\Modetour\SVN_172.20.52.109\AirWebService\obj\Debug\AirWebService.csproj.CopyComplete
+D:\Modetour\SVN_172.20.52.109\AirWebService\obj\Debug\AirWebService.dll
+D:\Modetour\SVN_172.20.52.109\AirWebService\obj\Debug\AirWebService.pdb
+C:\Users\jun\Desktop\My Project\FIT\AirWebService\bin\AirWebService.dll.config
+C:\Users\jun\Desktop\My Project\FIT\AirWebService\bin\AirWebService.dll
+C:\Users\jun\Desktop\My Project\FIT\AirWebService\bin\AirWebService.pdb
+C:\Users\jun\Desktop\My Project\FIT\AirWebService\obj\Debug\AirWebService.csproj.AssemblyReference.cache
+C:\Users\jun\Desktop\My Project\FIT\AirWebService\obj\Debug\AirWebService.csproj.CoreCompileInputs.cache
+C:\Users\jun\Desktop\My Project\FIT\AirWebService\obj\Debug\AirWebService.csproj.CopyComplete
+C:\Users\jun\Desktop\My Project\FIT\AirWebService\obj\Debug\AirWebService.dll
+C:\Users\jun\Desktop\My Project\FIT\AirWebService\obj\Debug\AirWebService.pdb

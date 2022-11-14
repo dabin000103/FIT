@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--## 예약 취소 결과 ##-->
+<!--Repeat:1-->
+<!--@version:(필수)(number) 버전정보-->
+<!--@timeStamp:(필수)(datetime)(YYYY-MM-DD HH:MM) 출력일시-->
+<ResponseDetails version="1.0.0" timeStamp="">
+  <!--예약 기본 정보-->
+  <!--Repeat:1-->
+  <bookingInfo>
+    <!--주문번호-->
+    <!--Repeat:1-->
+    <!--@ibn:(필수)(number) 주문아이템번호-->
+    <!--NodeValue:(옵션)(number) 주문번호-->
+		<modeBookingNo ibn=""></modeBookingNo>
+    <!--예약상태-->
+    <!--Repeat:1-->
+    <!--@code:(필수)(string) 예약상태코드(HK:확약, HL:대기, TK:스케쥴변경, UC:불가, XX:취소)-->
+		<bookingStatus code=""></bookingStatus>
+	</bookingInfo>
+</ResponseDetails>

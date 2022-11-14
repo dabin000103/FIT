@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--## 오류 설명 ##-->
+<!--Repeat:1-->
+<!--@version:(필수)(number) 버전정보-->
+<!--@timeStamp:(필수)(datetime)(YYYY-MM-DD HH:MM) 출력일시-->
+<ErrorMessage version="1.0.0" timeStamp="">
+  <!--오류 발생 위치-->
+  <!--Repeat:1-->
+  <errorSource>
+    <!--GDS명칭-->
+    <!--Repeat:1-->
+    <!--NodeValue:(필수)(string) GDS명-->
+    <gds></gds>
+    <!--웹서비스명-->
+    <!--Repeat:1-->
+    <!--NodeValue:(필수)(string) 웹서비스명-->
+    <method></method>
+    <!--웹서비스 파일 정보-->
+    <!--Repeat:1-->
+    <!--NodeValue:(필수)(string) 웹서비스 파일 정보-->
+    <service></service>
+    <!--웹서비스 서버 정보-->
+    <!--Repeat:1-->
+    <!--NodeValue:(필수)(string) 웹서비스 서버 정보-->
+    <server></server>
+    <!--요청 IP 정보-->
+    <!--Repeat:1-->
+    <!--NodeValue:(필수)(string) 요청 IP 정보-->
+    <requestAddr></requestAddr>
+    <!--주문번호-->
+    <!--Repeat:1-->
+    <!--NodeValue:(옵션)(int) 주문번호-->
+    <orderNumber></orderNumber>
+    <!--주문아이템번호-->
+    <!--Repeat:1-->
+    <!--NodeValue:(옵션)(int) 주문아이템번호-->
+    <itemBookingNumber></itemBookingNumber>
+  </errorSource>
+  <!--오류 내용-->
+  <!--Repeat:1-->
+  <errorMessageText>
+    <!--오류 내용-->
+    <!--Repeat:1-->
+    <!--NodeValue:(필수)(string) 오류 내용-->
+    <description><![CDATA[]]></description>
+  </errorMessageText>
+  <!--원본-->
+  <!--Repeat:1-->
+  <!--NodeValue:(옵션)(string) GDS 오류 XML-->
+  <errorOriginal><![CDATA[]]></errorOriginal>
+</ErrorMessage>

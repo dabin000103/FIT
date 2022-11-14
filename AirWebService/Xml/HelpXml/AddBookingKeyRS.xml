@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--## 예약 임시 저장 ##-->
+<!--Repeat:1-->
+<!--@version:(필수)(number) 버전정보-->
+<!--@timeStamp:(필수)(datetime)(YYYY-MM-DD HH:MM) 출력일시-->
+<ResponseDetails version="1.0.0" timeStamp="">
+	<!--기본정보-->
+	<!--Repeat:1-->
+	<bookingInfo>
+		<!--사이트번호-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(number) 웹사이트번호-->
+		<siteNo></siteNo>
+		<!--고유번호-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(number) 예약 고유번호-->
+		<uniqueKey></uniqueKey>
+		<!--임시저장일시-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(datetime)(YYYY-MM-DD HH:MM:SS) 임시저장일시-->
+		<bookingCreationDate></bookingCreationDate>
+	</bookingInfo>
+</ResponseDetails>

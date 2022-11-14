@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[투어마일리지 예상 적립액]]></Summary>
+	<Return Type="XmlElement"><![CDATA[투어마일리지 예상 적립액 XML]]></Return>
+	<Items SubTitle="">
+		<Item Param="AdultFare" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[성인요금]]></Item>
+		<Item Param="ChildFare" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[소아요금]]></Item>
+		<Item Param="InfantFare" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[유아요금]]></Item>
+	</Items>
+</Help>

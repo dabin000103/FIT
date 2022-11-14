@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[E-Ticket 정보 조회(발권전)]]></Summary>
+	<Return Type="XmlElement"><![CDATA[E-Ticket 정보 조회 결과 XML]]></Return>
+	<Items SubTitle="">
+		<Item Param="OID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[모두투어 주문번호]]></Item>
+		<Item Param="PID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[예약자번호(PTID)]]></Item>
+    <Item Param="RIP" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청자IP]]></Item>
+	</Items>
+</Help>

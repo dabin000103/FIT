@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[자동 발권전 실행(발권 가능여부 체크 및 발권용 운임 재계산)]]></Summary>
+	<Return Type="XmlElement"><![CDATA[]]></Return>
+	<Items SubTitle="">
+    <Item Param="SNM" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[사이트번호]]></Item>
+    <Item Param="OID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[모두투어 주문번호]]></Item>
+		<Item Param="PID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[예약자번호(PTID)]]></Item>
+    <Item Param="RIP" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청자IP]]></Item>
+    <Item Param="RQR" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청자번호(PTID)]]></Item>
+    <Item Param="RQT" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청단말기(WEB/MOBILEWEB/MOBILEAPP/CRS/MODEWARE)]]></Item>
+	</Items>
+</Help>

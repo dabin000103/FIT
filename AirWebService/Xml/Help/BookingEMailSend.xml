@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[예약내용 이메일 발송]]></Summary>
+	<Return Type="XmlElement"><![CDATA[이메일 발송 완료 XML]]></Return>
+	<Items SubTitle="">
+		<Item Param="OID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[모두투어 주문번호]]></Item>
+		<Item Param="PID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[예약자번호(PTID)]]></Item>
+		<Item Param="Title" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[이메일 제목]]></Item>
+		<Item Param="URL" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[예약상세조회페이지 URL(해당 페이지를 스캔하여 이메일 내용으로 전송)]]></Item>
+	</Items>
+</Help>

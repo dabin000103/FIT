@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--## SeatMapServiceKey 결과 ##-->
+<!--Repeat:1-->
+<!--@timeStamp:(필수)(datetime)(YYYY-MM-DD HH:MM) 출력일시-->
+<ResponseDetails timeStamp="">
+	<!--서브세션ID-->
+	<!--Repeat:1-->
+	<!--NodeValue:(필수)(string) 서브세션ID-->
+	<gSsKey></gSsKey>
+	<!--PNR-->
+	<!--Repeat:1-->
+	<!--NodeValue:(필수)(string) PNR-->
+	<pnr></pnr>
+	<!--OfficeID-->
+	<!--Repeat:1-->
+	<!--NodeValue:(필수)(string) OfficeID-->
+	<officeId></officeId>
+	<!--토파스인증키-->
+	<!--Repeat:1-->
+	<!--NodeValue:(필수)(string) 토파스인증키-->
+	<topasToken></topasToken>
+</ResponseDetails>

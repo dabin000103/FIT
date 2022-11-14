@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--## 예상텍스 ##-->
+<!--Repeat:1-->
+<!--@version:(필수)(number) 버전정보-->
+<!--@timeStamp:(필수)(datetime)(YYYY-MM-DD HH:MM) 출력일시-->
+<ResponseDetails version="1.0.0" timeStamp="">
+	<!--텍스그룹-->
+	<!--Repeat:1-->
+	<paxQuoteTaxGroup>
+		<!--승객타입별 텍스정보-->
+		<!--Repeat:1~9-->
+		<!--@ptc:(필수)(string) 탑승객 타입-->
+		<paxQuoteTax ptc="">
+			<!--텍스정보(1인기준)-->
+			<!--Repeat:1-->
+			<!--@tax:(필수)(number) 텍스-->
+			<!--@fsc:(필수)(number) 유류할증료-->
+			<!--NodeValue:(필수)(number) 총텍스요금(텍스 + 유류할증료)-->
+			<amount tax="" fsc=""></amount>
+			<!--텍스상세정보-->
+			<!--Repeat:1~9-->
+			<!--@isoCountry:(필수)(string) 텍스 타입-->
+			<!--@amount:(필수)(number) 텍스-->
+			<tax isoCountry="" amount=""/>
+		</paxQuoteTax>
+	</paxQuoteTaxGroup>
+</ResponseDetails>

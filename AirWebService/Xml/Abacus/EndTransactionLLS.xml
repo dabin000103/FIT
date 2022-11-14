@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<EndTransactionRQ xmlns="http://webservices.sabre.com/sabreXML/2003/07" EchoToken="String" TimeStamp="2001-12-17T09:30:47-05:00" Target="Production" Version="2003A.TsabreXML1.4.1" SequenceNmbr="1" PrimaryLangID="en-us" AltLangID="en-us">
+	<UpdatedBy>
+		<TPA_Extensions>
+			<Access>
+				<AccessPerson>
+					<GivenName>KO/JAEYOUNG</GivenName>
+				</AccessPerson>
+			</Access>
+		</TPA_Extensions>
+	</UpdatedBy>
+	<EndTransaction Ind="true"></EndTransaction>
+</EndTransactionRQ>

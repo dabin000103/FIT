@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--## 무료수화물 결과 ##-->
+<!--Repeat:1-->
+<!--@version:(필수)(number) 버전정보-->
+<!--@timeStamp:(필수)(datetime)(YYYY-MM-DD HH:MM) 출력일시-->
+<ResponseDetails version="1.0.0" timeStamp="">
+  <!--운임타입 리스트-->
+  <!--Repeat:1~9-->
+  <fareList>
+    <!--탑승객타입코드-->
+    <!--Repeat:1-->
+    <!--NodeValue:(필수)(string) 탑승객 타입코드(ADT:성인, CHD:소아, INF:유아)-->
+    <paxType></paxType>
+    <!--Segment-->
+    <!--Repeat:1~4-->
+    <!--@ref:(필수)(number) 참조번호-->
+    <!--@dlc:(필수)(string) 출발지 공항코드-->
+    <!--@alc:(필수)(string) 도착지 공항코드-->
+    <!--@baggage:(필수)(string) 무료수화물-->
+    <seg ref="" dlc="" alc="" baggage=""></seg>
+  </fareList>
+</ResponseDetails>

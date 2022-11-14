@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResponseDetails version="1.0.0" timeStamp="">
+	<paxQuoteTaxGroup>
+		<paxQuoteTax ptc="">
+			<amount tax="" fsc=""></amount>
+			<tax isoCountry="" amount=""/>
+		</paxQuoteTax>
+	</paxQuoteTaxGroup>
+</ResponseDetails>

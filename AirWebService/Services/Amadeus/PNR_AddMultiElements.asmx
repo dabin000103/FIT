@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="PNR_AddMultiElements.asmx.cs" Class="AirWebService.AddMultiElements.AmadeusWebService" %>

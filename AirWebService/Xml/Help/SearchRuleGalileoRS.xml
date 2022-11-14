@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[운임규정(갈릴레오) 조회]]></Summary>
+	<Return Type="XmlElement"><![CDATA[운임규정 XML]]></Return>
+	<Items SubTitle="">
+		<Item Param="SNM" Type="number" format="" Required="true" DefaultValue="" ExampleValue="2"><![CDATA[웹사이트 번호]]></Item>
+		<Item Param="FareRuleUrl" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[갈릴레오 운임규정조회 파리미터 정보]]></Item>
+	</Items>
+</Help>

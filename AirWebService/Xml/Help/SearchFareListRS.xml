@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[항공운임조회]]></Summary>
+	<Return Type="XmlElement"><![CDATA[예약 가능한 운임 결과 XML]]></Return>
+	<Items SubTitle="">
+		<Item Param="SNM" Type="number" format="" Required="true" DefaultValue="" ExampleValue="2"><![CDATA[웹사이트 번호]]></Item>
+		<Item Param="DLC" Type="string" format="" Required="true" DefaultValue="" ExampleValue="ICN"><![CDATA[출발지 공항 코드]]></Item>
+		<Item Param="ALC" Type="string" format="" Required="true" DefaultValue="" ExampleValue="BKK"><![CDATA[도착지 공항 코드]]></Item>
+		<Item Param="ROT" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[구간(OW:편도, RT:왕복, DT:출도착이원구간)]]></Item>
+		<Item Param="DTD" Type="datetime" format="YYYYMMDD" Required="true" DefaultValue="" ExampleValue=""><![CDATA[출발일]]></Item>
+		<Item Param="ARD" Type="datetime" format="YYYYMMDD" Required="true" DefaultValue="" ExampleValue=""><![CDATA[도착일(오픈일 경우 공백 또는 7D/14D/45D/1M/2M/3M/6M/300D 중 하나 입력)]]></Item>
+		<Item Param="OPN" Type="string" format="YN" Required="true" DefaultValue="" ExampleValue=""><![CDATA[오픈여부]]></Item>
+		<Item Param="CCD" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[캐빈 클래스(Y:일반석, C:비즈니스석, F:일등석)]]></Item>
+		<Item Param="ADC" Type="number" format="" Required="true" DefaultValue="" ExampleValue="1"><![CDATA[성인 탑승객 수]]></Item>
+		<Item Param="CHC" Type="number" format="" Required="true" DefaultValue="" ExampleValue="0"><![CDATA[소아 탑승객 수]]></Item>
+		<Item Param="IFC" Type="number" format="" Required="true" DefaultValue="" ExampleValue="0"><![CDATA[유아 탑승객 수]]></Item>
+	</Items>
+	<additionalExplanation>
+		<![CDATA[
+		# 여정 설정에 따른 출발지, 도착지, 출발일, 도착일, 오픈 설정방법
+
+		1. 편도(OW)
+			- 출발지(DLC), 도착지(ALC), 출발일(DTD) 필수 입력
+			- 오픈없음(OPN = 'N')
+
+		2. 왕복(RT)
+			① 오픈이 아닐 경우(OPN = 'N')
+				- 출발지(DLC), 도착지(ALC), 출발일(DTD), 도착일(ARD) 필수 입력
+			② 오픈일 경우(OPN = 'Y')
+				- 출발지(DLC), 도착지(ALC), 출발일(DTD) 필수 입력
+				- 도착일(ARD)은 7D(최대 7일), 14D(최대 14일), 45D(최대 45일), 1M(최대 1개월), 2M(최대 2개월), 3M(최대 3개월), 6M(최대 6개월), 300D(최대 1년) 중 선택 입력
+				  도착일(ARD)의 값이 공백일 경우 300D(최대 1년)로 기본 셋팅
+		
+		3. 출도착이원구간(DT)
+			① 오픈이 아닐 경우(OPN = 'N')
+				- 출발지(DLC), 도착지(ALC)는  콤마(,)로 구분하여 입력
+				- 위 각 항목은 2개의 공항 입력
+				- 출발일(DTD)은 첫번째 여정의 출발일 입력
+				- 도착일(ARD)은 두번째 여정의 출발일 입력
+			② 오픈일 경우(OPN = 'Y')
+				- 출발지(DLC), 도착지(ALC)는  콤마(,)로 구분하여 입력
+				- 위 각 항목은 2개의 공항 입력
+				- 출발일(DTD)은 첫번째 여정의 출발일 입력
+				- 도착일(ARD)은 7D(최대 7일), 14D(최대 14일), 45D(최대 45일), 1M(최대 1개월), 2M(최대 2개월), 3M(최대 3개월), 6M(최대 6개월), 300D(최대 1년) 중 선택 입력
+				  도착일(ARD)의 값이 공백일 경우 300D(최대 1년)로 기본 셋팅
+		]]>
+	</additionalExplanation>
+</Help>

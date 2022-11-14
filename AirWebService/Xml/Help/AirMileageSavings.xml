@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[항공사 마일리지 등록]]></Summary>
+	<Return Type="XmlElement"><![CDATA[항공사 마일리지 등록 완료 XML]]></Return>
+	<Items SubTitle="">
+    <Item Param="SNM" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[웹사이트 번호]]></Item>
+    <Item Param="OID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[모두투어 주문번호]]></Item>
+		<Item Param="PID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[예약자번호(PTID)]]></Item>
+		<Item Param="SurName" Type="string[]" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[영문성]]></Item>
+		<Item Param="GivenName" Type="string[]" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[영문이름]]></Item>
+		<Item Param="AirCode" Type="string[]" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[항공사코드(마일리지 적립을 위한 항공사코드)]]></Item>
+		<Item Param="MileageNumber" Type="string[]" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[항공사 마일리지 회원번호]]></Item>
+    <Item Param="RQR" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[작업 요청자(PTID 또는 이름)]]></Item>
+    <Item Param="RQT" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청단말기(WEB/MOBILEWEB/MOBILEAPP/CRS/MODEWARE)]]></Item>
+	</Items>
+</Help>

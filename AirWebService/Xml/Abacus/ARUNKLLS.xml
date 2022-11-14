@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--"ARUNK_RQ" is used to add arrival unknown segments into a passenger name record.  The system will properly apply them so there is no need to segment select, etc...-->
+<!--"ReturnHostCommand" is used to specify whether or not to return the native host command in the response message.-->
+<!--Equivalent Sabre host command: 0AA-->
+<ARUNK_RQ ReturnHostCommand="false" TimeStamp="2013-02-12T11:00:00-06:00" Version="2.0.1" xmlns="http://webservices.sabre.com/sabreXML/2011/10" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>

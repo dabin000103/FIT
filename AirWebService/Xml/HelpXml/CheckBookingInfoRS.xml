@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--## 운임 + Availability 선택 정보 ##-->
+<!--Repeat:1-->
+<!--@ref:(옵션)(string) 참조번호-->
+<!--@version:(필수)(number) 버전정보-->
+<!--@timeStamp:(필수)(datetime)(YYYY-MM-DD HH:MM) 출력일시-->
+<ResponseDetails ref="" version="1.0.0" timeStamp="">
+	<!--여정 정보-->
+	<!--Repeat:1-->
+	<!--@ptc:(필수)(string) 요금조건코드(ADT:성인, DIS:장애인, STU:학생, SRC:경로, LBR:근로자)-->
+	<flightInfo ptc="">
+		<!--여정-->
+		<!--Repeat:1~4-->
+		<!--@ref:(필수)(number) 참조번호-->
+		<flightIndex ref="">
+			<!--Group of Segment-->
+			<!--Repeat:1~999-->
+			<!--@ref:(필수)(number) 참조번호-->
+      <!--@jrt:(필수)(datetime)(HHMM) 여정시간-->
+      <!--@eft:(옵션)(datetime)(HHMM) 비행시간-->
+      <!--@ewt:(옵션)(datetime)(HHMM) 대기시간-->
+			<!--@mjc:(필수)(string) 대표 항공사코드-->
+			<!--@cds:(필수)(string)(Y|N) 공동운항 여부-->
+			<!--@nosp:(필수)(number) 여정 갯수-->
+			<segGroup ref="" jrt="" eft="" ewt="" mjc="" cds="" nosp="">
+				<!--Segment-->
+				<!--Repeat:1~4-->
+				<!--@dlc:(필수)(string) 출발지 공항코드-->
+				<!--@alc:(필수)(string) 도착지 공항코드-->
+				<!--@ddt:(필수)(datetime)(YYYY-MM-DD HH:MM) 출발일시-->
+				<!--@ardt:(필수)(datetime)(YYYY-MM-DD HH:MM) 도착일시-->
+				<!--@mcc:(필수)(string) 마케팅 항공사코드-->
+				<!--@occ:(옵션)(string) 운항 항공사코드-->
+				<!--@fln:(옵션)(number) 편명-->
+				<!--@eqt:(옵션)(number) 기종-->
+				<!--@stn:(필수)(number) 경유 수(기착)-->
+				<!--@etc:(옵션)(string)(Y|N) 이티켓 발행 가능 여부-->
+        <!--@eft:(옵션)(datetime)(HHMM) 비행시간-->
+        <!--@ewt:(옵션)(datetime)(HHMM) 대기시간-->
+				<seg dlc="" alc="" ddt="" ardt="" mcc="" occ="" fln="" eqt="" stn="" etc="" eft="" ewt="">
+					<!--기착정보-->
+					<!--Repeat:0~2-->
+					<!--@dlc:(필수)(string) 출발지 공항코드-->
+					<!--@alc:(필수)(string) 도착지 공항코드-->
+					<!--@ddt:(필수)(datetime)(YYYY-MM-DD HH:MM) 출발일시-->
+					<!--@ardt:(필수)(datetime)(YYYY-MM-DD HH:MM) 도착일시-->
+          <!--@eft:(옵션)(datetime)(HHMM) 비행시간-->
+          <!--@gwt:(옵션)(datetime)(HHMM) 기착시 지상 대기시간-->
+					<seg dlc="" alc="" ddt="" ardt="" eft="" gwt=""/>
+				</seg>
+			</segGroup>
+		</flightIndex>
+	</flightInfo>
+	<!--요금 정보-->
+	<!--Repeat:1-->
+	<priceInfo>
+		<!--요금-->
+		<!--Repeat:1-->
+    <!--@gds:(필수)(string) GDS-->
+    <!--@ptc:(필수)(string) 요금조건코드(ADT:성인, DIS:장애인, STU:학생, SRC:경로, LBR:근로자)-->
+		<!--@ref:(필수)(number) 참조번호-->
+		<priceIndex gds="" ptc="" ref="">
+			<!--종합 정보-->
+			<!--Repeat:1-->
+			<!--@price:(필수)(number) 항공판매가 합계(disFare + tax + fsc + tasf)-->
+			<!--@fare:(필수)(number) 항공요금 합계-->
+			<!--@disFare:(필수)(number) 항공할인요금 합계-->
+			<!--@tax:(필수)(number) TAX 합계-->
+			<!--@fsc:(필수)(number) 유류할증료 합계-->
+      <!--@disPartner:(필수)(number) 파트너 할인요금 합계-->
+			<!--@tasf:(필수)(number) TASF(발권 여행사 수수료)-->
+			<!--@pvc:(필수)(number) 발권 항공사코드-->
+			<!--@mas:(필수)(string) 유효기간-->
+			<!--@ttl:(필수)(datetime)(YYYY-MM-DD) TL-->
+      <!--@cds:(필수)(string)(Y|N) 공동운항 운임 여부-->
+      <!--@ucf:(필수)(string)(Y|N) 미확정 운임 여부-->
+			<!--@ntf:(필수)(string)(Y|N) 자동 발권 불가 운임 여부-->
+			<summary price="" fare="" disFare="" tax="" fsc="" disPartner="" tasf="" pvc="" mas="" ttl="" cds="" ucf="" ntf="" />
+			<!--여정 정보-->
+			<!--Repeat:1-->
+			<segGroup>
+				<!--Segment-->
+				<!--Repeat:1-->
+				<seg>
+					<!--여정별 Segment 참조번호-->
+					<!--Repeat:1~4-->
+					<!--@fiRef:(필수)(number) 여정의 참조번호(flightInfo/flightIndex의 ref의 값)-->
+          <!--@nosp:(필수)(number) 여정 갯수-->
+          <!--@baggage:(옵션)(string) 무료수화물 정보-->
+					<!--NodeValue:(필수)(number) Group of Segment의 참조번호(flightInfo/flightIndex/segGroup의 ref의 값)-->
+					<ref fiRef="" nosp="" baggage=""></ref>
+				</seg>
+			</segGroup>
+			<!--탑승객 요금 정보-->
+			<!--Repeat:1-->
+			<paxFareGroup>
+				<!--탑승객 구분-->
+				<!--Repeat:1~9-->
+				<!--@ptc:(필수)(string) 탑승객 구분 코드(ADT:성인, CHD:소아, INF:유아, DIS:장애인, STU:학생, SRC:경로, LBR:근로자)-->
+				<paxFare ptc="">
+					<!--탑승객 타입별 종합 정보-->
+					<!--Repeat:1-->
+					<!--@fare:(필수)(number) 항공요금(1인)-->
+					<!--@disFare:(필수)(number) 항공할인요금(1인)-->
+					<!--@tax:(필수)(number) TAX(1인)-->
+					<!--@fsc:(필수)(number) 유류할증료(1인)-->
+          <!--@disPartner:(필수)(number) 파트너 할인요금(1인)-->
+          <!--@tasf:(필수)(number) TASF(발권 여행사 수수료)(1인)-->
+					<amount fare="" disFare="" tax="" fsc="" disPartner="" tasf=""/>
+					<!--여정별 요금 정보-->
+					<!--Repeat:1-->
+					<segFareGroup>
+						<!--여정 정보-->
+						<!--Repeat:1~9-->
+						<!--@ref:(필수)(number) 참조번호-->
+						<segFare ref="">
+							<!--Segment별 요금 정보-->
+							<!--Repeat:1~4-->
+							<!--@bpt:(옵션)(string)(YN) 운임분리지점 여부-->
+							<!--@mas:(옵션)(string) 유효기간-->
+							<fare bpt="" mas="">
+								<!--좌석 정보-->
+								<!--Repeat:1-->
+								<!--@rbd:(필수)(string) 예약 클래스-->
+								<!--@cabin:(필수)(string) 좌석 클래스-->
+								<!--@avl:(필수)(number) 예약 가능 좌석수-->
+								<cabin rbd="" cabin="" avl=""/>
+								<!--요금 정보-->
+								<!--Repeat:1-->
+								<!--@basis:(옵션)(string) Fare Basis-->
+								<!--@ptc:(필수)(string) Passenger Type-->
+								<!--@tkd:(옵션)(string) Ticket Designator-->
+								<fare basis="" ptc="" tkd="">
+									<!--Fare Type-->
+									<!--Repeat:1~4-->
+									<!--NodeValue:(필수)(string) Fare Type-->
+									<fareType></fareType>
+								</fare>
+                <!--Corporate Code-->
+                <!--Repeat:0~1-->
+                <!--NodeValue:(필수)(string) Corporate Code-->
+                <corporateId></corporateId>
+							</fare>
+						</segFare>
+					</segFareGroup>
+					<!--탑승객 정보-->
+					<!--Repeat:1-->
+					<traveler>
+						<!--탑승객 참조번호-->
+						<!--Repeat:1~9-->
+						<!--NodeValue:(필수)(number) 탑승객 참조번호-->
+						<!--@ind:(옵션)(number) 보호자 참조번호-->
+						<ref ind=""></ref>
+					</traveler>
+				</paxFare>
+			</paxFareGroup>
+			<!--기타 요금 정보(패널티 등)-->
+			<!--Repeat:0~1-->
+			<!--NodeValue:(옵션)(string) free-->
+			<fareMessage></fareMessage>
+      <!--요금규정-->
+      <!--Repeat:0~1-->
+      <!--NodeValue:(옵션)(string) 요금규정 URL(갈릴레오 운임일 경우)-->
+      <fareRuleUrl><![CDATA[]]></fareRuleUrl>
+			<!--프로모션 정보-->
+			<!--Repeat:0~1-->
+			<promotionInfo>
+				<!--아이템-->
+				<!--Repeat:1-->
+				<item>
+					<!--프로모션 번호-->
+					<!--Repeat:1-->
+					<!--NodeValue:(옵션)(number) 프로모션 번호-->
+					<promotionId></promotionId>
+					<!--항공사코드-->
+					<!--Repeat:1-->
+					<!--NodeValue:(옵션)(string) 항공사코드-->
+					<airCode></airCode>
+					<!--여정타입-->
+					<!--Repeat:1-->
+					<!--NodeValue:(옵션)(string) 여정타입-->
+					<tripType></tripType>
+					<!--Fare Type-->
+					<!--Repeat:1-->
+					<!--NodeValue:(옵션)(string) Fare Type-->
+					<fareType></fareType>
+					<!--Cabin Class-->
+					<!--Repeat:1-->
+					<!--NodeValue:(옵션)(string) Cabin Class-->
+					<cabinClass></cabinClass>
+					<!--Booking Class-->
+					<!--Repeat:1-->
+					<!--NodeValue:(옵션)(string) Booking Class-->
+					<bookingClass></bookingClass>
+					<!--PTC 코드-->
+					<!--Repeat:1-->
+					<!--NodeValue:(옵션)(string) PTC 코드-->
+					<paxType></paxType>
+          <!--디스카운트-->
+          <!--Repeat:1-->
+          <!--NodeValue:(옵션)(number) 디스카운트-->
+          <discount></discount>
+					<!--커미션할인-->
+					<!--Repeat:1-->
+					<!--NodeValue:(옵션)(number) 커미션할인-->
+					<commission></commission>
+					<!--요금할인-->
+					<!--Repeat:1-->
+					<!--NodeValue:(옵션)(number) 요금할인-->
+					<fareDiscount></fareDiscount>
+					<!--판매장려금-->
+					<!--Repeat:1-->
+					<!--NodeValue:(옵션)(number) 판매장려금-->
+					<incentive></incentive>
+					<!--판매장려금 코드-->
+					<!--Repeat:1-->
+					<!--NodeValue:(옵션)(string) 판매장려금 코드-->
+					<incentiveCode></incentiveCode>
+					<!--판매장려금명-->
+					<!--Repeat:1-->
+					<!--NodeValue:(옵션)(string) 판매장려금명-->
+					<incentiveName></incentiveName>
+					<!--프로모션명-->
+					<!--Repeat:1-->
+					<!--NodeValue:(옵션)(string) 프로모션명-->
+					<fareTarget></fareTarget>
+          <!--아동할인제외-->
+          <!--Repeat:1-->
+          <!--NodeValue:(필수)(string) 아동할인제외여부(Y:아동은 할인에서 제외)-->
+          <childDiscountYN></childDiscountYN>
+          <!--부가서비스코드-->
+          <!--Repeat:1-->
+          <!--NodeValue:(옵션)(string) 부가서비스코드-->
+          <supplementaryServicecCode></supplementaryServicecCode>
+          <!--부가서비스명-->
+          <!--Repeat:1-->
+          <!--NodeValue:(옵션)(string) 부가서비스명-->
+          <supplementaryServiceName></supplementaryServiceName>
+          <!--프로모션 정보-->
+          <!--Repeat:1-->
+          <promotions>
+            <!--프로모션 리스트-->
+            <!--Repeat:1~99-->
+            <!--@promotionId:(필수)(number) 프로모션 번호-->
+            <!--@incentiveCode:(옵션)(string) 판매장려금 코드-->
+            <!--@incentiveName:(옵션)(string) 판매장려금명-->
+            <!--@fareTarget:(옵션)(string) 프로모션명-->
+            <promotion promotionId="" incentiveCode="" incentiveName="" fareTarget=""></promotion>
+          </promotions>
+				</item>
+			</promotionInfo>
+		</priceIndex>
+	</priceInfo>
+</ResponseDetails>

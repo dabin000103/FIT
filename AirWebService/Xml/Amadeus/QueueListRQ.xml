@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Queue_List>
+	<targetOffice>
+		<sourceType>
+			<sourceQualifier1>4</sourceQualifier1>
+		</sourceType>
+		<originatorDetails>
+			<inHouseIdentification1>SELK138AB</inHouseIdentification1>
+		</originatorDetails>
+	</targetOffice>
+	<queueNumber>
+		<queueDetails>
+			<number>0</number>
+		</queueDetails>
+	</queueNumber>
+	<categoryDetails>
+		<subQueueInfoDetails>
+			<identificationType>C</identificationType>
+			<itemNumber>0</itemNumber>
+      <itemDescription></itemDescription>
+		</subQueueInfoDetails>
+	</categoryDetails>
+  <date>
+    <timeMode>1</timeMode>
+  </date>
+  <scanRange>
+    <rangeQualifier>701</rangeQualifier>
+    <rangeDetails>
+      <min>1</min>
+      <max>250</max>
+    </rangeDetails>
+  </scanRange>
+  <sortCriteria>
+		<dumbo></dumbo>
+		<sortOption>
+			<selectionDetails>
+				<option>CD</option>
+			</selectionDetails>
+		</sortOption>
+	</sortCriteria>
+</Queue_List>

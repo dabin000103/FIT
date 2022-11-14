@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="Command_Cryptic.asmx.cs" Class="AirWebService.CommandCryptic.AmadeusWebService" %>

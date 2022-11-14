@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--## 항공사 마일리지 등록 ##-->
+<!--Repeat:1-->
+<!--@version:(필수)(number) 버전정보-->
+<!--@timeStamp:(필수)(datetime)(YYYY-MM-DD HH:MM) 출력일시-->
+<AirMileageSavings version="1.0.0" timeStamp="">
+  <!--성공여부-->
+  <!--Repeat:0~1-->
+  <success/>
+</AirMileageSavings>

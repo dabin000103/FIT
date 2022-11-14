@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[운임 + Availability 동시조회]]></Summary>
+	<Return Type="XmlElement"><![CDATA[예약 가능한 항공편 및 운임 결과 XML]]></Return>
+	<Items SubTitle="">
+		<Item Param="SNM" Type="number" format="" Required="true" DefaultValue="" ExampleValue="2"><![CDATA[웹사이트 번호]]></Item>
+		<Item Param="SAC" Type="string" format="" Required="false" DefaultValue="" ExampleValue="KE"><![CDATA[항공사 코드(하나 이상일 경우 콤마로 구분)]]></Item>
+		<Item Param="DLC" Type="string" format="" Required="true" DefaultValue="" ExampleValue="ICN"><![CDATA[출발지 공항 코드]]></Item>
+		<Item Param="ALC" Type="string" format="" Required="true" DefaultValue="" ExampleValue="BKK"><![CDATA[도착지 공항 코드]]></Item>
+		<Item Param="ROT" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[구간(OW:편도, RT:왕복, DT:출도착이원구간, MD:다구간)]]></Item>
+		<Item Param="DTD" Type="datetime" format="YYYYMMDD" Required="true" DefaultValue="" ExampleValue=""><![CDATA[출발일]]></Item>
+		<Item Param="ARD" Type="datetime" format="YYYYMMDD" Required="true" DefaultValue="" ExampleValue=""><![CDATA[도착일]]></Item>
+		<Item Param="OPN" Type="string" format="YN" Required="true" DefaultValue="" ExampleValue=""><![CDATA[오픈여부]]></Item>
+		<Item Param="FLD" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[여정추가옵션(C:Connecting Service, D:Direct Service, N:Non-Stop Service, OV:Overnight not allowed)]]></Item>
+		<Item Param="CCD" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[캐빈 클래스(Y:Economic, M:Economic Standard, W:Economic Premium, C:Business, F:First/Supersonic)]]></Item>
+		<Item Param="PTC" Type="string[]" format="" Required="true" DefaultValue="" ExampleValue="1"><![CDATA[탑승객 타입 코드(ADT:성인, DIS:장애인, STU:학생, SRC:경로, LBR:근로자)]]></Item>
+		<Item Param="NOP" Type="number[]" format="" Required="true" DefaultValue="" ExampleValue="0"><![CDATA[탑승객 수]]></Item>
+		<Item Param="NRR" Type="number" format="" Required="true" DefaultValue="200" ExampleValue=""><![CDATA[응답 결과 수]]></Item>
+		<Item Param="FTX" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[free text]]></Item>
+	</Items>
+</Help>

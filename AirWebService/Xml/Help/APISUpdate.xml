@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[APIS 정보 등록]]></Summary>
+	<Return Type="XmlElement"><![CDATA[APIS 등록 완료 XML]]></Return>
+	<Items SubTitle="">
+		<Item Param="OID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[모두투어 주문번호]]></Item>
+		<Item Param="PID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[예약자번호(PTID)]]></Item>
+		<Item Param="RQR" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[작업 요청자(PTID 또는 이름)]]></Item>
+		<Item Param="SurName" Type="string[]" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[영문성]]></Item>
+		<Item Param="GivenName" Type="string[]" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[영문이름]]></Item>
+		<Item Param="PaxGender" Type="string[]" format="M/F" Required="true" DefaultValue="" ExampleValue=""><![CDATA[성별]]></Item>
+		<Item Param="BirthDate" Type="string[]" format="YYYYMMDD" Required="true" DefaultValue="" ExampleValue=""><![CDATA[생년월일]]></Item>
+		<Item Param="PassportNum" Type="string[]" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[여권번호]]></Item>
+		<Item Param="ExpireDate" Type="string[]" format="YYYYMMDD" Required="true" DefaultValue="" ExampleValue=""><![CDATA[여권만료일]]></Item>
+		<Item Param="IssueCountry" Type="string[]" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[여권발행국]]></Item>
+		<Item Param="HolderNationality" Type="string[]" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[국적]]></Item>
+    <Item Param="RIP" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청자IP]]></Item>
+	</Items>
+</Help>

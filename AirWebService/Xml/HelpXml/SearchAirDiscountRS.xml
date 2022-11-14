@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--## 할인항공운임 ##-->
+<!--Repeat:1-->
+<airDiscount>
+	<!--운임리스트-->
+	<!--Repeat:1~999-->
+	<fare>
+    <!--일련번호-->
+    <!--Repeat:1-->
+    <!--NodeValue:(필수)(number) 일련번호-->
+    <IF_SEQNO></IF_SEQNO>
+    <!--운임번호-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 운임번호-->
+		<FARE_NO></FARE_NO>
+		<!--운임기초-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 운임기초-->
+		<FARE_BASIS></FARE_BASIS>
+    <!--운임종류-->
+    <!--Repeat:1-->
+    <!--NodeValue:(필수)(string) 운임종류-->
+    <DEPLOY_FARE_KIND></DEPLOY_FARE_KIND>
+		<!--오피스아이디(예약)-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 오피스아이디-->
+		<RSV_AGT_CD></RSV_AGT_CD>
+		<!--오피스아이디(등록)-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 오피스아이디-->
+		<FILE_AGT_CD></FILE_AGT_CD>
+		<!--운임규정번호-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 운임규정번호-->
+		<FARE_RULE_NO></FARE_RULE_NO>
+		<!--IATA 항공사코드-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) IATA 항공사코드-->
+		<IATA_AIR_CD></IATA_AIR_CD>
+		<!--지역코드-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 지역코드-->
+		<AREA_CD></AREA_CD>
+		<!--국가코드-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 국가코드-->
+		<NA_CD></NA_CD>
+		<!--출발도시코드-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 출발도시코드-->
+		<DEP_CITY_CD></DEP_CITY_CD>
+    <!--출발도시명-->
+    <!--Repeat:1-->
+    <!--NodeValue:(필수)(string) 출발도시명-->
+    <DEP_CITY_KOR_NM></DEP_CITY_KOR_NM>
+		<!--도착도시코드-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 도착도시코드-->
+		<ARR_CITY_CD></ARR_CITY_CD>
+    <!--도착도시명-->
+    <!--Repeat:1-->
+    <!--NodeValue:(필수)(string) 도착도시명-->
+    <ARR_CITY_KOR_NM></ARR_CITY_KOR_NM>
+		<!--성인운임-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(number) 성인운임-->
+		<ADT_FARE></ADT_FARE>
+		<!--성인할인운임-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(number) 성인할인운임-->
+		<ADT_DSCNT_FARE></ADT_DSCNT_FARE>
+		<!--성인유류할증료-->
+		<!--Repeat:0~1-->
+		<!--NodeValue:(필수)(number) 성인유류할증료-->
+		<ADT_BAF></ADT_BAF>
+		<!--성인TAX-->
+		<!--Repeat:0~1-->
+		<!--NodeValue:(필수)(number) 성인TAX-->
+		<ADT_TAX_AMT></ADT_TAX_AMT>
+		<!--소아운임-->
+		<!--Repeat:0~1-->
+		<!--NodeValue:(필수)(number) 소아운임-->
+		<CHD_FARE></CHD_FARE>
+		<!--소아할인운임-->
+		<!--Repeat:0~1-->
+		<!--NodeValue:(필수)(number) 소아할인운임-->
+		<CHD_DSCNT_FARE></CHD_DSCNT_FARE>
+		<!--유아운임-->
+		<!--Repeat:0~1-->
+		<!--NodeValue:(필수)(number) 유아운임-->
+		<INF_FARE></INF_FARE>
+		<!--출발요일색인-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 출발요일색인-->
+		<DEP_WKDAY_IDX></DEP_WKDAY_IDX>
+		<!--귀국요일색인-->
+		<!--Repeat:0~1-->
+		<!--NodeValue:(옵션)(string) 귀국요일색인-->
+		<IB_WKDAY_IDX></IB_WKDAY_IDX>
+		<!--좌석클래스-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 좌석클래스-->
+    <SERVICE_CLASS></SERVICE_CLASS>
+    <!--캐빈좌석등급-->
+    <!--Repeat:1-->
+    <!--NodeValue:(필수)(string) 캐빈좌석등급-->
+    <CABIN_SEAT_GRAD></CABIN_SEAT_GRAD>
+		<!--승객유형-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 승객유형-->
+		<PAX_TYPE></PAX_TYPE>
+    <!--승객유형명-->
+    <!--Repeat:1-->
+    <!--NodeValue:(필수)(string) 승객유형명-->
+    <PAX_TYPE_DESC></PAX_TYPE_DESC>
+		<!--최소체류일자-->
+		<!--Repeat:0~1-->
+		<!--NodeValue:(필수)(string) 최소체류일자-->
+		<MIN_STAY_DATE></MIN_STAY_DATE>
+		<!--최대체류일자-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 최대체류일자-->
+		<MAX_STAY_DATE></MAX_STAY_DATE>
+		<!--사전발권일수-->
+		<!--Repeat:0~1-->
+		<!--NodeValue:(필수)(string) 사전발권일수-->
+		<AP_DAYCNT></AP_DAYCNT>
+		<!--여행유형-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 여행유형-->
+		<TRIP_TYPE></TRIP_TYPE>
+		<!--예약좌석등급-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 예약좌석등급-->
+		<RSV_SEAT_GRAD></RSV_SEAT_GRAD>
+		<!--귀국일자 지정여부-->
+		<!--Repeat:0~1-->
+		<!--NodeValue:(필수)(string) 귀국일자 지정여부-->
+		<IB_DATE_ASIN_YN></IB_DATE_ASIN_YN>
+		<!--투어 코드-->
+		<!--Repeat:0~1-->
+		<!--NodeValue:(옵션)(string) 투어 코드-->
+		<TOUR_CD></TOUR_CD>
+		<!--커미션 여부-->
+		<!--Repeat:0~1-->
+		<!--NodeValue:(필수)(string) 커미션 여부-->
+		<COMM_FLAG></COMM_FLAG>
+		<!--커미션-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(number) 커미션-->
+		<COMM></COMM>
+		<!--경유수-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(number) 경유수-->
+		<NO_OF_STOP></NO_OF_STOP>
+		<!--루팅 도시명-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 루팅 도시명-->
+		<RTG_CITY_NM></RTG_CITY_NM>
+		<!--루팅 항공사명-->
+		<!--Repeat:0~1-->
+		<!--NodeValue:(필수)(string) 루팅 항공사명-->
+		<RTG_AIR_NM></RTG_AIR_NM>
+		<!--루팅 좌석등급-->
+		<!--Repeat:0~1-->
+		<!--NodeValue:(필수)(string) 루팅 좌석등급-->
+		<RTG_SEAT_GRAD></RTG_SEAT_GRAD>
+		<!--루팅 비행편명-->
+		<!--Repeat:0~1-->
+		<!--NodeValue:(필수)(string) 루팅 비행편명-->
+		<RTG_FLTNO></RTG_FLTNO>
+		<!--승객 제한 인원-->
+		<!--Repeat:0~1-->
+		<!--NodeValue:(옵션)(number) 승객 제한 인원-->
+		<PAX_LIMIT_INWON></PAX_LIMIT_INWON>
+		<!--승객 제한 나이-->
+		<!--Repeat:0~1-->
+		<!--NodeValue:(옵션)(number) 승객 제한 나이-->
+		<PAX_LIMIT_AGE></PAX_LIMIT_AGE>
+		<!--운임 구분1-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 운임 구분1-->
+		<FARE_FLAG1></FARE_FLAG1>
+		<!--운임 구분2-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 운임 구분2-->
+		<FARE_FLAG2></FARE_FLAG2>
+		<!--운임 구분3-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 운임 구분3-->
+		<FARE_FLAG3></FARE_FLAG3>
+		<!--운임 구분4-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 운임 구분4-->
+		<FARE_FLAG4></FARE_FLAG4>
+		<!--운임 구분5-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 운임 구분5-->
+		<FARE_FLAG5></FARE_FLAG5>
+		<!--운임생성일-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(datetime)(YYYYMMDD) 운임생성일-->
+		<FARE_CREAT_DATE></FARE_CREAT_DATE>
+		<!--작업구분-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 작업구분-->
+		<OPERT_FLAG></OPERT_FLAG>
+		<!--등록자ID-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 등록자ID-->
+		<REG_USR_ID></REG_USR_ID>
+		<!--등록일시-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(datetime)(YYYYMMDDHHMMSS) 등록일시-->
+		<REG_DTM></REG_DTM>
+		<!--수정자ID-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 수정자ID-->
+		<UPD_USR_ID></UPD_USR_ID>
+		<!--수정일시-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(datetime)(YYYYMMDDHHMMSS) 수정일시-->
+		<UPD_DTM></UPD_DTM>
+		<!--운임사용기간-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(datetime)(YYYYMMDD) 운임사용기간-->
+		<FARE_DATE></FARE_DATE>
+		<!--적용가능기간-->
+		<!--Repeat:0~1-->
+		<!--NodeValue:(필수)(datetime)(YYYYMMDD) 적용가능기간-->
+    <APPLY_DATE></APPLY_DATE>
+		<!--판매가능기간-->
+		<!--Repeat:0~1-->
+		<!--NodeValue:(필수)(datetime)(YYYYMMDD) 판매가능기간-->
+		<SALE_DATE></SALE_DATE>
+		<!--사이트번호-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(number) 사이트번호-->
+		<SITE_NO></SITE_NO>
+	</fare>
+</airDiscount>

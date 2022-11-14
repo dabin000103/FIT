@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Security_Authenticate>
+	<userIdentifier>
+		<originIdentification>
+			<sourceOffice>SELK138AB</sourceOffice>
+		</originIdentification>
+		<originatorTypeCode>U</originatorTypeCode>
+		<originator>WSMOTIBE</originator>
+	</userIdentifier>
+	<dutyCode>
+		<dutyCodeDetails>
+			<referenceQualifier>DUT</referenceQualifier>
+			<referenceIdentifier>SU</referenceIdentifier>
+		</dutyCodeDetails>
+	</dutyCode>
+	<systemDetails>
+		<organizationDetails>
+			<organizationId>TOPAS-TA</organizationId>
+		</organizationDetails>
+	</systemDetails>
+	<passwordInfo>
+		<dataLength>8</dataLength>
+		<dataType>E</dataType>
+		<binaryData>NGR1M1lTSSE=</binaryData>
+	</passwordInfo>
+</Security_Authenticate>

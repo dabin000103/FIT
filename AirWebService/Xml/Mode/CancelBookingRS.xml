@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResponseDetails version="1.0.0" timeStamp="">
+	<bookingInfo>
+		<gds></gds>
+		<bookingNo></bookingNo>
+		<modeBookingNo></modeBookingNo>
+		<bookingStatus code=""></bookingStatus>
+	</bookingInfo>
+</ResponseDetails>

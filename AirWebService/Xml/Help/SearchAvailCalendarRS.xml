@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[할인항공 월별 Availability 조회]]></Summary>
+	<Return Type="XmlElement"><![CDATA[할인항공 월별 Availability 결과 XML]]></Return>
+	<Items SubTitle="">
+		<Item Param="SNM" Type="number" format="" Required="true" DefaultValue="" ExampleValue="2"><![CDATA[웹사이트 번호]]></Item>
+		<Item Param="DTD" Type="datetime" format="YYYYMMDD" Required="true" DefaultValue="" ExampleValue=""><![CDATA[출발일]]></Item>
+		<Item Param="ARD" Type="datetime" format="YYYYMMDD" Required="true" DefaultValue="" ExampleValue=""><![CDATA[도착일]]></Item>
+		<Item Param="ADC" Type="number" format="" Required="true" DefaultValue="" ExampleValue="1"><![CDATA[성인 탑승객 수]]></Item>
+		<Item Param="CHC" Type="number" format="" Required="true" DefaultValue="" ExampleValue="0"><![CDATA[소아 탑승객 수]]></Item>
+		<Item Param="IFC" Type="number" format="" Required="true" DefaultValue="" ExampleValue="0"><![CDATA[유아 탑승객 수]]></Item>
+		<Item Param="FXL" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[할인항공운임의 fare XmlNode]]></Item>
+	</Items>
+	<XmlSample>
+		<FXL>
+			<![CDATA[
+            <fare>
+				<IF_SEQNO>1</IF_SEQNO>
+				<FARE_NO>MSP|4|SEL1A0981|KE|8|JP07|B|BHEKJ2|ICN|HND|ADT|RT|F||N|||KE|KE|20140811|99991231</FARE_NO>
+				<FARE_KEY>SELK138ABKEICNHNDADTBJP0720140811BHEKJ2167336</FARE_KEY>
+				<FARE_BASIS>BHEKJ2</FARE_BASIS>
+				<DEPLOY_FARE_KIND>MSP</DEPLOY_FARE_KIND>
+				<RSV_AGT_CD>SELK138AB</RSV_AGT_CD>
+				<FILE_AGT_CD>SEL1A0981</FILE_AGT_CD>
+				<FARE_RULE_NO>JP07</FARE_RULE_NO>
+				<IATA_AIR_CD>KE</IATA_AIR_CD>
+				<AREA_CD>JPN</AREA_CD>
+				<NA_CD>JP</NA_CD>
+				<DEP_CITY_CD>ICN</DEP_CITY_CD>
+				<ARR_CITY_CD>HND</ARR_CITY_CD>
+				<ADT_FARE>600000</ADT_FARE>
+				<ADT_DSCNT_FARE>600000</ADT_DSCNT_FARE>
+				<ADT_BAF>0</ADT_BAF>
+				<ADT_TAX_AMT>2255000</ADT_TAX_AMT>
+				<CHD_FARE>450000</CHD_FARE>
+				<CHD_DSCNT_FARE>600000</CHD_DSCNT_FARE>
+				<CHD_BAF>0</CHD_BAF>
+				<CHD_TAX_AMT>2255000</CHD_TAX_AMT>
+				<INF_FARE>60000</INF_FARE>
+				<INF_BAF>0</INF_BAF>
+				<INF_TAX_AMT>2255000</INF_TAX_AMT>
+				<DEP_WKDAY_IDX>1111111</DEP_WKDAY_IDX>
+				<IB_WKDAY_IDX>1111111</IB_WKDAY_IDX>
+				<CABIN_SEAT_GRAD>M</CABIN_SEAT_GRAD>
+				<PAX_TYPE>ADT</PAX_TYPE>
+				<MIN_STAY_DATE>0D</MIN_STAY_DATE>
+				<MAX_STAY_DATE>12M</MAX_STAY_DATE>
+				<AP_DAYCNT>0D</AP_DAYCNT>
+				<TRIP_TYPE>RT</TRIP_TYPE>
+				<RSV_SEAT_GRAD>B</RSV_SEAT_GRAD>
+				<IB_DATE_ASIN_YN>Y</IB_DATE_ASIN_YN>
+				<COMM_FLAG>R</COMM_FLAG>
+				<COMM>0</COMM>
+				<NO_OF_STOP>0</NO_OF_STOP>
+				<RTG_CITY_NM>ICN~HND~ICN</RTG_CITY_NM>
+				<RTG_AIR_NM>KE-KE</RTG_AIR_NM>
+				<RTG_SEAT_GRAD>B-B</RTG_SEAT_GRAD>
+				<RTG_FLTNO>1-KE****;2-KE****</RTG_FLTNO>
+				<FARE_FLAG1>Y</FARE_FLAG1>
+				<FARE_FLAG2>Y</FARE_FLAG2>
+				<FARE_FLAG3>Y</FARE_FLAG3>
+				<FARE_FLAG4>Y</FARE_FLAG4>
+				<FARE_FLAG5>Y</FARE_FLAG5>
+				<USE_YN>Y</USE_YN>
+				<FARE_CREAT_DATE>20140811</FARE_CREAT_DATE>
+				<OPERT_FLAG>I</OPERT_FLAG>
+				<REG_USR_ID>TOPAS</REG_USR_ID>
+				<REG_DTM>20140813094058</REG_DTM>
+				<UPD_USR_ID>TOPAS</UPD_USR_ID>
+				<UPD_DTM>20140813094058</UPD_DTM>
+				<FARE_DATE>20140811-99991231</FARE_DATE>
+				<SEASON>20140725-20140816/20140905-20140908/20141002-20141003/20141220-20150228</SEASON>
+				<SALE_DATE>20000101-20991231</SALE_DATE>
+				<SITE_NO>2</SITE_NO>
+			</fare>
+            ]]>
+		</FXL>
+	</XmlSample>
+</Help>

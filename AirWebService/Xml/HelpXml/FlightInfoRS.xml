@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--## FlightInfoRS 결과 ##-->
+<!--Repeat:1-->
+<!--@version:(필수)(number) 버전정보-->
+<!--@timeStamp:(필수)(datetime)(YYYY-MM-DD HH:MM) 출력일시-->
+<ResponseDetails version="1.0.0" timeStamp="">
+	<!--여정 정보-->
+	<!--Repeat:1-->
+	<flightInfo>
+		<!--여정-->
+		<!--Repeat:1~4-->
+		<!--@ref:(필수)(number) 참조번호-->
+		<flightIndex ref="">
+			<!--기본 정보-->
+			<!--Repeat:1-->
+			<!--@dlc:(필수)(string) 출발지 공항코드-->
+			<!--@alc:(필수)(string) 도착지 공항코드-->
+			<!--@mcc:(필수)(string) 마케팅 항공사코드-->
+			<!--@occ:(필수)(string) 운항 항공사코드-->
+			<!--@fln:(필수)(number) 편명-->
+			<!--@eqt:(필수)(number) 기종-->
+			<general dlc="" alc="" mcc="" occ="" fln="" eqt=""/>
+			<!--Group of Segment-->
+			<!--Repeat:1-->
+			<segGroup>
+				<!--Segment-->
+				<!--Repeat:1~2-->
+				<!--@dlc:(필수)(string) 출발지 공항코드-->
+        <!--@dlcn:(옵션)(string) 출발지 공항명-->
+				<!--@alc:(필수)(string) 도착지 공항코드-->
+        <!--@alcn:(옵션)(string) 도착지 공항명-->
+				<!--@ddt:(필수)(datetime)(YYYY-MM-DD HH:MM) 출발일시-->
+				<!--@ardt:(필수)(datetime)(YYYY-MM-DD HH:MM) 도착일시-->
+				<!--@eft:(필수)(datetime)(HHMM) 비행시간-->
+				<!--@gwt:(옵션)(datetime)(HHMM) 기착시 지상 대기시간-->
+				<seg dlc="" dlcn="" alc="" alcn="" ddt="" ardt="" eft="" gwt=""/>
+			</segGroup>
+		</flightIndex>
+	</flightInfo>
+</ResponseDetails>

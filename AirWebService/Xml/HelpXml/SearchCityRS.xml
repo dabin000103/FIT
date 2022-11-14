@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--## SearchCityRS 결과 ##-->
+<!--Repeat:1-->
+<!--@timeStamp:(필수)(datetime)(YYYY-MM-DD HH:MM) 출력일시-->
+<ResponseDetails timeStamp="">
+	<!--도시 정보-->
+	<!--Repeat:1~999-->
+	<CityInfo>
+		<!--지역번호-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(number) 지역번호-->
+		<AreaNum></AreaNum>
+		<!--지역코드-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 지역코드-->
+		<AreaCode></AreaCode>
+		<!--지역명-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 지역명(한글)-->
+		<AreaKName></AreaKName>
+		<!--국가코드-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 국가코드-->
+		<CountryCode></CountryCode>
+		<!--국가명-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 국가명(영어)-->
+		<CountryEName></CountryEName>
+		<!--국가명-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 국가명(한글)-->
+		<CountryKName></CountryKName>
+		<!--주명-->
+		<!--Repeat:1-->
+		<!--NodeValue:(옵션)(string) 주명(영어)-->
+		<StateEName></StateEName>
+		<!--도시코드-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 도시코드-->
+		<CityCode></CityCode>
+		<!--도시명-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 도시명(영어)-->
+		<CityEName></CityEName>
+		<!--도시명-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 도시명(한글)-->
+		<CityKName></CityKName>
+		<!--공항코드-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 공항코드-->
+		<AirportCode></AirportCode>
+		<!--공항명-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 공항명(영어)-->
+		<AirportEName></AirportEName>
+		<!--공항명-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 공항명(한글)-->
+		<AirportKName></AirportKName>
+		<!--PLACE ID-->
+		<!--Repeat:0~1-->
+		<!--NodeValue:(필수)(number) 여행정보 PLACE PLID-->
+		<PlaceId></PlaceId>
+	</CityInfo>
+</ResponseDetails>

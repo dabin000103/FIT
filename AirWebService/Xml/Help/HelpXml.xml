@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[Response 도움말]]></Summary>
+	<Return Type="XmlElement"><![CDATA[웹서비스 출력값에 대한 설명 XML]]></Return>
+	<Items SubTitle="">
+		<Item Param="WebMethodName" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[웹서비스명]]></Item>
+    <Item Param="Gubun" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[구분(RQ:Request XML, RS:Response XML)(미사용)]]></Item>
+	</Items>
+</Help>

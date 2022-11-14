@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResponseDetails version="1.0.0" timeStamp="">
+	<flightInfo>
+		<flightIndex ref="">
+			<segGroup ref="">
+				<seg dlc="" alc="" ddt="" ardt="" mcc="" occ="" fln="" stn="">
+					<seg dlc="" alc="" ddt="" ardt=""/>
+				</seg>
+			</segGroup>
+		</flightIndex>
+	</flightInfo>
+	<priceInfo>
+		<priceIndex ref="">
+			<summary price="" fare="" disFare="" tax="" fsc="" tasf="" pvc="" ucf="" ntf="" />
+			<segGroup>
+				<seg>
+					<ref></ref>
+				</seg>
+			</segGroup>
+			<paxFareGroup>
+				<paxFare ptc="">
+					<amount fare="" disFare="" tax="" fsc=""/>
+					<segFareGroup>
+						<segFare ref="">
+							<fare bpt="">
+								<cabin rbd="" cabin="" avl=""/>
+								<fare basis="" ptc="" tkd="">
+									<fareType></fareType>
+								</fare>
+							</fare>
+							<family>
+								<num></num>
+							</family>
+						</segFare>
+					</segFareGroup>
+					<traveler>
+						<ref ind=""></ref>
+					</traveler>
+				</paxFare>
+			</paxFareGroup>
+			<fareMessage></fareMessage>
+			<promotionInfo></promotionInfo>
+		</priceIndex>
+	</priceInfo>
+</ResponseDetails>

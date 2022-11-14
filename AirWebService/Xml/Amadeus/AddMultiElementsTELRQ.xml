@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PNR_AddMultiElements>
+  <pnrActions>
+    <optionCode>0</optionCode>
+  </pnrActions>
+  <dataElementsMaster>
+    <marker1/>
+    <dataElementsIndiv>
+      <elementManagementData>
+        <reference>
+          <qualifier>OT</qualifier>
+          <number>1</number>
+        </reference>
+        <segmentName>AP</segmentName>
+      </elementManagementData>
+      <freetextData>
+        <freetextDetail>
+          <subjectQualifier>3</subjectQualifier>
+          <type></type>
+          <companyId></companyId>
+        </freetextDetail>
+        <longFreetext></longFreetext>
+      </freetextData>
+    </dataElementsIndiv>
+  </dataElementsMaster>
+</PNR_AddMultiElements>

@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="Fare_InstantTravelBoardSearch.asmx.cs" Class="AirWebService.InstantTravelBoardSearch.AmadeusWebService" %>

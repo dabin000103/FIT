@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SabreCommandLLSRQ xmlns="http://webservices.sabre.com/sabreXML/2003/07" EchoToken="String" TimeStamp="2001-12-17T09:30:47-05:00" Target="Production" Version="2003A.TsabreXML1.6.1" SequenceNmbr="1" PrimaryLangID="en-us" AltLangID="en-us">
+	<Request Output="SCREEN" MDRSubset="AD01" CDATA="true">
+		<HostCommand></HostCommand>
+	</Request>
+</SabreCommandLLSRQ>

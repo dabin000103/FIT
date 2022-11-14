@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Ticket_CancelDocument>
+	<documentNumberDetails>
+		<documentDetails>
+			<number></number>
+		</documentDetails>
+	</documentNumberDetails>
+  <stockProviderDetails>
+    <officeSettingsDetails>
+      <marketIataCode>KR</marketIataCode>
+    </officeSettingsDetails>
+  </stockProviderDetails>
+  <targetOfficeDetails>
+		<originatorDetails>
+			<inHouseIdentification2>SELK138AB</inHouseIdentification2>
+		</originatorDetails>
+	</targetOfficeDetails>
+</Ticket_CancelDocument>

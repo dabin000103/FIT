@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="FOP_CreateFormOfPayment.asmx.cs" Class="AirWebService.CreateFormOfPayment.AmadeusWebService" %>

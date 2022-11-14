@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Fare_GetRulesOfPricedItinerary>
+	<messageActionDetails>
+		<messageFunctionDetails>
+			<messageFunction>FRL</messageFunction>
+		</messageFunctionDetails>
+	</messageActionDetails>
+	<optionInfoGroup>
+		<optionInfo>
+			<selectionDetails>
+				<option>LNG</option>
+				<optionInformation>KO</optionInformation>
+			</selectionDetails>
+		</optionInfo>
+	</optionInfoGroup>
+</Fare_GetRulesOfPricedItinerary>

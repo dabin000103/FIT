@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResponseDetails version="1.0.0" timeStamp="">
+	<bookingInfo>
+		<gds id=""></gds>
+		<bookingNo pnr=""></bookingNo>
+		<modeBookingNo></modeBookingNo>
+		<agentBookingNo></agentBookingNo>
+    <allianceBookingNo></allianceBookingNo>
+		<bookingCreationDate></bookingCreationDate>
+	</bookingInfo>
+	<flightInfo>
+		<seg ref="" dlc="" alc="" ddt="" ardt="" mcc="" occ="" fln="" eqt="" stn="" rbd="" rsc="" sto="">
+			<seg dlc="" alc="" ddt="" ardt=""/>
+		</seg>
+	</flightInfo>
+	<travellerInfo>
+		<paxData>
+			<pax ref="" nsi="" psn="" pfn="" ptc="" ptl="" pbd="" gni=""/>
+			<payment gross="" card="" bank="" balance="" date=""/>
+			<passport id="" expireDate="" issueCountry="" holderNationality="" writeDate=""/>
+			<ticket number=""/>
+		</paxData>
+	</travellerInfo>
+	<fareInfo>
+		<fare ptc="" price="" subPrice="" amount="" fare="" primeFare="" disFare="" tax="" fsc="" disPartner="0" tasf="" cnc="" createDate="" calMode="">
+			<fare seg="" basis="" baggage="" nvb="" nva="" tkd=""/>
+			<fareCalculation></fareCalculation>
+      <tourCode></tourCode>
+      <commission></commission>
+      <endorsement></endorsement>
+      <ticketingCarrier></ticketingCarrier>
+			<traveler>
+				<ref></ref>
+			</traveler>
+		</fare>
+		<promotionInfo></promotionInfo>
+	</fareInfo>
+	<addInfo>
+		<iata></iata>
+		<city></city>
+		<ttl></ttl>
+		<tourCode></tourCode>
+		<commission></commission>
+		<endorsement></endorsement>
+		<ticketingCarrier></ticketingCarrier>
+	</addInfo>
+	<paymentRequest>
+		<cardInfo>
+			<card traveler="" travelerInfo="" gross="" cnc="" code="" name="" number="" vaildThru="" installment="" bl="" holder="" rqt="" rqn=""/>
+		</cardInfo>
+		<cashInfo>
+			<cash traveler="" travelerInfo="" gross="" cnc="" bank="" accountNumber="" rqt="" rqn=""/>
+		</cashInfo>
+    <couponInfo>
+      <coupon traveler="" travelerInfo="" gross="" cnc="" issueNumber="" rqt="" rqn=""></coupon>
+    </couponInfo>
+		<tasfInfo>
+			<tasf traveler="" travelerInfo="" gross="" cnc="" installment="" rqt="" rqn=""/>
+		</tasfInfo>
+	</paymentRequest>
+	<paymentInfo>
+		<cardInfo>
+			<card traveler="" gross="" cnc=""></card>
+		</cardInfo>
+		<cashInfo>
+			<cash traveler="" gross="" cnc=""/>
+		</cashInfo>
+    <couponInfo>
+      <coupon traveler="" gross="" cnc=""></coupon>
+    </couponInfo>
+	</paymentInfo>
+</ResponseDetails>

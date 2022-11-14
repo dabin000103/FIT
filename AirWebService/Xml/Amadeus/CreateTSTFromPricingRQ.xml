@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Ticket_CreateTSTFromPricing>
+	<psaList>
+		<itemReference>
+			<referenceType>TST</referenceType>
+			<uniqueReference>1</uniqueReference>
+		</itemReference>
+    <paxReference>
+      <refDetails>
+        <refQualifier>P</refQualifier>
+        <refNumber></refNumber>
+      </refDetails>
+    </paxReference>
+	</psaList>
+</Ticket_CreateTSTFromPricing>

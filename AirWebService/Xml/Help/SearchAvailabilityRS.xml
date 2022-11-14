@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[Availability 조회]]></Summary>
+	<Return Type="XmlElement"><![CDATA[Availability 결과 XML]]></Return>
+	<Items SubTitle="">
+		<Item Param="UniqueID" Type="string" format="" Required="true" DefaultValue="" ExampleValue="2"><![CDATA[항공운임 고유번호]]></Item>
+		<Item Param="FareID" Type="number" format="" Required="true" DefaultValue="" ExampleValue="ICN"><![CDATA[항공운임번호]]></Item>
+	</Items>
+</Help>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Ticket_DisplayQuota>
+  <displayedQuotaIataNumber>
+    <originIdentification>
+      <originatorId>17301756</originatorId>
+    </originIdentification>
+  </displayedQuotaIataNumber>
+  <validatingCarrier>
+    <companyIdentification>
+      <otherCompany>KE</otherCompany>
+    </companyIdentification>
+  </validatingCarrier>
+</Ticket_DisplayQuota>

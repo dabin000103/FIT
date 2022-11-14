@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[이니시스 카드 인증]]></Summary>
+	<Return Type="string"><![CDATA[카드 인증 결과 XML]]></Return>
+	<Items SubTitle="">
+		<Item Param="Owner" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[소유자명]]></Item>
+		<Item Param="CardNumber" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[카드번호]]></Item>
+		<Item Param="ValidThru" Type="datetime" format="YYYYMM|YYMM" Required="true" DefaultValue="" ExampleValue=""><![CDATA[유효기간(YYYYMM OR YYMM)]]></Item>
+		<Item Param="IDNumbers" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[개인(생년월일 6자리) / 법인(사업자번호 10자리)]]></Item>
+		<Item Param="Password" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[비밀번호 앞2자리]]></Item>
+	</Items>
+</Help>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--"NumResponses" is used to specify the number of responses expected in order to capture any multiple responses if applicable.  Most times 1 is sufficient, however there are several direct connect vendors that will send back multiple responses.-->
+<!--"ReturnHostCommand" is used to specify whether or not to return the native host command in the response message.-->
+<OTA_CancelRQ NumResponses="1" ReturnHostCommand="false" TimeStamp="2012-01-09T10:00:00-06:00" Version="2.0.0" xmlns="http://webservices.sabre.com/sabreXML/2011/10" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<!--Mandatory-->
+	<!--Repeat Factor=0-99-->
+	<!--"EndNumber" is used to specify a range of segments to cancel.-->
+	<!--"Number" is used to specify a particular segment number to cancel.-->
+	<!--"Type" is used to specify a particular segment type to cancel.  Acceptable values for "Type" are "air", "vehicle", "hotel", "other", or "entire".  These formats look like this: "XIA", "XIC", "XIH", "XIO", or "XI".-->
+	<!--"Type" cannot combine with @EndNumber or @Number.-->
+	<!--End Number  equivalent Sabre host command: X1-3-->
+	<!--Number equivalent Sabre host command: X1-->
+	<!--Type equivalent Sabre host command: XIA-->
+	<Segment EndNumber="3" Number="1" Type="air"/>
+	<!--Multiple, Number equivalent Sabre host command: X1/4-->
+	<Segment Number="4"/>
+</OTA_CancelRQ>

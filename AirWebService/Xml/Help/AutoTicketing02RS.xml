@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[자동발권(결제시스템 연동후 실행)]]></Summary>
+	<Return Type="XmlElement"><![CDATA[PNR Retrieve XML]]></Return>
+	<Items SubTitle="">
+    <Item Param="SNM" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[사이트번호]]></Item>
+    <Item Param="OID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[모두투어 주문번호]]></Item>
+    <Item Param="PID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[예약자번호(PTID)]]></Item>
+    <Item Param="RQR" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청자번호(PTID)]]></Item>
+    <Item Param="RQT" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청단말기(WEB/MOBILEWEB/MOBILEAPP/CRS/MODEWARE)]]></Item>
+    <Item Param="FOP" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[결제정보("영어성^영어이름^카드타입^카드번호^유효기간(MMYY)^할부기간^승인번호^카드결제금액^현금결제금액")]]></Item>
+    <Item Param="ITREmail" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[ITR 발송 이메일주소(미사용)]]></Item>
+	</Items>
+</Help>

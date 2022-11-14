@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[선택운임 및 여정 임시저장 정보 호출]]></Summary>
+	<Return Type="string"><![CDATA[]]></Return>
+	<Items SubTitle="">
+		<Item Param="SNM" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[사이트번호]]></Item>
+		<Item Param="UKey" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[선택운임 및 여정정보 임시저장 Key]]></Item>
+	</Items>
+</Help>

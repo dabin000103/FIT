@@ -1,0 +1,2 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" %>
+<%Response.Write(String.Format("{0} ({1}) ({2})", System.Environment.MachineName, System.Net.Dns.GetHostEntry("LocalHost").HostName, Request.ServerVariables["LOCAL_ADDR"]));%>

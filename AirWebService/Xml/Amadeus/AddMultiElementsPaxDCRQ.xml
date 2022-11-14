@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PNR_AddMultiElements>
+	<pnrActions>
+		<optionCode>0</optionCode>
+	</pnrActions>
+	<dataElementsMaster>
+		<marker1/>
+		<dataElementsIndiv>
+			<elementManagementData>
+				<reference>
+					<qualifier>OT</qualifier>
+					<number>1</number>
+				</reference>
+				<segmentName>FD</segmentName>
+			</elementManagementData>
+			<fareDiscount>
+				<discount>
+					<adjustmentReason></adjustmentReason>
+				</discount>
+			</fareDiscount>
+			<referenceForDataElement>
+				<reference>
+					<qualifier>PT</qualifier>
+					<number></number>
+				</reference>
+			</referenceForDataElement>
+		</dataElementsIndiv>
+	</dataElementsMaster>
+</PNR_AddMultiElements>

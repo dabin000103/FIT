@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PNR_AddMultiElements>
+	<pnrActions>
+		<optionCode>0</optionCode>
+	</pnrActions>
+	<dataElementsMaster>
+		<marker1/>
+		<dataElementsIndiv>
+			<elementManagementData>
+				<segmentName>SSR</segmentName>
+			</elementManagementData>
+			<serviceRequest>
+				<ssr>
+					<type>DOCS</type>
+					<status>HK</status>
+					<quantity>1</quantity>
+					<freetext></freetext>
+					<freetext></freetext>
+				</ssr>
+			</serviceRequest>
+			<referenceForDataElement>
+				<reference>
+					<qualifier>PT</qualifier>
+					<number></number>
+				</reference>
+			</referenceForDataElement>
+		</dataElementsIndiv>
+	</dataElementsMaster>
+</PNR_AddMultiElements>

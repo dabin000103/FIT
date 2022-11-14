@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResponseDetails version="1.0.0" timeStamp="">
+  <bookingInfo>
+    <modeBookingNo siteNo="" agnetNo="" creationDate="" rqt="" cancel=""></modeBookingNo>
+    <bookingAirline code=""></bookingAirline>
+    <bookingRtg type="" departureAirport="" departureDate=""></bookingRtg>
+  </bookingInfo>
+  <supplementaryService>
+    <service code="">
+      <name></name>
+      <price amount="" cost="" discount="" quantity="" sellingPrice="">
+        <eventTitle></eventTitle>
+        <eventMessage></eventMessage>
+      </price>
+      <summary></summary>
+      <description></description>
+    </service>
+  </supplementaryService>
+</ResponseDetails>

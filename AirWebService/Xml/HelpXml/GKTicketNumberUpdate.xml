@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--## GKTicketNumberUpdate 결과 ##-->
+<!--Repeat:1-->
+<TicketNumUpdateProcess>
+  <!--성공여부-->
+  <!--Repeat:1-->
+  <!--NodeValue:(필수)(number) 성공여부(성공인 경우:0)-->
+  <ResultErrorNo></ResultErrorNo>
+  <!--결과메시지-->
+  <!--Repeat:1-->
+  <!--NodeValue:(필수)(string) 결과메시지(성공인 경우:OK)-->
+  <ResultMsg></ResultMsg>
+  <!--PNR정보-->
+  <!--Repeat:1-->
+  <!--NodeValue:(필수)(string) 갈릴레오 PNR-->
+  <PNR></PNR>
+  <!--PNR정보-->
+  <!--Repeat:1-->
+  <!--NodeValue:(필수)(string) 발권된 PNR-->
+  <TKTPNR></TKTPNR>
+  <!--탑승객수-->
+  <!--Repeat:1-->
+  <!--NodeValue:(필수)(number) 탑승객수-->
+  <PaxCnt></PaxCnt>
+  <!--탑승객정보-->
+  <!--Repeat:1~9-->
+  <PaxInfo>
+    <!--탑승객타입-->
+    <!--Repeat:1-->
+    <!--NodeValue:(필수)(string) 탑승객타입코드-->
+    <PaxType></PaxType>
+    <!--탑승객이름-->
+    <!--Repeat:1-->
+    <!--NodeValue:(필수)(string) 탑승객 영문성/영문이름-->
+    <PaxName></PaxName>
+    <!--티켓번호-->
+    <!--Repeat:1-->
+    <!--NodeValue:(필수)(string) 티켓번호-->
+    <PaxTicketNum></PaxTicketNum>
+  </PaxInfo>
+</TicketNumUpdateProcess>

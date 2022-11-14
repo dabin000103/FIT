@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[탑승객별 E-Ticket 이메일 발송용 양식]]></Summary>
+	<Return Type="string"><![CDATA[]]></Return>
+	<Items SubTitle="">
+    <Item Param="SNM" Type="number" format="" Required="true" DefaultValue="" ExampleValue="2"><![CDATA[웹사이트 번호]]></Item>
+    <Item Param="OID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[모두투어 주문번호]]></Item>
+		<Item Param="PID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[예약자번호(PTID)]]></Item>
+    <Item Param="GDS" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[GDS코드]]></Item>
+    <Item Param="PNR" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[PNR번호]]></Item>
+    <Item Param="PaxName" Type="string" format="" Required="true" DefaultValue="" ExampleValue="HONG/GILDONGMR"><![CDATA[탑승객명(ex HONG/GILDONGMR)]]></Item>
+		<Item Param="EMail" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[ETicket을 받을 이메일주소]]></Item>
+    <Item Param="AgentInfo" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[거래처정보(ex 거래처명 거래처직원명 (tel 연락처))(공백일 경우에는 모두투어 정보 출력)]]></Item>
+    <Item Param="Logo" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[Logo URL(로고 미출력시에는 'X' 입력, 공백일 경우에는 모두투어 로고 출력)]]></Item>
+    <Item Param="RIP" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청자IP]]></Item>
+    <Item Param="RQR" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청자번호(PTID)]]></Item>
+    <Item Param="RQT" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청단말기(WEB/MOBILEWEB/MOBILEAPP/CRS/MODEWARE)]]></Item>
+	</Items>
+</Help>

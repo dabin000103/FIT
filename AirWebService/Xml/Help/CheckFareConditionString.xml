@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[운임조건 체크(사전발권, 발권일 등)]]></Summary>
+	<Return Type="Boolean"><![CDATA[운임조건 체크 결과]]></Return>
+	<Items SubTitle="">
+		<Item Param="SNM" Type="number" format="" Required="true" DefaultValue="" ExampleValue="2"><![CDATA[웹사이트 번호]]></Item>
+		<Item Param="AirCode" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[항공사코드]]></Item>
+		<Item Param="DTD" Type="datetime" format="YYYY-MM-DD" Required="true" DefaultValue="" ExampleValue=""><![CDATA[출발일]]></Item>
+		<Item Param="TTL" Type="datetime" format="YYYY-MM-DD" Required="true" DefaultValue="" ExampleValue=""><![CDATA[발권마감일]]></Item>
+		<Item Param="FareInfos" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요금규정 XML내용 중 fareInfos Node Data]]></Item>
+	</Items>
+	<XmlSample>
+		<FareInfos>
+			<![CDATA[
+      <fareInfos ulc="EN">
+				<fareInfo ref="1">
+					<item name="Origin">SEL</item>
+					<item name="Destination">MNL</item>
+					<item name="FareCategory">
+					</item>
+					<item name="FareClass">
+					</item>
+					<item name="AdvanceAfter">
+					</item>
+					<item name="AdvanceBefore">
+					</item>
+					<item name="MinStay">
+					</item>
+					<item name="MaxStay">
+					</item>
+					<item name="FareType">
+					</item>
+					<item name="BookingClass">
+					</item>
+					<item name="RuleNumber">S046</item>
+					<item name="TariffId">8</item>
+				</fareInfo>
+				<fareInfo ref="2">
+					<item name="Origin">MNL</item>
+					<item name="Destination">SEL</item>
+					<item name="FareCategory">
+					</item>
+					<item name="FareClass">
+					</item>
+					<item name="AdvanceAfter">
+					</item>
+					<item name="AdvanceBefore">
+					</item>
+					<item name="MinStay">
+					</item>
+					<item name="MaxStay">
+					</item>
+					<item name="FareType">
+					</item>
+					<item name="BookingClass">
+					</item>
+					<item name="RuleNumber">S046</item>
+					<item name="TariffId">8</item>
+				</fareInfo>
+			</fareInfos>
+      ]]>
+		</FareInfos>
+	</XmlSample>
+</Help>

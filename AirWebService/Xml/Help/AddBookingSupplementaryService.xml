@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[부가서비스 예약]]></Summary>
+	<Return Type="XmlElement"><![CDATA[예약 조회 결과 XML]]></Return>
+	<Items SubTitle="">
+    <Item Param="SNM" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[사이트번호]]></Item>
+    <Item Param="ANM" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[거래처번호]]></Item>
+    <Item Param="RID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[예약자 PTID]]></Item>
+    <Item Param="RQT" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청단말기(WEB/MOBILEWEB/MOBILEAPP/CRS/MODEWARE)]]></Item>
+    <Item Param="RQU" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청URL]]></Item>
+    <Item Param="OID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[모두투어 주문번호]]></Item>
+    <Item Param="SXL" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[선택한 여정을 <supplementaryService>~<supplementaryService>노드에 삽입한 XmlNode]]></Item>
+	</Items>
+	<XmlSample>
+		<SXL>
+			<![CDATA[
+      <supplementaryService>
+				<service code="3">
+          <name>긴급응대서비스</name>
+          <price amount="0" cost="5000" discount="5000">
+            <eventTitle>오픈이벤트</eventTitle>
+            <eventMessage>오픈 이벤트 기간(2016-03-14 ~ 2016-03-20)에는 모두닷컴(모바일) 예약에 한해서 부가서비스를 무료로 제공</eventMessage>
+          </price>
+          <summary>항공권 구매자가 여행중 긴급상황(항공변경 및 의료관련) 발생시 전화하여 안내 받을 수 있는 서비스</summary>
+          <description>항공권 구매자가 여행중 긴급상황(항공변경 및 의료관련) 발생시 전화하여 안내 받을 수 있는 서비스</description>
+        </service>
+        <service code="7">
+          <name>컨시어지서비스</name>
+          <price amount="0" cost="10000" discount="0"></price>
+          <summary></summary>
+          <description></description>
+        </service>
+			</supplementaryService>
+      ]]>
+		</SXL>
+	</XmlSample>
+</Help>

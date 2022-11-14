@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[운임 + Availability 동시조회]]></Summary>
+	<Return Type="XmlElement"><![CDATA[예약 가능한 항공편 및 운임 결과 XML]]></Return>
+	<Items SubTitle="">
+		<Item Param="SNM" Type="number" format="" Required="true" DefaultValue="" ExampleValue="2"><![CDATA[웹사이트 번호]]></Item>
+		<Item Param="SAC" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[항공사 코드(하나 이상일 경우 콤마로 구분)]]></Item>
+		<Item Param="DLC" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[출발지 공항 코드]]></Item>
+		<Item Param="ALC" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[도착지 공항 코드]]></Item>
+		<Item Param="ROT" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[구간(OW:편도, RT:왕복, DT:출도착이원구간, MD:다구간)]]></Item>
+		<Item Param="DTD" Type="datetime" format="YYYYMMDD" Required="true" DefaultValue="" ExampleValue=""><![CDATA[출발일]]></Item>
+		<Item Param="ARD" Type="datetime" format="YYYYMMDD" Required="true" DefaultValue="" ExampleValue=""><![CDATA[도착일(오픈일 경우 공백 또는 7D/14D/45D/1M/2M/3M/6M/300D 중 하나 입력)]]></Item>
+		<Item Param="OPN" Type="string" format="YN" Required="true" DefaultValue="" ExampleValue=""><![CDATA[오픈여부]]></Item>
+    <Item Param="FLD" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[여정추가옵션(C:Connecting Service, D:Direct Service, N:Non-Stop Service, OV:Overnight not allowed)]]></Item>
+    <Item Param="CCD" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[캐빈 클래스(Y:Economic, M:Economic Standard, W:Economic Premium, C:Business, F:First/Supersonic)]]></Item>
+    <Item Param="ACQ" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[여정의 출발/도착지 코드에 대해 도시 또는 공항코드 여부 지정(A:공항, C:도시, 공백:자동인식)]]></Item>
+    <Item Param="PTC" Type="string[]" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[탑승객 타입 코드(ADT:성인, CHD:소아, INF:유아, DIS:장애인, STU:학생, SRC:경로, LBR:근로자)(단, 첫번째 배열에는 ADT, DIS, STU, SRC, LBR만 가능)]]></Item>
+    <Item Param="NOP" Type="number[]" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[탑승객 수]]></Item>
+    <Item Param="NRR" Type="number" format="" Required="true" DefaultValue="250" ExampleValue=""><![CDATA[응답 결과 수]]></Item>
+    <Item Param="RQT" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청단말기(WEB/MOBILEWEB/MOBILEAPP/CRS/MODEWARE)]]></Item>
+		<Item Param="FTX" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[free text]]></Item>
+	</Items>
+	<additionalExplanation>
+		<![CDATA[
+		# 여정 설정에 따른 출발지, 도착지, 출발일, 도착일, 오픈 설정방법
+
+		1. 편도(OW)
+			- 출발지(DLC), 도착지(ALC), 출발일(DTD) 필수 입력
+			- 오픈없음(OPN = 'N')
+
+		2. 왕복(RT)
+			① 오픈이 아닐 경우(OPN = 'N')
+				- 출발지(DLC), 도착지(ALC), 출발일(DTD), 도착일(ARD) 필수 입력
+			② 오픈일 경우(OPN = 'Y')
+				- 출발지(DLC), 도착지(ALC), 출발일(DTD) 필수 입력
+				- 도착일(ARD)은 7D(최대 7일), 14D(최대 14일), 45D(최대 45일), 1M(최대 1개월), 2M(최대 2개월), 3M(최대 3개월), 6M(최대 6개월), 300D(최대 1년) 중 선택 입력
+				  도착일(ARD)의 값이 공백일 경우 300D(최대 1년)로 기본 셋팅
+		
+		3. 출도착이원구간(DT)
+			① 오픈이 아닐 경우(OPN = 'N')
+				- 출발지(DLC), 도착지(ALC)는  콤마(,)로 구분하여 입력
+				- 위 각 항목은 2개의 공항 입력
+				- 출발일(DTD)은 첫번째 여정의 출발일 입력
+				- 도착일(ARD)은 두번째 여정의 출발일 입력
+			② 오픈일 경우(OPN = 'Y')
+				- 출발지(DLC), 도착지(ALC)는  콤마(,)로 구분하여 입력
+				- 위 각 항목은 2개의 공항 입력
+				- 출발일(DTD)은 첫번째 여정의 출발일 입력
+				- 도착일(ARD)은 7D(최대 7일), 14D(최대 14일), 45D(최대 45일), 1M(최대 1개월), 2M(최대 2개월), 3M(최대 3개월), 6M(최대 6개월), 300D(최대 1년) 중 선택 입력
+				  도착일(ARD)의 값이 공백일 경우 300D(최대 1년)로 기본 셋팅
+
+		4. 다구간(MD)
+			- 출발지(DLC), 도착지(ALC), 출발일(DTD)은 콤마(,)로 구분하여 입력
+			- 위 각 항목은 3개의 공항 및 날짜 입력, 단 최소 한 구간은 출도착지가 동일해야 함
+			- 도착일(ARD)은 공백
+			- 오픈없음(OPN = 'N')
+		]]>
+	</additionalExplanation>
+</Help>

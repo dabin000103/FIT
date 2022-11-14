@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GetReservationRQ xmlns="http://webservices.sabre.com/pnrbuilder/v1_19" xmlns:ns2="http://services.sabre.com/res/or/v1_14" Version="1.19.0">
+  <Locator></Locator>
+  <RequestType>Stateful</RequestType>
+  <ReturnOptions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReturnOptions">
+    <SubjectAreas>
+      <SubjectArea>AIR_CABIN</SubjectArea>
+      <SubjectArea>AFAX</SubjectArea>
+      <SubjectArea>ANCILLARY</SubjectArea>
+      <SubjectArea>BSGPROCESSING</SubjectArea>
+      <SubjectArea>DSS</SubjectArea>
+      <SubjectArea>FQTV</SubjectArea>
+      <SubjectArea>GFAX</SubjectArea>
+      <SubjectArea>ITINERARY</SubjectArea>
+      <SubjectArea>NAME</SubjectArea>
+      <SubjectArea>PASSENGERDETAILS</SubjectArea>
+      <SubjectArea>PHONE</SubjectArea>
+      <SubjectArea>PRICE_QUOTE</SubjectArea>
+      <SubjectArea>PRERESERVEDSEAT</SubjectArea>
+      <SubjectArea>REMARKS</SubjectArea>
+      <SubjectArea>TICKETING</SubjectArea>
+    </SubjectAreas>
+  </ReturnOptions>
+</GetReservationRQ>

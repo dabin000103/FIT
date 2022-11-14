@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResponseDetails version="1.0.0" timeStamp="">
+	<rule ref="">
+		<item ref="">
+			<name></name>
+			<message></message>
+		</item>
+	</rule>
+	<fareInfos gds="" ulc="">
+		<fareInfo ref="">
+			<item name="Origin"></item>
+			<item name="Destination"></item>
+			<item name="FareCategory"></item>
+			<item name="FareClass"></item>
+			<item name="AdvanceAfter"></item>
+			<item name="AdvanceBefore"></item>
+			<item name="MinStay"></item>
+			<item name="MaxStay"></item>
+			<item name="FareType"></item>
+			<item name="BookingClass"></item>
+			<item name="RuleNumber"></item>
+			<item name="TariffId"></item>
+		</fareInfo>
+	</fareInfos>
+</ResponseDetails>

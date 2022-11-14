@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+	<identification>
+		<topas>
+			<agentCode>SC9</agentCode>
+			<agentId>SC9</agentId>
+			<passwd>0000000000</passwd>
+			<branchCode>00</branchCode>
+		</topas>
+		<abacus>
+			<userName>7288</userName>
+			<password>mtour11</password>
+			<pcc>K7M8</pcc>
+			<clientUrl>SWSSession.abacus.com.sg</clientUrl>
+		</abacus>
+		<amadeus>
+			<OfficeId>SELK138AB</OfficeId>
+		</amadeus>
+	</identification>
+</config>

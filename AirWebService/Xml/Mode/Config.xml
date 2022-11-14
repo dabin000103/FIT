@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Config version="1.0.0" timeStamp="">
+	<dateInfo>
+		<systemDate>
+			<date></date>
+			<time></time>
+		</systemDate>
+		<userDate>
+			<startDate></startDate>
+		</userDate>
+		<unAvailability use="false">
+			<gds code="">
+				<from>
+					<date></date>
+					<time></time>
+				</from>
+				<to>
+					<date></date>
+					<time></time>
+				</to>
+				<message><![CDATA[]]></message>
+			</gds>
+		</unAvailability>
+	</dateInfo>
+	<customerCenter>
+		<company><![CDATA[모두투어 해외항공 예약센터]]></company>
+		<tel>1544-5252</tel>
+		<info><![CDATA[평일 09:00 ~ 18:00 (항공권 문의는 평일만 가능합니다.)]]></info>
+	</customerCenter>
+</Config>

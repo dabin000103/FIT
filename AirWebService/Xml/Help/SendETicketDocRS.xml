@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[탑승객별 E-Ticket 이메일 발송]]></Summary>
+	<Return Type="string"><![CDATA[]]></Return>
+	<Items SubTitle="">
+		<Item Param="OID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[모두투어 주문번호]]></Item>
+		<Item Param="PID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[예약자번호(PTID)]]></Item>
+		<Item Param="PaxName" Type="string" format="" Required="true" DefaultValue="" ExampleValue="HONG/GILDONGMR"><![CDATA[탑승객명]]></Item>
+    <Item Param="TicketNumber" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[티켓번호]]></Item>
+    <Item Param="EMail" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[ETicket을 받을 이메일주소]]></Item>
+	</Items>
+</Help>

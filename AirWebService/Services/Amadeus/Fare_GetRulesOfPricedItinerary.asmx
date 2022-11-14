@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="Fare_GetRulesOfPricedItinerary.asmx.cs" Class="AirWebService.GetRulesOfPricedItinerary.AmadeusWebService" %>

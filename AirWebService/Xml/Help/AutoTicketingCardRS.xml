@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[자동발권 가능 카드리스트 조회]]></Summary>
+	<Return Type="XmlElement"><![CDATA[카드리스트 XML]]></Return>
+	<Items SubTitle="">
+		<Item Param="AirCode" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[항공사코드]]></Item>
+	</Items>
+</Help>

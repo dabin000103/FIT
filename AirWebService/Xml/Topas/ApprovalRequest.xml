@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ApprovalRequestService xmlns="http://TOPAS_GPS_Service_Library">
+  <generalinfo>
+    <Authn>MPI</Authn>
+    <Channel>4</Channel>
+    <Currency>KRW</Currency>
+    <DomIntTyp>I</DomIntTyp>
+    <ErrLang>ENG</ErrLang>
+    <IataNo>17301756</IataNo>
+    <CcInsMths>00</CcInsMths>
+    <OfcId>SELK138AB</OfcId>
+    <PayDstn>VAN</PayDstn>
+    <ReqAmt></ReqAmt>
+    <ReqNoTyp>1</ReqNoTyp>
+    <ReqNo></ReqNo>
+    <ReqSys>IBE</ReqSys>
+    <Sign>AB1234</Sign>
+    <ApvStatus>A</ApvStatus>
+    <Tid>K0</Tid>
+    <PayMthd>C</PayMthd>
+    <PnrRloc></PnrRloc>
+    <UserId>MODETOUR</UserId>
+  </generalinfo>
+  <authinfo>
+    <cavv></cavv>
+    <halbuinfo></halbuinfo>
+    <eci></eci>
+    <xid></xid>
+    <kvp_card_prefix></kvp_card_prefix>
+    <kvp_cardcode></kvp_cardcode>
+    <kvp_encdata></kvp_encdata>
+    <kvp_quota></kvp_quota>
+    <kvp_sessionkey></kvp_sessionkey>
+  </authinfo>
+</ApprovalRequestService>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[기본셋팅정보]]></Summary>
+	<Return Type="XmlElement"><![CDATA[사이트별 기본 셋팅 정보 XML]]></Return>
+	<Items SubTitle="">
+		<Item Param="SNM" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[사이트번호]]></Item>
+	</Items>
+</Help>

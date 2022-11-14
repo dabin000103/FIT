@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Queue_RemoveItem>
+	<removalOption>
+		<selectionDetails>
+			<option>QRP</option>
+		</selectionDetails>
+	</removalOption>
+	<targetDetails>
+		<targetOffice>
+			<sourceType>
+				<sourceQualifier1>4</sourceQualifier1>
+			</sourceType>
+			<originatorDetails>
+				<inHouseIdentification1>SELK138AB</inHouseIdentification1>
+			</originatorDetails>
+		</targetOffice>
+		<queueNumber>
+			<queueDetails>
+				<number></number>
+			</queueDetails>
+		</queueNumber>
+		<categoryDetails>
+			<subQueueInfoDetails>
+				<identificationType>C</identificationType>
+				<itemNumber>0</itemNumber>
+        <itemDescription></itemDescription>
+			</subQueueInfoDetails>
+		</categoryDetails>
+    <placementDate>
+      <timeMode></timeMode>
+    </placementDate>
+		<recordLocator>
+			<reservation>
+				<controlNumber></controlNumber>
+			</reservation>
+		</recordLocator>
+	</targetDetails>
+</Queue_RemoveItem>

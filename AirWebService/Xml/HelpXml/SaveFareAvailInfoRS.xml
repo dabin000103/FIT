@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--## 선택운임 및 여정 임시저장 정보 ##-->
+<!--Repeat:1-->
+<!--@version:(필수)(number) 버전정보-->
+<!--@timeStamp:(필수)(datetime)(YYYY-MM-DD HH:MM) 출력일시-->
+<ResponseDetails version="1.0.0" timeStamp="">
+	<!--기본정보-->
+	<!--Repeat:1-->
+	<selectInfo>
+		<!--사이트번호-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(number) 웹사이트번호-->
+		<siteNo></siteNo>
+		<!--항공운임 고유번호-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(number) 항공운임 고유번호-->
+		<uniqueId></uniqueId>
+		<!--항공운임번호-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(number) 항공운임번호-->
+		<fareId></fareId>
+	</selectInfo>
+	<!--여정정보-->
+	<!--Repeat:1-->
+	<itinerary></itinerary>
+	<!--요금정보-->
+	<!--Repeat:1-->
+	<priceIndex></priceIndex>
+	<!--규정정보-->
+	<!--Repeat:1-->
+	<rules></rules>
+</ResponseDetails>

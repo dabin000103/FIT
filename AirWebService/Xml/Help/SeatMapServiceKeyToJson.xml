@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[실시간좌석배정 인증키(토파스 ASP서비스용)]]></Summary>
+	<Return Type="JSON|STRING"><![CDATA[실시간좌석배정 인증키 결과 JSON 또는 STRING]]></Return>
+	<Items SubTitle="">
+		<Item Param="SNM" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[사이트번호]]></Item>
+		<Item Param="PNR" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[PNR번호]]></Item>
+		<Item Param="CTU" Type="string" format="Y|N" Required="false" DefaultValue="N" ExampleValue=""><![CDATA[Y:JSON으로 출력, N:JSON형태의 STRING으로 출력]]></Item>
+	</Items>
+</Help>

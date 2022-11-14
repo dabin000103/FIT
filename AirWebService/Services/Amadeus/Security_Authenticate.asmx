@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="Security_Authenticate.asmx.cs" Class="AirWebService.Authenticate.AmadeusWebService" %>

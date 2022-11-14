@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OTA_AirBookRQ xmlns="http://webservices.sabre.com/sabreXML/2003/07" EchoToken="String" TimeStamp="2001-12-17T09:30:47-05:00" Target="Production" Version="2003A.TsabreXML1.6.1" SequenceNmbr="1" PrimaryLangID="en-us" AltLangID="en-us">
+	<AirItinerary>
+		<OriginDestinationOptions>
+			<OriginDestinationOption>
+				<FlightSegment DepartureDateTime="" ArrivalDateTime="" FlightNumber="" ResBookDesigCode="" ActionCode="" NumberInParty="">
+					<DepartureAirport LocationCode="" CodeContext="IATA"/>
+					<ArrivalAirport LocationCode="" CodeContext="IATA"/>
+					<OperatingAirline Code=""/>
+					<MarketingAirline Code=""/>
+					<MarriageGrp Ind="false"/>
+				</FlightSegment>
+			</OriginDestinationOption>
+		</OriginDestinationOptions>
+	</AirItinerary>
+</OTA_AirBookRQ>

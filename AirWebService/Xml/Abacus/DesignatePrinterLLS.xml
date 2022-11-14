@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DesignatePrinterRQ Version="2.0.1" xmlns="http://webservices.sabre.com/sabreXML/2011/10">
+  <Printers>
+    <Hardcopy LNIATA="031AE4"/>
+    <InvoiceItinerary LNIATA="031AE4"/>
+    <Ticket CountryCode="KR"/>
+  </Printers>
+</DesignatePrinterRQ>

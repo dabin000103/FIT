@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://mailservice.modetour.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://mailservice.modetour.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://mailservice.modetour.com/">
+      <s:element name="EMailSendOnly1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MIC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CPN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ToAddr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ToName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Subject" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BodyText" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BodyHtml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BodyUrl" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EMailSendOnly1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EMailSendOnly1Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EMailSendOnly2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MIC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CPN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ToInfo">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="Subject" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BodyText" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BodyHtml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BodyUrl" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EMailSendOnly2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EMailSendOnly2Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EMailSend">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MIC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CPN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FromAddr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FromName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ToAddr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ToName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Subject" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BodyText" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BodyHtml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BodyUrl" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EMailSendResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EMailSendResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="EMailSendOnly1SoapIn">
+    <wsdl:part name="parameters" element="tns:EMailSendOnly1" />
+  </wsdl:message>
+  <wsdl:message name="EMailSendOnly1SoapOut">
+    <wsdl:part name="parameters" element="tns:EMailSendOnly1Response" />
+  </wsdl:message>
+  <wsdl:message name="EMailSendOnly2SoapIn">
+    <wsdl:part name="parameters" element="tns:EMailSendOnly2" />
+  </wsdl:message>
+  <wsdl:message name="EMailSendOnly2SoapOut">
+    <wsdl:part name="parameters" element="tns:EMailSendOnly2Response" />
+  </wsdl:message>
+  <wsdl:message name="EMailSendSoapIn">
+    <wsdl:part name="parameters" element="tns:EMailSend" />
+  </wsdl:message>
+  <wsdl:message name="EMailSendSoapOut">
+    <wsdl:part name="parameters" element="tns:EMailSendResponse" />
+  </wsdl:message>
+  <wsdl:message name="EMailSendOnly1HttpGetIn">
+    <wsdl:part name="MIC" type="s:string" />
+    <wsdl:part name="CPN" type="s:string" />
+    <wsdl:part name="ToAddr" type="s:string" />
+    <wsdl:part name="ToName" type="s:string" />
+    <wsdl:part name="Subject" type="s:string" />
+    <wsdl:part name="BodyText" type="s:string" />
+    <wsdl:part name="BodyHtml" type="s:string" />
+    <wsdl:part name="BodyUrl" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EMailSendOnly1HttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="EMailSendHttpGetIn">
+    <wsdl:part name="MIC" type="s:string" />
+    <wsdl:part name="CPN" type="s:string" />
+    <wsdl:part name="FromAddr" type="s:string" />
+    <wsdl:part name="FromName" type="s:string" />
+    <wsdl:part name="ToAddr" type="s:string" />
+    <wsdl:part name="ToName" type="s:string" />
+    <wsdl:part name="Subject" type="s:string" />
+    <wsdl:part name="BodyText" type="s:string" />
+    <wsdl:part name="BodyHtml" type="s:string" />
+    <wsdl:part name="BodyUrl" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EMailSendHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="EMailSendOnly1HttpPostIn">
+    <wsdl:part name="MIC" type="s:string" />
+    <wsdl:part name="CPN" type="s:string" />
+    <wsdl:part name="ToAddr" type="s:string" />
+    <wsdl:part name="ToName" type="s:string" />
+    <wsdl:part name="Subject" type="s:string" />
+    <wsdl:part name="BodyText" type="s:string" />
+    <wsdl:part name="BodyHtml" type="s:string" />
+    <wsdl:part name="BodyUrl" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EMailSendOnly1HttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="EMailSendHttpPostIn">
+    <wsdl:part name="MIC" type="s:string" />
+    <wsdl:part name="CPN" type="s:string" />
+    <wsdl:part name="FromAddr" type="s:string" />
+    <wsdl:part name="FromName" type="s:string" />
+    <wsdl:part name="ToAddr" type="s:string" />
+    <wsdl:part name="ToName" type="s:string" />
+    <wsdl:part name="Subject" type="s:string" />
+    <wsdl:part name="BodyText" type="s:string" />
+    <wsdl:part name="BodyHtml" type="s:string" />
+    <wsdl:part name="BodyUrl" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EMailSendHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:portType name="MailServiceSoap">
+    <wsdl:operation name="EMailSendOnly1">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">이메일 발송(발신전용) - 수신자정보 String Type</wsdl:documentation>
+      <wsdl:input message="tns:EMailSendOnly1SoapIn" />
+      <wsdl:output message="tns:EMailSendOnly1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EMailSendOnly2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">이메일 발송(발신전용) - 수신자정보 XML Type</wsdl:documentation>
+      <wsdl:input message="tns:EMailSendOnly2SoapIn" />
+      <wsdl:output message="tns:EMailSendOnly2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EMailSend">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">이메일 발송</wsdl:documentation>
+      <wsdl:input message="tns:EMailSendSoapIn" />
+      <wsdl:output message="tns:EMailSendSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="MailServiceHttpGet">
+    <wsdl:operation name="EMailSendOnly1">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">이메일 발송(발신전용) - 수신자정보 String Type</wsdl:documentation>
+      <wsdl:input message="tns:EMailSendOnly1HttpGetIn" />
+      <wsdl:output message="tns:EMailSendOnly1HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EMailSend">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">이메일 발송</wsdl:documentation>
+      <wsdl:input message="tns:EMailSendHttpGetIn" />
+      <wsdl:output message="tns:EMailSendHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="MailServiceHttpPost">
+    <wsdl:operation name="EMailSendOnly1">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">이메일 발송(발신전용) - 수신자정보 String Type</wsdl:documentation>
+      <wsdl:input message="tns:EMailSendOnly1HttpPostIn" />
+      <wsdl:output message="tns:EMailSendOnly1HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EMailSend">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">이메일 발송</wsdl:documentation>
+      <wsdl:input message="tns:EMailSendHttpPostIn" />
+      <wsdl:output message="tns:EMailSendHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MailServiceSoap" type="tns:MailServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="EMailSendOnly1">
+      <soap:operation soapAction="http://mailservice.modetour.com/EMailSendOnly1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EMailSendOnly2">
+      <soap:operation soapAction="http://mailservice.modetour.com/EMailSendOnly2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EMailSend">
+      <soap:operation soapAction="http://mailservice.modetour.com/EMailSend" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MailServiceSoap12" type="tns:MailServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="EMailSendOnly1">
+      <soap12:operation soapAction="http://mailservice.modetour.com/EMailSendOnly1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EMailSendOnly2">
+      <soap12:operation soapAction="http://mailservice.modetour.com/EMailSendOnly2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EMailSend">
+      <soap12:operation soapAction="http://mailservice.modetour.com/EMailSend" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MailServiceHttpGet" type="tns:MailServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="EMailSendOnly1">
+      <http:operation location="/EMailSendOnly1" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EMailSend">
+      <http:operation location="/EMailSend" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MailServiceHttpPost" type="tns:MailServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="EMailSendOnly1">
+      <http:operation location="/EMailSendOnly1" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EMailSend">
+      <http:operation location="/EMailSend" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MailService">
+    <wsdl:port name="MailServiceSoap" binding="tns:MailServiceSoap">
+      <soap:address location="http://mailservice.modetour.com/MailService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MailServiceSoap12" binding="tns:MailServiceSoap12">
+      <soap12:address location="http://mailservice.modetour.com/MailService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MailServiceHttpGet" binding="tns:MailServiceHttpGet">
+      <http:address location="http://mailservice.modetour.com/MailService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MailServiceHttpPost" binding="tns:MailServiceHttpPost">
+      <http:address location="http://mailservice.modetour.com/MailService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PNR_AddMultiElements>
+  <pnrActions>
+    <optionCode>0</optionCode>
+  </pnrActions>
+  <dataElementsMaster>
+    <marker1/>
+    <dataElementsIndiv>
+      <elementManagementData>
+        <reference>
+          <qualifier>OT</qualifier>
+          <number>1</number>
+        </reference>
+        <segmentName>FT</segmentName>
+      </elementManagementData>
+      <tourCode>
+        <passengerType>PAX</passengerType>
+        <freeFormatTour>
+          <indicator>FF</indicator>
+          <freetext></freetext>
+        </freeFormatTour>
+      </tourCode>
+    </dataElementsIndiv>
+  </dataElementsMaster>
+</PNR_AddMultiElements>

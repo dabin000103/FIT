@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[항공운임조회]]></Summary>
+	<Return Type="XmlElement"><![CDATA[예약 조회 결과 XML]]></Return>
+	<Items SubTitle="">
+		<Item Param="SNM" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[사이트번호]]></Item>
+		<Item Param="FXL" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요금조회 결과 중 선택된 <priceIndex>~</priceIndex> XmlNode(segGroup는 제외)]]></Item>
+		<Item Param="SXL" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[선택한 여정을 <itinerary>~<itinerary>노드에 삽입한 XmlNode]]></Item>
+	</Items>
+	<XmlSample>
+		<FXL>
+			<![CDATA[
+      <priceIndex ptc="ADT" ref="2001">
+				<summary price="406900" fare="230000" disFare="230000" tax="56500" fsc="120400" tasf="0" pvc="VN" mas="1Y" ttl="2014-10-01" ucf="N" ntf="N" />
+				<paxFareGroup>
+					<paxFare ptc="ADT">
+						<amount fare="230000" disFare="230000" tax="56500" fsc="120400" />
+						<segFareGroup>
+							<segFare ref="1">
+								<fare bpt="N" mas="">
+									<cabin rbd="R" cabin="M" avl="4" />
+									<fare basis="RL1YKRF" ptc="ADT" tkd="">
+										<fareType>RN</fareType>
+										<fareType>MSP</fareType>
+										<fareType>NTF</fareType>
+									</fare>
+								</fare>
+								<fare bpt="Y" mas="1Y">
+									<cabin rbd="L" cabin="M" avl="4" />
+									<fare basis="RL1YKRF" ptc="ADT" tkd="">
+										<fareType>RN</fareType>
+										<fareType>MSP</fareType>
+										<fareType>NTF</fareType>
+									</fare>
+								</fare>
+							</segFare>
+							<segFare ref="2">
+								<fare bpt="N" mas="">
+									<cabin rbd="L" cabin="M" avl="4" />
+									<fare basis="NL1YKRF" ptc="ADT" tkd="">
+										<fareType>RN</fareType>
+										<fareType>MSP</fareType>
+										<fareType>NTF</fareType>
+									</fare>
+								</fare>
+								<fare bpt="Y" mas="1Y">
+									<cabin rbd="N" cabin="M" avl="4" />
+									<fare basis="NL1YKRF" ptc="ADT" tkd="">
+										<fareType>RN</fareType>
+										<fareType>MSP</fareType>
+										<fareType>NTF</fareType>
+									</fare>
+								</fare>
+							</segFare>
+						</segFareGroup>
+						<traveler>
+							<ref>1</ref>
+						</traveler>
+					</paxFare>
+				</paxFareGroup>
+				<fareMessage>
+					<fare>
+						<pricingMessage>
+							<freeTextQualification>
+								<textSubjectQualifier>PEN</textSubjectQualifier>
+								<informationType>73</informationType>
+							</freeTextQualification>
+							<description>PENALTY APPLIES</description>
+						</pricingMessage>
+						<monetaryInformation>
+							<monetaryDetail>
+								<amountType>MT</amountType>
+								<amount>50000</amount>
+								<currency>KRW</currency>
+							</monetaryDetail>
+						</monetaryInformation>
+					</fare>
+					<fare>
+						<pricingMessage>
+							<freeTextQualification>
+								<textSubjectQualifier>LTD</textSubjectQualifier>
+								<informationType>41</informationType>
+							</freeTextQualification>
+							<description>LAST TKT DTE</description>
+							<description>01OCT14</description>
+							<description> - DATE OF ORIGIN</description>
+						</pricingMessage>
+					</fare>
+					<fare>
+						<pricingMessage>
+							<freeTextQualification>
+								<textSubjectQualifier>APM</textSubjectQualifier>
+							</freeTextQualification>
+							<description>TKT NOT AUTHORIZED, PRICE IN OTHER OFFICE TO TKT</description>
+						</pricingMessage>
+					</fare>
+				</fareMessage>
+			</priceIndex>
+      ]]>
+		</FXL>
+		<SXL>
+			<![CDATA[
+      <itinerary>
+				<segGroup ref="2001" eft="0810" mjc="VN" cds="N">
+					<seg dlc="ICN" alc="SGN" ddt="2014-10-01 10:15" ardt="2014-10-01 13:30" mcc="VN" occ="VN" fln="409" eqt="332" stn="0" etc="Y" aic="LCA" />
+					<seg dlc="SGN" alc="SIN" ddt="2014-10-01 14:30" ardt="2014-10-01 17:25" mcc="VN" occ="VN" fln="655" eqt="321" stn="0" etc="Y" aic="LCA" />
+				</segGroup>
+				<segGroup ref="2001" eft="0945" mjc="VN" cds="N">
+					<seg dlc="SIN" alc="SGN" ddt="2014-10-10 20:25" ardt="2014-10-10 21:30" mcc="VN" occ="VN" fln="658" eqt="321" stn="0" etc="Y" aic="LCA" />
+					<seg dlc="SGN" alc="ICN" ddt="2014-10-11 00:05" ardt="2014-10-11 07:10" mcc="VN" occ="VN" fln="406" eqt="321" stn="0" etc="Y" aic="LCA" />
+				</segGroup>
+			</itinerary>
+      ]]>
+		</SXL>
+	</XmlSample>
+</Help>

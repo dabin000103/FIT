@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ApprovalHistoryRequestService>
+  <historyinfo>
+    <OfcId></OfcId>
+    <IataNo></IataNo>
+    <ApvNo></ApvNo>
+    <ReqNo></ReqNo>
+    <PnrNmrlNo></PnrNmrlNo>
+    <Sign></Sign>
+    <TktNo></TktNo>
+    <InqStrDT></InqStrDT>
+    <InqEndDT></InqEndDT>
+    <NxtCnt></NxtCnt>
+  </historyinfo>
+</ApprovalHistoryRequestService>

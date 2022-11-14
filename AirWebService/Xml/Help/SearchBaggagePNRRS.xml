@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[무료수화물 조회(PNR 이용)]]></Summary>
+	<Return Type="XmlElement"><![CDATA[무료수화물 정보 XML]]></Return>
+	<Items SubTitle="">
+		<Item Param="SNM" Type="number" format="" Required="true" DefaultValue="" ExampleValue="2"><![CDATA[웹사이트 번호]]></Item>
+    <Item Param="RQT" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청단말기(WEB/MOBILEWEB/MOBILEAPP/CRS/MODEWARE)]]></Item>
+		<Item Param="PNR" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[PNR]]></Item>
+	</Items>
+</Help>

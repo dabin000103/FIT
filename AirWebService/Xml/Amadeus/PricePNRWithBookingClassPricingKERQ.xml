@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Fare_PricePNRWithBookingClass>
+  <pricingOptionGroup>
+    <pricingOptionKey>
+      <pricingOptionKey>SEL</pricingOptionKey>
+    </pricingOptionKey>
+    <paxSegTstReference>
+      <referenceDetails>
+        <type>P</type>
+        <value>1</value>
+      </referenceDetails>
+    </paxSegTstReference>
+  </pricingOptionGroup>
+  <pricingOptionGroup>
+    <pricingOptionKey>
+      <pricingOptionKey>RU</pricingOptionKey>
+    </pricingOptionKey>
+  </pricingOptionGroup>
+  <pricingOptionGroup>
+    <pricingOptionKey>
+      <pricingOptionKey>RP</pricingOptionKey>
+    </pricingOptionKey>
+  </pricingOptionGroup>
+  <pricingOptionGroup>
+    <pricingOptionKey>
+      <pricingOptionKey>RLI</pricingOptionKey>
+    </pricingOptionKey>
+  </pricingOptionGroup>
+  <pricingOptionGroup>
+    <pricingOptionKey>
+      <pricingOptionKey>VC</pricingOptionKey>
+    </pricingOptionKey>
+    <carrierInformation>
+      <companyIdentification>
+        <otherCompany>KE</otherCompany>
+      </companyIdentification>
+    </carrierInformation>
+  </pricingOptionGroup>
+</Fare_PricePNRWithBookingClass>

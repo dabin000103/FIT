@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<paxs>
+	<pax>
+		<no></no>
+		<ptid></ptid>
+		<korName></korName>
+		<engName></engName>
+		<type></type>
+		<title></title>
+		<birthday></birthday>
+		<email></email>
+		<tel></tel>
+		<hp></hp>
+    <memberClass></memberClass>
+    <mileageNumber></mileageNumber>
+    <mileageRequest></mileageRequest>
+	</pax>
+</paxs>

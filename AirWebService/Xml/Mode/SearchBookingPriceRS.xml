@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResponseDetails guid="" version="1.0.0" timeStamp="">
+	<paxFareGroup>
+		<paxFare ptc="" tstRef="">
+			<amount fare="" disFare="" tax="" fsc="" tasf=""></amount>
+			<taxInfo>
+				<tax isoCountry="" amount=""/>
+			</taxInfo>
+		</paxFare>
+	</paxFareGroup>
+	<promotionInfo></promotionInfo>
+</ResponseDetails>

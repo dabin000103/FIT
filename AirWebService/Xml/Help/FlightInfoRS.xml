@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[비행 상세조회 조회]]></Summary>
+	<Return Type="XmlElement"><![CDATA[비행 상세조회 결과 XML]]></Return>
+	<Items SubTitle="">
+		<Item Param="SNM" Type="number" format="" Required="true" DefaultValue="" ExampleValue="2"><![CDATA[웹사이트 번호]]></Item>
+		<Item Param="DTD" Type="datetime" format="YYYYMMDD" Required="true" DefaultValue="" ExampleValue=""><![CDATA[출발일]]></Item>
+		<Item Param="DTT" Type="datetime" format="HHMM" Required="false" DefaultValue="" ExampleValue=""><![CDATA[출발시간]]></Item>
+		<Item Param="DLC" Type="string" format="" Required="true" DefaultValue="" ExampleValue="ICN"><![CDATA[출발지 공항 코드]]></Item>
+		<Item Param="ALC" Type="string" format="" Required="true" DefaultValue="" ExampleValue="BKK"><![CDATA[도착지 공항 코드]]></Item>
+		<Item Param="MCC" Type="string" format="" Required="true" DefaultValue="" ExampleValue="KE"><![CDATA[마케팅항공사 코드]]></Item>
+		<Item Param="OCC" Type="string" format="" Required="false" DefaultValue="" ExampleValue="KE"><![CDATA[운항항공사 코드]]></Item>
+		<Item Param="FLN" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[편명]]></Item>
+	</Items>
+</Help>

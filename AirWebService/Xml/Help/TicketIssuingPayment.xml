@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[자동발권(이니시스 결제)]]></Summary>
+	<Return Type="XmlElement"><![CDATA[]]></Return>
+	<Items SubTitle="">
+    <Item Param="SNM" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[사이트번호]]></Item>
+    <Item Param="OID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[모두투어 주문번호]]></Item>
+		<Item Param="PID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[예약자번호(PTID)]]></Item>
+    <Item Param="RIP" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청자IP]]></Item>
+    <Item Param="RQR" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청자번호(PTID)]]></Item>
+    <Item Param="RQT" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청단말기(WEB/MOBILEWEB/MOBILEAPP/CRS/MODEWARE)]]></Item>
+    <Item Param="API" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[카드구분값 ISP(BC카드, 국민카드 등), MPI(일반) : EV_req_type]]></Item>
+    <Item Param="CPR" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[승인금액]]></Item>
+    <Item Param="PNR" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[항공사PNR ]]></Item>
+    <Item Param="CIP" Type="string" format="" Required="true" DefaultValue="" ExampleValue="00"><![CDATA[할부개월수 : EV_install_period]]></Item>
+    <Item Param="ICD" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[ISP 카드코드(번호) : EV_kvp_cardcode]]></Item>
+    <Item Param="ISK" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[ISP 인증키1 : EV_kvp_sessionkey]]></Item>
+    <Item Param="IED" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[ISP 인증키2 : EV_kvp_encdata]]></Item>
+    <Item Param="MCN" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[MPI 카드번호 : EV_card_no]]></Item>
+    <Item Param="MED" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[MPI 카드 유효기간 : EV_expire_date]]></Item>
+    <Item Param="MCV" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[MPI 인증키1 : EV_cavv]]></Item>
+    <Item Param="MXI" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[MPI 인증키2 : EV_xid]]></Item>
+    <Item Param="MEC" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[MPI 인증키3 : EV_eci]]></Item>
+    <Item Param="ACN" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[결제자명 : EP_user_nm]]></Item>
+    <Item Param="ACT" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[결제자연락처 : EP_user_phone2]]></Item>
+	</Items>
+</Help>

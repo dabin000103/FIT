@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MiniRule_GetFromPricing>
+  <fareRecommendationId>
+    <referenceType>FRN</referenceType>
+    <uniqueReference>ALL</uniqueReference>
+  </fareRecommendationId>
+</MiniRule_GetFromPricing>

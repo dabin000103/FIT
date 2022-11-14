@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--"ReturnHostCommand" is used to specify whether or not to return the native host command in the response message.-->
+<AddRemarkRQ ReturnHostCommand="false" TimeStamp="2012-11-15T14:15:00-06:00" Version="2.1.0" xmlns="http://webservices.sabre.com/sabreXML/2011/10" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<!--Mandatory-->
+	<!--Repeat Factor=0-->
+	<RemarkInfo>
+		<!--Optional-->
+		<!--Repeat Factor=0-->
+		<!--"Type" is used to specify the form of payment type.-->
+		<!--Equivalent Sabre host command: 5-CHECK-->
+		<FOP_Remark Type="CHECK">
+			<!--Optional-->
+			<!--Repeat Factor=0-->
+			<!--"Suppress" is used to specify whether or not to suppress credit card information on an itinerary.-->
+			<!--Suppress equivalent Sabre host command: 5-*VI4123412341234123‡12/12-XN-->
+			<CC_Info Suppress="true">
+				<!--Mandatory-->
+				<!--Repeat Factor=0-->
+				<!--"AirlineCode" is used to specify an airline code to be used in conjuntion with a credit card security code.-->
+				<!--"CardSecurityCode" is used to specify a credit card security code.-->
+				<!--"Code" is used to specify a credit card vendor code.-->
+				<!--"ExpireDate" is used to specify a credit card expiration date.-->
+				<!--"ManualApprovalCode" is used to specify a manual credit card if applicable.-->
+				<!--"Number" is used to specify a credit card number.-->
+				<!--"SuppressApprovalCode" is used to specify to prevent the Sabre system from generating an approval code when the credit card number is input into the system.-->
+				<!--CardSecurityCode example: 5-*VI4123412341234123‡12/12‡1234/YY-->
+				<!--ExtendedPayment example: 5-*VI4123412341234123‡12/12*E12-->
+				<!--ManualApprovalCode example: 5-*VI4123412341234123‡12/12*Z123456-->
+				<!--SuppressApprovalCode example: 5-VI4123412341234123‡12/12-->
+				<PaymentCard AirlineCode="YY" CardSecurityCode="1234" Code="VI" ExpireDate="2012-12" ExtendedPayment="12" ManualApprovalCode="123456" Number="4123412341234123" SuppressApprovalCode="true"/>
+			</CC_Info>
+		</FOP_Remark>
+		<!--Optional-->
+		<!--Repeat Factor=0-->
+		<!--"Date" is used to specify a queue placement date.-->
+		<!--"Date" follows this format: MM-DD-->
+		<!--"PrefatoryInstructionCode" is used to specify the prefatory instruction code.-->
+		<!--"PseudoCityCode" is used to specify a pseudocitycode.-->
+		<!--"QueueIdentifier" is used to specify a queue name/number.-->
+		<!--"Time" is used to specify a queue placement time.  Please note that only whole hours can be specified, i.e. 12:00.-->
+		<!--"Time" follows this format: HH:MM-->
+		<!--Equivalent Sabre host command: 5Q-IPCC121DEC/0600-499/11-->
+		<FutureQueuePlaceRemark Date="12-21" PrefatoryInstructionCode="11" PseudoCityCode="IPCC1" QueueIdentifier="499" Time="06:00"/>
+		<!--Optional-->
+		<!--Repeat Factor=0-999-->
+		<!--"Code" is used to specify an alpha sorting character.-->
+		<!--"SegmentNumber" is used to specify a segment number.-->
+		<!--"Type" is used to specify the type of remark.  Acceptable values are: Alpha-Coded, Client Address, Corporate, Delivery Address, General, Group Name, Hidden, Historical, Invoice, or Itinerary.-->
+		<!--Equivalent Sabre host command: 5TEST REMARK-->
+		<Remark Code="H" SegmentNumber="1" Type="General">
+			<!--Mandatory-->
+			<!--Repeat Factor=0-->
+			<!--"Text" is used to specify remark-related text.-->
+			<Text>TEST REMARK</Text>
+		</Remark>
+	</RemarkInfo>
+</AddRemarkRQ>

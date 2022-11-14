@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Fare_PricePNRWithBookingClass>
+	<pricingOptionGroup>
+		<pricingOptionKey>
+			<pricingOptionKey>RU</pricingOptionKey>
+		</pricingOptionKey>
+		<pricingOptionKey>
+			<pricingOptionKey>RP</pricingOptionKey>
+		</pricingOptionKey>
+	</pricingOptionGroup>
+</Fare_PricePNRWithBookingClass>

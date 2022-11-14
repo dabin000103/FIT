@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Ticket_ProcessEDoc>
+	<msgActionDetails>
+		<messageFunctionDetails>
+			<messageFunction>131</messageFunction>
+		</messageFunctionDetails>
+	</msgActionDetails>
+	<infoGroup>
+		<docInfo>
+			<documentDetails>
+				<number></number>
+			</documentDetails>
+		</docInfo>
+	</infoGroup>
+</Ticket_ProcessEDoc>

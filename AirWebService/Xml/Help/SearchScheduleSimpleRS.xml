@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+  <Summary><![CDATA[Availability 간단 조회]]></Summary>
+  <Return Type="XmlElement"><![CDATA[]]></Return>
+  <Items SubTitle="">
+    <Item Param="SNM" Type="number" format="" Required="true" DefaultValue="" ExampleValue="2"><![CDATA[웹사이트 번호]]></Item>
+    <Item Param="DTD" Type="datetime" format="YYYYMMDD" Required="true" DefaultValue="" ExampleValue=""><![CDATA[출발일]]></Item>
+    <Item Param="DLC" Type="string" format="" Required="true" DefaultValue="" ExampleValue="ICN"><![CDATA[출발지 공항 코드]]></Item>
+    <Item Param="ALC" Type="string" format="" Required="true" DefaultValue="" ExampleValue="BKK"><![CDATA[도착지 공항 코드]]></Item>
+    <Item Param="CLC" Type="string" format="" Required="false" DefaultValue="" ExampleValue="HKG"><![CDATA[경유지 공항 코드(콤마로 구분)]]></Item>
+    <Item Param="SCD" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[서비스 클래스(콤마로 구분)]]></Item>
+    <Item Param="MCC" Type="string" format="" Required="false" DefaultValue="" ExampleValue="KE"><![CDATA[항공사 코드(콤마로 구분)]]></Item>
+    <Item Param="FLN" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[편명(콤마로 구분)]]></Item>
+    <Item Param="RQT" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청단말기(WEB/MOBILEWEB/MOBILEAPP/CRS/MODEWARE)]]></Item>
+  </Items>
+</Help>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OTA_TravelItineraryReadRQ xmlns="http://webservices.sabre.com/sabreXML/2003/07" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" EchoToken="String" TimeStamp="2001-12-17T09:30:47-05:00" Target="Production" Version="2003A.TsabreXML1.15.1" SequenceNmbr="1" PrimaryLangID="en-us" AltLangID="en-us">
+	<!--Optional-->
+	<!--Repeat Factor=0-->
+	<POS>
+		<!--Optional-->
+		<!--Repeat Factor=0-->
+		<!--"PseudoCityCode" is used to pass a 3 or 4 character security ID.-->
+		<Source PseudoCityCode="IPCC"/>
+	</POS>
+	<!--Optional-->
+	<!--Repeat Factor=0-->
+	<TPA_Extensions>
+		<!--Mandatory-->
+		<!--Repeat Factor=0-->
+		<MessagingDetails>
+			<!--Mandatory-->
+			<!--Repeat Factor=0-->
+			<!--"Code" is used to specify an SDS MDR subset code if applicable.-->
+			<MDRSubset Code="PN38"/>
+			<!--Optional-->
+			<!--Repeat Factor=0-->
+			<!--"ApplicationID" is not applicable for external SWS subscribers.-->
+			<ApplicationID>DEF456</ApplicationID>
+		</MessagingDetails>
+	</TPA_Extensions>
+	<!--Mandatory-->
+	<!--Repeat Factor=0-->
+	<!--"ID" is used to specify the record locator.-->
+	<!--The value of "ID" will be 6 alphanumeric, although Sabre only accepts 6 alpha.-->
+	<UniqueID ID="ABC123">
+		<!--Optional-->
+		<!--Repeat Factor=0-->
+		<TPA_Extensions>
+			<!--Optional-->
+			<!--Repeat Factor=0-99-->
+			<!--"Code" is used to specify SDS transaction code definitions-->
+			<!--Acceptable values for Code: GEN, PAX, FNR, FFT, PHN, AFD, GFD, ADR, CDR, ACR, PPT, HRM, FQP, GRM, BSD, AIT, HOT, CAR, TIN, AX1, AX2, TRM, TFS, FOP, WSR, PH4, FPL, FBL, ACC, ITN, ITR, INV, DDR, PTD, SIP.-->
+			<!--Note: to redisplay the contents of a work area (AAA) please pass "PNR".-->
+			<!--Example: JX PNR/ACR*ABC123-->
+			<Transaction Code="PNR"/>
+			<Transaction Code="ACR"/>
+		</TPA_Extensions>
+	</UniqueID>
+</OTA_TravelItineraryReadRQ>

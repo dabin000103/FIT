@@ -1,0 +1,1612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://webservice.modetour.com/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://webservice.modetour.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://webservice.modetour.com/">
+      <s:element name="AirBookCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SNM" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ItemGubun" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SiteCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PathType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AirBookCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AirBookCodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AirBook">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ANM" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="OID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="IBN" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="PID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RQR" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="RQT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AirBookResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AirBookResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AirBookEx">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ANM" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="OID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="IBN" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="PID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RQR" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="RQT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="COOKIE" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AirBookExResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AirBookExResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AirCancel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ANM" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="OID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="IBN" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="PID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RQR" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="RQT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AirCancelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AirCancelResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AirPayment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ANM" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="OID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="IBN" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="PID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="PayCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PayAmount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RQR" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="RQT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="COOKIE" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AirPaymentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AirPaymentResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AirTicket">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ANM" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="OID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="IBN" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="PID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RQR" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="RQT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AirTicketResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AirTicketResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AirTicket2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ANM" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="OID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="IBN" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="PID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RQR" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="RQT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AirTicket2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AirTicket2Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AirPaymentTicket">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ANM" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="OID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="IBN" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="PID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="PayCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PayAmount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RQR" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="RQT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="COOKIE" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AirPaymentTicketResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AirPaymentTicketResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AirBookRefund">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ANM" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="OID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="IBN" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="PID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RQR" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="RQT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AirBookRefundResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AirBookRefundResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AirBookRefundCancel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ANM" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="OID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="IBN" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="PID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RQR" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="RQT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AirBookRefundCancelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AirBookRefundCancelResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AirBookPayCancel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ANM" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="OID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="IBN" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="PID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RQR" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="RQT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AirBookPayCancelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AirBookPayCancelResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AirBookFareModify">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ANM" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="OID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="IBN" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="PID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RQR" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="RQT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AirBookFareModifyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AirBookFareModifyResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AirBookTLModify">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ANM" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="OID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="IBN" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="PID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RQR" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="RQT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AirBookTLModifyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AirBookTLModifyResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AirStatusInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ANM" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="OID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="IBN" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="PID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RQR" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="RQT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AirStatusInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AirStatusInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCouponList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ANM" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="OID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="IBN" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="PID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RQR" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="RQT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCouponListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCouponListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AirBookCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:AirBookCode" />
+  </wsdl:message>
+  <wsdl:message name="AirBookCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:AirBookCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="AirBookSoapIn">
+    <wsdl:part name="parameters" element="tns:AirBook" />
+  </wsdl:message>
+  <wsdl:message name="AirBookSoapOut">
+    <wsdl:part name="parameters" element="tns:AirBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="AirBookExSoapIn">
+    <wsdl:part name="parameters" element="tns:AirBookEx" />
+  </wsdl:message>
+  <wsdl:message name="AirBookExSoapOut">
+    <wsdl:part name="parameters" element="tns:AirBookExResponse" />
+  </wsdl:message>
+  <wsdl:message name="AirCancelSoapIn">
+    <wsdl:part name="parameters" element="tns:AirCancel" />
+  </wsdl:message>
+  <wsdl:message name="AirCancelSoapOut">
+    <wsdl:part name="parameters" element="tns:AirCancelResponse" />
+  </wsdl:message>
+  <wsdl:message name="AirPaymentSoapIn">
+    <wsdl:part name="parameters" element="tns:AirPayment" />
+  </wsdl:message>
+  <wsdl:message name="AirPaymentSoapOut">
+    <wsdl:part name="parameters" element="tns:AirPaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="AirTicketSoapIn">
+    <wsdl:part name="parameters" element="tns:AirTicket" />
+  </wsdl:message>
+  <wsdl:message name="AirTicketSoapOut">
+    <wsdl:part name="parameters" element="tns:AirTicketResponse" />
+  </wsdl:message>
+  <wsdl:message name="AirTicket2SoapIn">
+    <wsdl:part name="parameters" element="tns:AirTicket2" />
+  </wsdl:message>
+  <wsdl:message name="AirTicket2SoapOut">
+    <wsdl:part name="parameters" element="tns:AirTicket2Response" />
+  </wsdl:message>
+  <wsdl:message name="AirPaymentTicketSoapIn">
+    <wsdl:part name="parameters" element="tns:AirPaymentTicket" />
+  </wsdl:message>
+  <wsdl:message name="AirPaymentTicketSoapOut">
+    <wsdl:part name="parameters" element="tns:AirPaymentTicketResponse" />
+  </wsdl:message>
+  <wsdl:message name="AirBookRefundSoapIn">
+    <wsdl:part name="parameters" element="tns:AirBookRefund" />
+  </wsdl:message>
+  <wsdl:message name="AirBookRefundSoapOut">
+    <wsdl:part name="parameters" element="tns:AirBookRefundResponse" />
+  </wsdl:message>
+  <wsdl:message name="AirBookRefundCancelSoapIn">
+    <wsdl:part name="parameters" element="tns:AirBookRefundCancel" />
+  </wsdl:message>
+  <wsdl:message name="AirBookRefundCancelSoapOut">
+    <wsdl:part name="parameters" element="tns:AirBookRefundCancelResponse" />
+  </wsdl:message>
+  <wsdl:message name="AirBookPayCancelSoapIn">
+    <wsdl:part name="parameters" element="tns:AirBookPayCancel" />
+  </wsdl:message>
+  <wsdl:message name="AirBookPayCancelSoapOut">
+    <wsdl:part name="parameters" element="tns:AirBookPayCancelResponse" />
+  </wsdl:message>
+  <wsdl:message name="AirBookFareModifySoapIn">
+    <wsdl:part name="parameters" element="tns:AirBookFareModify" />
+  </wsdl:message>
+  <wsdl:message name="AirBookFareModifySoapOut">
+    <wsdl:part name="parameters" element="tns:AirBookFareModifyResponse" />
+  </wsdl:message>
+  <wsdl:message name="AirBookTLModifySoapIn">
+    <wsdl:part name="parameters" element="tns:AirBookTLModify" />
+  </wsdl:message>
+  <wsdl:message name="AirBookTLModifySoapOut">
+    <wsdl:part name="parameters" element="tns:AirBookTLModifyResponse" />
+  </wsdl:message>
+  <wsdl:message name="AirStatusInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:AirStatusInfo" />
+  </wsdl:message>
+  <wsdl:message name="AirStatusInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:AirStatusInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCouponListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCouponList" />
+  </wsdl:message>
+  <wsdl:message name="GetCouponListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCouponListResponse" />
+  </wsdl:message>
+  <wsdl:message name="AirBookCodeHttpGetIn">
+    <wsdl:part name="SNM" type="s:string" />
+    <wsdl:part name="ItemGubun" type="s:string" />
+    <wsdl:part name="SiteCode" type="s:string" />
+    <wsdl:part name="UserId" type="s:string" />
+    <wsdl:part name="PathType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AirBookCodeHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AirBookHttpGetIn">
+    <wsdl:part name="ANM" type="s:string" />
+    <wsdl:part name="OID" type="s:string" />
+    <wsdl:part name="IBN" type="s:string" />
+    <wsdl:part name="PID" type="s:string" />
+    <wsdl:part name="RQR" type="s:string" />
+    <wsdl:part name="RQT" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AirBookHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="AirBookExHttpGetIn">
+    <wsdl:part name="ANM" type="s:string" />
+    <wsdl:part name="OID" type="s:string" />
+    <wsdl:part name="IBN" type="s:string" />
+    <wsdl:part name="PID" type="s:string" />
+    <wsdl:part name="RQR" type="s:string" />
+    <wsdl:part name="RQT" type="s:string" />
+    <wsdl:part name="COOKIE" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AirBookExHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="AirCancelHttpGetIn">
+    <wsdl:part name="ANM" type="s:string" />
+    <wsdl:part name="OID" type="s:string" />
+    <wsdl:part name="IBN" type="s:string" />
+    <wsdl:part name="PID" type="s:string" />
+    <wsdl:part name="RQR" type="s:string" />
+    <wsdl:part name="RQT" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AirCancelHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="AirPaymentHttpGetIn">
+    <wsdl:part name="ANM" type="s:string" />
+    <wsdl:part name="OID" type="s:string" />
+    <wsdl:part name="IBN" type="s:string" />
+    <wsdl:part name="PID" type="s:string" />
+    <wsdl:part name="PayCode" type="s:string" />
+    <wsdl:part name="PayAmount" type="s:string" />
+    <wsdl:part name="RQR" type="s:string" />
+    <wsdl:part name="RQT" type="s:string" />
+    <wsdl:part name="COOKIE" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AirPaymentHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="AirTicketHttpGetIn">
+    <wsdl:part name="ANM" type="s:string" />
+    <wsdl:part name="OID" type="s:string" />
+    <wsdl:part name="IBN" type="s:string" />
+    <wsdl:part name="PID" type="s:string" />
+    <wsdl:part name="RQR" type="s:string" />
+    <wsdl:part name="RQT" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AirTicketHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="AirTicket2HttpGetIn">
+    <wsdl:part name="ANM" type="s:string" />
+    <wsdl:part name="OID" type="s:string" />
+    <wsdl:part name="IBN" type="s:string" />
+    <wsdl:part name="PID" type="s:string" />
+    <wsdl:part name="RQR" type="s:string" />
+    <wsdl:part name="RQT" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AirTicket2HttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="AirPaymentTicketHttpGetIn">
+    <wsdl:part name="ANM" type="s:string" />
+    <wsdl:part name="OID" type="s:string" />
+    <wsdl:part name="IBN" type="s:string" />
+    <wsdl:part name="PID" type="s:string" />
+    <wsdl:part name="PayCode" type="s:string" />
+    <wsdl:part name="PayAmount" type="s:string" />
+    <wsdl:part name="RQR" type="s:string" />
+    <wsdl:part name="RQT" type="s:string" />
+    <wsdl:part name="COOKIE" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AirPaymentTicketHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="AirBookRefundHttpGetIn">
+    <wsdl:part name="ANM" type="s:string" />
+    <wsdl:part name="OID" type="s:string" />
+    <wsdl:part name="IBN" type="s:string" />
+    <wsdl:part name="PID" type="s:string" />
+    <wsdl:part name="RQR" type="s:string" />
+    <wsdl:part name="RQT" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AirBookRefundHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="AirBookRefundCancelHttpGetIn">
+    <wsdl:part name="ANM" type="s:string" />
+    <wsdl:part name="OID" type="s:string" />
+    <wsdl:part name="IBN" type="s:string" />
+    <wsdl:part name="PID" type="s:string" />
+    <wsdl:part name="RQR" type="s:string" />
+    <wsdl:part name="RQT" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AirBookRefundCancelHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="AirBookPayCancelHttpGetIn">
+    <wsdl:part name="ANM" type="s:string" />
+    <wsdl:part name="OID" type="s:string" />
+    <wsdl:part name="IBN" type="s:string" />
+    <wsdl:part name="PID" type="s:string" />
+    <wsdl:part name="RQR" type="s:string" />
+    <wsdl:part name="RQT" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AirBookPayCancelHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="AirBookFareModifyHttpGetIn">
+    <wsdl:part name="ANM" type="s:string" />
+    <wsdl:part name="OID" type="s:string" />
+    <wsdl:part name="IBN" type="s:string" />
+    <wsdl:part name="PID" type="s:string" />
+    <wsdl:part name="RQR" type="s:string" />
+    <wsdl:part name="RQT" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AirBookFareModifyHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="AirBookTLModifyHttpGetIn">
+    <wsdl:part name="ANM" type="s:string" />
+    <wsdl:part name="OID" type="s:string" />
+    <wsdl:part name="IBN" type="s:string" />
+    <wsdl:part name="PID" type="s:string" />
+    <wsdl:part name="RQR" type="s:string" />
+    <wsdl:part name="RQT" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AirBookTLModifyHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="AirStatusInfoHttpGetIn">
+    <wsdl:part name="ANM" type="s:string" />
+    <wsdl:part name="OID" type="s:string" />
+    <wsdl:part name="IBN" type="s:string" />
+    <wsdl:part name="PID" type="s:string" />
+    <wsdl:part name="RQR" type="s:string" />
+    <wsdl:part name="RQT" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AirStatusInfoHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetCouponListHttpGetIn">
+    <wsdl:part name="ANM" type="s:string" />
+    <wsdl:part name="OID" type="s:string" />
+    <wsdl:part name="IBN" type="s:string" />
+    <wsdl:part name="PID" type="s:string" />
+    <wsdl:part name="RQR" type="s:string" />
+    <wsdl:part name="RQT" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCouponListHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="AirBookCodeHttpPostIn">
+    <wsdl:part name="SNM" type="s:string" />
+    <wsdl:part name="ItemGubun" type="s:string" />
+    <wsdl:part name="SiteCode" type="s:string" />
+    <wsdl:part name="UserId" type="s:string" />
+    <wsdl:part name="PathType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AirBookCodeHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AirBookHttpPostIn">
+    <wsdl:part name="ANM" type="s:string" />
+    <wsdl:part name="OID" type="s:string" />
+    <wsdl:part name="IBN" type="s:string" />
+    <wsdl:part name="PID" type="s:string" />
+    <wsdl:part name="RQR" type="s:string" />
+    <wsdl:part name="RQT" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AirBookHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="AirBookExHttpPostIn">
+    <wsdl:part name="ANM" type="s:string" />
+    <wsdl:part name="OID" type="s:string" />
+    <wsdl:part name="IBN" type="s:string" />
+    <wsdl:part name="PID" type="s:string" />
+    <wsdl:part name="RQR" type="s:string" />
+    <wsdl:part name="RQT" type="s:string" />
+    <wsdl:part name="COOKIE" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AirBookExHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="AirCancelHttpPostIn">
+    <wsdl:part name="ANM" type="s:string" />
+    <wsdl:part name="OID" type="s:string" />
+    <wsdl:part name="IBN" type="s:string" />
+    <wsdl:part name="PID" type="s:string" />
+    <wsdl:part name="RQR" type="s:string" />
+    <wsdl:part name="RQT" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AirCancelHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="AirPaymentHttpPostIn">
+    <wsdl:part name="ANM" type="s:string" />
+    <wsdl:part name="OID" type="s:string" />
+    <wsdl:part name="IBN" type="s:string" />
+    <wsdl:part name="PID" type="s:string" />
+    <wsdl:part name="PayCode" type="s:string" />
+    <wsdl:part name="PayAmount" type="s:string" />
+    <wsdl:part name="RQR" type="s:string" />
+    <wsdl:part name="RQT" type="s:string" />
+    <wsdl:part name="COOKIE" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AirPaymentHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="AirTicketHttpPostIn">
+    <wsdl:part name="ANM" type="s:string" />
+    <wsdl:part name="OID" type="s:string" />
+    <wsdl:part name="IBN" type="s:string" />
+    <wsdl:part name="PID" type="s:string" />
+    <wsdl:part name="RQR" type="s:string" />
+    <wsdl:part name="RQT" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AirTicketHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="AirTicket2HttpPostIn">
+    <wsdl:part name="ANM" type="s:string" />
+    <wsdl:part name="OID" type="s:string" />
+    <wsdl:part name="IBN" type="s:string" />
+    <wsdl:part name="PID" type="s:string" />
+    <wsdl:part name="RQR" type="s:string" />
+    <wsdl:part name="RQT" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AirTicket2HttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="AirPaymentTicketHttpPostIn">
+    <wsdl:part name="ANM" type="s:string" />
+    <wsdl:part name="OID" type="s:string" />
+    <wsdl:part name="IBN" type="s:string" />
+    <wsdl:part name="PID" type="s:string" />
+    <wsdl:part name="PayCode" type="s:string" />
+    <wsdl:part name="PayAmount" type="s:string" />
+    <wsdl:part name="RQR" type="s:string" />
+    <wsdl:part name="RQT" type="s:string" />
+    <wsdl:part name="COOKIE" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AirPaymentTicketHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="AirBookRefundHttpPostIn">
+    <wsdl:part name="ANM" type="s:string" />
+    <wsdl:part name="OID" type="s:string" />
+    <wsdl:part name="IBN" type="s:string" />
+    <wsdl:part name="PID" type="s:string" />
+    <wsdl:part name="RQR" type="s:string" />
+    <wsdl:part name="RQT" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AirBookRefundHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="AirBookRefundCancelHttpPostIn">
+    <wsdl:part name="ANM" type="s:string" />
+    <wsdl:part name="OID" type="s:string" />
+    <wsdl:part name="IBN" type="s:string" />
+    <wsdl:part name="PID" type="s:string" />
+    <wsdl:part name="RQR" type="s:string" />
+    <wsdl:part name="RQT" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AirBookRefundCancelHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="AirBookPayCancelHttpPostIn">
+    <wsdl:part name="ANM" type="s:string" />
+    <wsdl:part name="OID" type="s:string" />
+    <wsdl:part name="IBN" type="s:string" />
+    <wsdl:part name="PID" type="s:string" />
+    <wsdl:part name="RQR" type="s:string" />
+    <wsdl:part name="RQT" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AirBookPayCancelHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="AirBookFareModifyHttpPostIn">
+    <wsdl:part name="ANM" type="s:string" />
+    <wsdl:part name="OID" type="s:string" />
+    <wsdl:part name="IBN" type="s:string" />
+    <wsdl:part name="PID" type="s:string" />
+    <wsdl:part name="RQR" type="s:string" />
+    <wsdl:part name="RQT" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AirBookFareModifyHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="AirBookTLModifyHttpPostIn">
+    <wsdl:part name="ANM" type="s:string" />
+    <wsdl:part name="OID" type="s:string" />
+    <wsdl:part name="IBN" type="s:string" />
+    <wsdl:part name="PID" type="s:string" />
+    <wsdl:part name="RQR" type="s:string" />
+    <wsdl:part name="RQT" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AirBookTLModifyHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="AirStatusInfoHttpPostIn">
+    <wsdl:part name="ANM" type="s:string" />
+    <wsdl:part name="OID" type="s:string" />
+    <wsdl:part name="IBN" type="s:string" />
+    <wsdl:part name="PID" type="s:string" />
+    <wsdl:part name="RQR" type="s:string" />
+    <wsdl:part name="RQT" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AirStatusInfoHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetCouponListHttpPostIn">
+    <wsdl:part name="ANM" type="s:string" />
+    <wsdl:part name="OID" type="s:string" />
+    <wsdl:part name="IBN" type="s:string" />
+    <wsdl:part name="PID" type="s:string" />
+    <wsdl:part name="RQR" type="s:string" />
+    <wsdl:part name="RQT" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCouponListHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:portType name="ModeSoap">
+    <wsdl:operation name="AirBookCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">예약 키 발번</wsdl:documentation>
+      <wsdl:input message="tns:AirBookCodeSoapIn" />
+      <wsdl:output message="tns:AirBookCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirBook">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">예약정보 전송</wsdl:documentation>
+      <wsdl:input message="tns:AirBookSoapIn" />
+      <wsdl:output message="tns:AirBookSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirBookEx">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">예약정보(신규) 전송</wsdl:documentation>
+      <wsdl:input message="tns:AirBookExSoapIn" />
+      <wsdl:output message="tns:AirBookExSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirCancel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">예약취소 전송</wsdl:documentation>
+      <wsdl:input message="tns:AirCancelSoapIn" />
+      <wsdl:output message="tns:AirCancelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirPayment">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">결제정보 전송</wsdl:documentation>
+      <wsdl:input message="tns:AirPaymentSoapIn" />
+      <wsdl:output message="tns:AirPaymentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirTicket">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">발권(티켓)정보 전송(PNR 데이타로 전문 생성)</wsdl:documentation>
+      <wsdl:input message="tns:AirTicketSoapIn" />
+      <wsdl:output message="tns:AirTicketSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirTicket2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">발권정(티켓)보 전송(DB 데이타로 전문 생성)</wsdl:documentation>
+      <wsdl:input message="tns:AirTicket2SoapIn" />
+      <wsdl:output message="tns:AirTicket2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirPaymentTicket">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">결제+발권(티켓)정보 전송</wsdl:documentation>
+      <wsdl:input message="tns:AirPaymentTicketSoapIn" />
+      <wsdl:output message="tns:AirPaymentTicketSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirBookRefund">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">변경정보 전송 - 환불</wsdl:documentation>
+      <wsdl:input message="tns:AirBookRefundSoapIn" />
+      <wsdl:output message="tns:AirBookRefundSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirBookRefundCancel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">변경정보 전송 - 환불취소</wsdl:documentation>
+      <wsdl:input message="tns:AirBookRefundCancelSoapIn" />
+      <wsdl:output message="tns:AirBookRefundCancelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirBookPayCancel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">변경정보 전송 - 결제취소</wsdl:documentation>
+      <wsdl:input message="tns:AirBookPayCancelSoapIn" />
+      <wsdl:output message="tns:AirBookPayCancelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirBookFareModify">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">변경정보 전송 - 금액정보변경</wsdl:documentation>
+      <wsdl:input message="tns:AirBookFareModifySoapIn" />
+      <wsdl:output message="tns:AirBookFareModifySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirBookTLModify">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">변경정보 전송 - 결제시한변경</wsdl:documentation>
+      <wsdl:input message="tns:AirBookTLModifySoapIn" />
+      <wsdl:output message="tns:AirBookTLModifySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirStatusInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">예약상태 확인</wsdl:documentation>
+      <wsdl:input message="tns:AirStatusInfoSoapIn" />
+      <wsdl:output message="tns:AirStatusInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCouponList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">예약상태 확인</wsdl:documentation>
+      <wsdl:input message="tns:GetCouponListSoapIn" />
+      <wsdl:output message="tns:GetCouponListSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ModeHttpGet">
+    <wsdl:operation name="AirBookCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">예약 키 발번</wsdl:documentation>
+      <wsdl:input message="tns:AirBookCodeHttpGetIn" />
+      <wsdl:output message="tns:AirBookCodeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirBook">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">예약정보 전송</wsdl:documentation>
+      <wsdl:input message="tns:AirBookHttpGetIn" />
+      <wsdl:output message="tns:AirBookHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirBookEx">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">예약정보(신규) 전송</wsdl:documentation>
+      <wsdl:input message="tns:AirBookExHttpGetIn" />
+      <wsdl:output message="tns:AirBookExHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirCancel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">예약취소 전송</wsdl:documentation>
+      <wsdl:input message="tns:AirCancelHttpGetIn" />
+      <wsdl:output message="tns:AirCancelHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirPayment">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">결제정보 전송</wsdl:documentation>
+      <wsdl:input message="tns:AirPaymentHttpGetIn" />
+      <wsdl:output message="tns:AirPaymentHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirTicket">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">발권(티켓)정보 전송(PNR 데이타로 전문 생성)</wsdl:documentation>
+      <wsdl:input message="tns:AirTicketHttpGetIn" />
+      <wsdl:output message="tns:AirTicketHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirTicket2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">발권정(티켓)보 전송(DB 데이타로 전문 생성)</wsdl:documentation>
+      <wsdl:input message="tns:AirTicket2HttpGetIn" />
+      <wsdl:output message="tns:AirTicket2HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirPaymentTicket">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">결제+발권(티켓)정보 전송</wsdl:documentation>
+      <wsdl:input message="tns:AirPaymentTicketHttpGetIn" />
+      <wsdl:output message="tns:AirPaymentTicketHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirBookRefund">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">변경정보 전송 - 환불</wsdl:documentation>
+      <wsdl:input message="tns:AirBookRefundHttpGetIn" />
+      <wsdl:output message="tns:AirBookRefundHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirBookRefundCancel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">변경정보 전송 - 환불취소</wsdl:documentation>
+      <wsdl:input message="tns:AirBookRefundCancelHttpGetIn" />
+      <wsdl:output message="tns:AirBookRefundCancelHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirBookPayCancel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">변경정보 전송 - 결제취소</wsdl:documentation>
+      <wsdl:input message="tns:AirBookPayCancelHttpGetIn" />
+      <wsdl:output message="tns:AirBookPayCancelHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirBookFareModify">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">변경정보 전송 - 금액정보변경</wsdl:documentation>
+      <wsdl:input message="tns:AirBookFareModifyHttpGetIn" />
+      <wsdl:output message="tns:AirBookFareModifyHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirBookTLModify">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">변경정보 전송 - 결제시한변경</wsdl:documentation>
+      <wsdl:input message="tns:AirBookTLModifyHttpGetIn" />
+      <wsdl:output message="tns:AirBookTLModifyHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirStatusInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">예약상태 확인</wsdl:documentation>
+      <wsdl:input message="tns:AirStatusInfoHttpGetIn" />
+      <wsdl:output message="tns:AirStatusInfoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCouponList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">예약상태 확인</wsdl:documentation>
+      <wsdl:input message="tns:GetCouponListHttpGetIn" />
+      <wsdl:output message="tns:GetCouponListHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ModeHttpPost">
+    <wsdl:operation name="AirBookCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">예약 키 발번</wsdl:documentation>
+      <wsdl:input message="tns:AirBookCodeHttpPostIn" />
+      <wsdl:output message="tns:AirBookCodeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirBook">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">예약정보 전송</wsdl:documentation>
+      <wsdl:input message="tns:AirBookHttpPostIn" />
+      <wsdl:output message="tns:AirBookHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirBookEx">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">예약정보(신규) 전송</wsdl:documentation>
+      <wsdl:input message="tns:AirBookExHttpPostIn" />
+      <wsdl:output message="tns:AirBookExHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirCancel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">예약취소 전송</wsdl:documentation>
+      <wsdl:input message="tns:AirCancelHttpPostIn" />
+      <wsdl:output message="tns:AirCancelHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirPayment">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">결제정보 전송</wsdl:documentation>
+      <wsdl:input message="tns:AirPaymentHttpPostIn" />
+      <wsdl:output message="tns:AirPaymentHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirTicket">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">발권(티켓)정보 전송(PNR 데이타로 전문 생성)</wsdl:documentation>
+      <wsdl:input message="tns:AirTicketHttpPostIn" />
+      <wsdl:output message="tns:AirTicketHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirTicket2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">발권정(티켓)보 전송(DB 데이타로 전문 생성)</wsdl:documentation>
+      <wsdl:input message="tns:AirTicket2HttpPostIn" />
+      <wsdl:output message="tns:AirTicket2HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirPaymentTicket">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">결제+발권(티켓)정보 전송</wsdl:documentation>
+      <wsdl:input message="tns:AirPaymentTicketHttpPostIn" />
+      <wsdl:output message="tns:AirPaymentTicketHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirBookRefund">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">변경정보 전송 - 환불</wsdl:documentation>
+      <wsdl:input message="tns:AirBookRefundHttpPostIn" />
+      <wsdl:output message="tns:AirBookRefundHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirBookRefundCancel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">변경정보 전송 - 환불취소</wsdl:documentation>
+      <wsdl:input message="tns:AirBookRefundCancelHttpPostIn" />
+      <wsdl:output message="tns:AirBookRefundCancelHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirBookPayCancel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">변경정보 전송 - 결제취소</wsdl:documentation>
+      <wsdl:input message="tns:AirBookPayCancelHttpPostIn" />
+      <wsdl:output message="tns:AirBookPayCancelHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirBookFareModify">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">변경정보 전송 - 금액정보변경</wsdl:documentation>
+      <wsdl:input message="tns:AirBookFareModifyHttpPostIn" />
+      <wsdl:output message="tns:AirBookFareModifyHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirBookTLModify">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">변경정보 전송 - 결제시한변경</wsdl:documentation>
+      <wsdl:input message="tns:AirBookTLModifyHttpPostIn" />
+      <wsdl:output message="tns:AirBookTLModifyHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AirStatusInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">예약상태 확인</wsdl:documentation>
+      <wsdl:input message="tns:AirStatusInfoHttpPostIn" />
+      <wsdl:output message="tns:AirStatusInfoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCouponList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">예약상태 확인</wsdl:documentation>
+      <wsdl:input message="tns:GetCouponListHttpPostIn" />
+      <wsdl:output message="tns:GetCouponListHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ModeSoap" type="tns:ModeSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AirBookCode">
+      <soap:operation soapAction="http://webservice.modetour.com/AirBookCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirBook">
+      <soap:operation soapAction="http://webservice.modetour.com/AirBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirBookEx">
+      <soap:operation soapAction="http://webservice.modetour.com/AirBookEx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirCancel">
+      <soap:operation soapAction="http://webservice.modetour.com/AirCancel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirPayment">
+      <soap:operation soapAction="http://webservice.modetour.com/AirPayment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirTicket">
+      <soap:operation soapAction="http://webservice.modetour.com/AirTicket" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirTicket2">
+      <soap:operation soapAction="http://webservice.modetour.com/AirTicket2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirPaymentTicket">
+      <soap:operation soapAction="http://webservice.modetour.com/AirPaymentTicket" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirBookRefund">
+      <soap:operation soapAction="http://webservice.modetour.com/AirBookRefund" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirBookRefundCancel">
+      <soap:operation soapAction="http://webservice.modetour.com/AirBookRefundCancel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirBookPayCancel">
+      <soap:operation soapAction="http://webservice.modetour.com/AirBookPayCancel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirBookFareModify">
+      <soap:operation soapAction="http://webservice.modetour.com/AirBookFareModify" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirBookTLModify">
+      <soap:operation soapAction="http://webservice.modetour.com/AirBookTLModify" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirStatusInfo">
+      <soap:operation soapAction="http://webservice.modetour.com/AirStatusInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCouponList">
+      <soap:operation soapAction="http://webservice.modetour.com/GetCouponList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ModeSoap12" type="tns:ModeSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AirBookCode">
+      <soap12:operation soapAction="http://webservice.modetour.com/AirBookCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirBook">
+      <soap12:operation soapAction="http://webservice.modetour.com/AirBook" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirBookEx">
+      <soap12:operation soapAction="http://webservice.modetour.com/AirBookEx" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirCancel">
+      <soap12:operation soapAction="http://webservice.modetour.com/AirCancel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirPayment">
+      <soap12:operation soapAction="http://webservice.modetour.com/AirPayment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirTicket">
+      <soap12:operation soapAction="http://webservice.modetour.com/AirTicket" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirTicket2">
+      <soap12:operation soapAction="http://webservice.modetour.com/AirTicket2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirPaymentTicket">
+      <soap12:operation soapAction="http://webservice.modetour.com/AirPaymentTicket" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirBookRefund">
+      <soap12:operation soapAction="http://webservice.modetour.com/AirBookRefund" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirBookRefundCancel">
+      <soap12:operation soapAction="http://webservice.modetour.com/AirBookRefundCancel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirBookPayCancel">
+      <soap12:operation soapAction="http://webservice.modetour.com/AirBookPayCancel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirBookFareModify">
+      <soap12:operation soapAction="http://webservice.modetour.com/AirBookFareModify" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirBookTLModify">
+      <soap12:operation soapAction="http://webservice.modetour.com/AirBookTLModify" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirStatusInfo">
+      <soap12:operation soapAction="http://webservice.modetour.com/AirStatusInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCouponList">
+      <soap12:operation soapAction="http://webservice.modetour.com/GetCouponList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ModeHttpGet" type="tns:ModeHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="AirBookCode">
+      <http:operation location="/AirBookCode" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirBook">
+      <http:operation location="/AirBook" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirBookEx">
+      <http:operation location="/AirBookEx" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirCancel">
+      <http:operation location="/AirCancel" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirPayment">
+      <http:operation location="/AirPayment" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirTicket">
+      <http:operation location="/AirTicket" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirTicket2">
+      <http:operation location="/AirTicket2" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirPaymentTicket">
+      <http:operation location="/AirPaymentTicket" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirBookRefund">
+      <http:operation location="/AirBookRefund" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirBookRefundCancel">
+      <http:operation location="/AirBookRefundCancel" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirBookPayCancel">
+      <http:operation location="/AirBookPayCancel" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirBookFareModify">
+      <http:operation location="/AirBookFareModify" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirBookTLModify">
+      <http:operation location="/AirBookTLModify" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirStatusInfo">
+      <http:operation location="/AirStatusInfo" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCouponList">
+      <http:operation location="/GetCouponList" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ModeHttpPost" type="tns:ModeHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="AirBookCode">
+      <http:operation location="/AirBookCode" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirBook">
+      <http:operation location="/AirBook" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirBookEx">
+      <http:operation location="/AirBookEx" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirCancel">
+      <http:operation location="/AirCancel" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirPayment">
+      <http:operation location="/AirPayment" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirTicket">
+      <http:operation location="/AirTicket" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirTicket2">
+      <http:operation location="/AirTicket2" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirPaymentTicket">
+      <http:operation location="/AirPaymentTicket" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirBookRefund">
+      <http:operation location="/AirBookRefund" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirBookRefundCancel">
+      <http:operation location="/AirBookRefundCancel" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirBookPayCancel">
+      <http:operation location="/AirBookPayCancel" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirBookFareModify">
+      <http:operation location="/AirBookFareModify" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirBookTLModify">
+      <http:operation location="/AirBookTLModify" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirStatusInfo">
+      <http:operation location="/AirStatusInfo" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCouponList">
+      <http:operation location="/GetCouponList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Mode">
+    <wsdl:port name="ModeSoap" binding="tns:ModeSoap">
+      <soap:address location="http://webservice.modetour.com/Air/Mode.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ModeSoap12" binding="tns:ModeSoap12">
+      <soap12:address location="http://webservice.modetour.com/Air/Mode.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ModeHttpGet" binding="tns:ModeHttpGet">
+      <http:address location="http://webservice.modetour.com/Air/Mode.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ModeHttpPost" binding="tns:ModeHttpPost">
+      <http:address location="http://webservice.modetour.com/Air/Mode.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

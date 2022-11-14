@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[할인항공 운임 조회]]></Summary>
+	<Return Type="XmlElement"><![CDATA[할인항공 운임 XML]]></Return>
+	<Items SubTitle="">
+		<Item Param="SNM" Type="number" format="" Required="true" DefaultValue="" ExampleValue="2"><![CDATA[웹사이트 번호]]></Item>
+		<Item Param="ARC" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[지역 코드(ASIA:동남아, JPN:일본, CHI:중국/대만/홍콩, EUR:유럽, AMCA:미주, SOPA:남태평양/괌/사이판, AFR:중동/아프리카, CSAM:중남미)]]></Item>
+		<Item Param="CRC" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[국가 코드]]></Item>
+		<Item Param="DLC" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[출발지 공항 코드]]></Item>
+		<Item Param="ALC" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[도착지 공항 코드]]></Item>
+		<Item Param="SAC" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[항공사 코드]]></Item>
+		<Item Param="FLAG1" Type="string" format="YN" Required="false" DefaultValue="" ExampleValue=""><![CDATA[FLAG1]]></Item>
+		<Item Param="FLAG2" Type="string" format="YN" Required="false" DefaultValue="" ExampleValue=""><![CDATA[FLAG2]]></Item>
+		<Item Param="FLAG3" Type="string" format="YN" Required="false" DefaultValue="" ExampleValue=""><![CDATA[FLAG3]]></Item>
+		<Item Param="FLAG4" Type="string" format="YN" Required="false" DefaultValue="" ExampleValue=""><![CDATA[FLAG4]]></Item>
+		<Item Param="FLAG5" Type="string" format="YN" Required="false" DefaultValue="" ExampleValue=""><![CDATA[FLAG5]]></Item>
+	</Items>
+</Help>

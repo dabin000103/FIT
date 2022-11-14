@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[항공예약]]></Summary>
+	<Return Type="XmlElement"><![CDATA[예약번호 XML]]></Return>
+	<Items SubTitle="탑승객">
+		<Item Param="PID" Type="number[]" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[탑승객 PTID]]></Item>
+		<Item Param="PTC" Type="string[]" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[탑승객 타입 코드 (ADT/CHD/INF/STU/LBR..)]]></Item>
+		<Item Param="PTL" Type="string[]" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[탑승객 타이틀 (MR/MRS/MS/MSTR/MISS)]]></Item>
+		<Item Param="PHN" Type="string[]" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[탑승객 한글이름]]></Item>
+		<Item Param="PSN" Type="string[]" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[탑승객 영문성 (SurName)]]></Item>
+		<Item Param="PFN" Type="string[]" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[탑승객 영문이름 (First Name)]]></Item>
+		<Item Param="PBD" Type="string[]" format="YYYYMMDD" Required="true" DefaultValue="" ExampleValue=""><![CDATA[탑승객 생년월일 (소아,유아일 경우 필수)]]></Item>
+		<Item Param="PTN" Type="string[]" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[탑승객 전화번호]]></Item>
+		<Item Param="PMN" Type="string[]" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[탑승객 휴대폰]]></Item>
+		<Item Param="PEA" Type="string[]" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[탑승객 이메일주소]]></Item>
+    <Item Param="PMC" Type="string[]" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[탑승객 회원구분 (01:정회원, 02:웹회원, 03:투어마일리지회원)]]></Item>
+    <Item Param="PMT" Type="string[]" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[탑승객 투어마일리지 카드번호]]></Item>
+    <Item Param="PMR" Type="string[]" format="YN" Required="false" DefaultValue="" ExampleValue=""><![CDATA[탑승객 투어마일리지 적립 요청여부]]></Item>
+	</Items>
+	<Items SubTitle="예약자">
+		<Item Param="RID" Type="number" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[예약자 PTID]]></Item>
+		<Item Param="RTL" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[예약자 타이틀 (MR/MS)]]></Item>
+		<Item Param="RHN" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[예약자 한글이름]]></Item>
+		<Item Param="RSN" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[예약자 영문성 (SurName)]]></Item>
+		<Item Param="RFN" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[예약자 영문이름 (First Name)]]></Item>
+		<Item Param="RDB" Type="string" format="YYYY-MM-DD" Required="true" DefaultValue="" ExampleValue=""><![CDATA[예약자 생년월일]]></Item>
+		<Item Param="RGD" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[예약자 성별 (M:남성, F:여성)]]></Item>
+		<Item Param="RLF" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[예약자 내/외국인 여부 (L:내국인, F:외국인)]]></Item>
+		<Item Param="RTN" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[예약자 전화번호]]></Item>
+		<Item Param="RMN" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[예약자 휴대폰]]></Item>
+		<Item Param="REA" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[예약자 이메일주소]]></Item>
+	</Items>
+	<Items SubTitle="기타">
+		<Item Param="RMK" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[요청사항]]></Item>
+		<Item Param="RQT" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청단말기(WEB/MOBILEWEB/MOBILEAPP/CRS/MODEWARE)]]></Item>
+    <Item Param="RQU" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청URL]]></Item>
+		<Item Param="SNM" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[사이트번호]]></Item>
+		<Item Param="ANM" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[거래처번호]]></Item>
+		<Item Param="AEN" Type="number" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[거래처직원번호]]></Item>
+    <Item Param="ROT" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[구간(OW:편도, RT:왕복, DT:출도착이원구간, MD:다구간)]]></Item>
+    <Item Param="OPN" Type="string" format="YN" Required="true" DefaultValue="" ExampleValue=""><![CDATA[오픈여부]]></Item>
+		<Item Param="FXL" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요금조회 결과 중 선택된 <priceIndex>~</priceIndex> XmlNode(segGroup는 제외)]]></Item>
+		<Item Param="SXL" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[선택한 여정을 <itinerary>~<itinerary>노드에 삽입한 XmlNode]]></Item>
+		<Item Param="RXL" Type="string" format=""  Required="true" DefaultValue="" ExampleValue=""><![CDATA[요금규정 XmlNode]]></Item>
+		<Item Param="DXL" Type="string" format=""  Required="false" DefaultValue="" ExampleValue=""><![CDATA[할인항공일 경우 선택된 <fare>~</fare> XmlNode]]></Item>
+    <Item Param="AKY" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[제휴정보(제휴사구분코드|회원번호|접속경로(REAL,DEV))(ex:NV|12345|REAL)]]></Item>
+    <Item Param="ATSF" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[발권수수료(TASF) 적용 여부(Y:적용, N:미적용)]]></Item>
+    <Item Param="FTX" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[FREE TEXT]]></Item>
+	</Items>
+	<XmlSample>
+		<FXL>
+			<![CDATA[
+        <priceIndex ptc="ADT" ref="2001">
+				<summary price="406900" fare="230000" disFare="230000" tax="56500" fsc="120400" tasf="0" pvc="VN" mas="1Y" ttl="2014-10-01" ucf="N" ntf="N" />
+				<paxFareGroup>
+					<paxFare ptc="ADT">
+						<amount fare="230000" disFare="230000" tax="56500" fsc="120400" />
+						<segFareGroup>
+							<segFare ref="1">
+								<fare bpt="N" mas="">
+									<cabin rbd="R" cabin="M" avl="4" />
+									<fare basis="RL1YKRF" ptc="ADT" tkd="">
+										<fareType>RN</fareType>
+										<fareType>MSP</fareType>
+										<fareType>NTF</fareType>
+									</fare>
+								</fare>
+								<fare bpt="Y" mas="1Y">
+									<cabin rbd="L" cabin="M" avl="4" />
+									<fare basis="RL1YKRF" ptc="ADT" tkd="">
+										<fareType>RN</fareType>
+										<fareType>MSP</fareType>
+										<fareType>NTF</fareType>
+									</fare>
+								</fare>
+							</segFare>
+							<segFare ref="2">
+								<fare bpt="N" mas="">
+									<cabin rbd="L" cabin="M" avl="4" />
+									<fare basis="NL1YKRF" ptc="ADT" tkd="">
+										<fareType>RN</fareType>
+										<fareType>MSP</fareType>
+										<fareType>NTF</fareType>
+									</fare>
+								</fare>
+								<fare bpt="Y" mas="1Y">
+									<cabin rbd="N" cabin="M" avl="4" />
+									<fare basis="NL1YKRF" ptc="ADT" tkd="">
+										<fareType>RN</fareType>
+										<fareType>MSP</fareType>
+										<fareType>NTF</fareType>
+									</fare>
+								</fare>
+							</segFare>
+						</segFareGroup>
+						<traveler>
+							<ref>1</ref>
+						</traveler>
+					</paxFare>
+				</paxFareGroup>
+				<fareMessage>
+					<fare>
+						<pricingMessage>
+							<freeTextQualification>
+								<textSubjectQualifier>PEN</textSubjectQualifier>
+								<informationType>73</informationType>
+							</freeTextQualification>
+							<description>PENALTY APPLIES</description>
+						</pricingMessage>
+						<monetaryInformation>
+							<monetaryDetail>
+								<amountType>MT</amountType>
+								<amount>50000</amount>
+								<currency>KRW</currency>
+							</monetaryDetail>
+						</monetaryInformation>
+					</fare>
+					<fare>
+						<pricingMessage>
+							<freeTextQualification>
+								<textSubjectQualifier>LTD</textSubjectQualifier>
+								<informationType>41</informationType>
+							</freeTextQualification>
+							<description>LAST TKT DTE</description>
+							<description>01OCT14</description>
+							<description> - DATE OF ORIGIN</description>
+						</pricingMessage>
+					</fare>
+					<fare>
+						<pricingMessage>
+							<freeTextQualification>
+								<textSubjectQualifier>APM</textSubjectQualifier>
+							</freeTextQualification>
+							<description>TKT NOT AUTHORIZED, PRICE IN OTHER OFFICE TO TKT</description>
+						</pricingMessage>
+					</fare>
+				</fareMessage>
+			</priceIndex>
+      ]]>
+		</FXL>
+		<SXL>
+			<![CDATA[
+      <itinerary>
+				<segGroup ref="2001" eft="0810" mjc="VN" cds="N">
+					<seg dlc="ICN" alc="SGN" ddt="2014-10-01 10:15" ardt="2014-10-01 13:30" mcc="VN" occ="VN" fln="409" eqt="332" stn="0" etc="Y" aic="LCA" />
+					<seg dlc="SGN" alc="SIN" ddt="2014-10-01 14:30" ardt="2014-10-01 17:25" mcc="VN" occ="VN" fln="655" eqt="321" stn="0" etc="Y" aic="LCA" />
+				</segGroup>
+				<segGroup ref="2001" eft="0945" mjc="VN" cds="N">
+					<seg dlc="SIN" alc="SGN" ddt="2014-10-10 20:25" ardt="2014-10-10 21:30" mcc="VN" occ="VN" fln="658" eqt="321" stn="0" etc="Y" aic="LCA" />
+					<seg dlc="SGN" alc="ICN" ddt="2014-10-11 00:05" ardt="2014-10-11 07:10" mcc="VN" occ="VN" fln="406" eqt="321" stn="0" etc="Y" aic="LCA" />
+				</segGroup>
+			</itinerary>
+      ]]>
+		</SXL>
+		<RXL>
+			<![CDATA[
+			<ResponseDetails version="1.0.0" timeStamp="2014-08-06 16:26:49">
+				<rule ref="1">
+					<item ref="2">
+						<name>운임종류</name>
+						<message>CX/KA항공 정규 운임</message>
+					</item>
+					<item ref="3">
+						<name>적용대상</name>
+						<message>성인</message>
+					</item>
+					<item ref="4">
+						<name>출국요일</name>
+						<message>매일</message>
+					</item>
+					<item ref="5">
+						<name>귀국요일</name>
+						<message>매일</message>
+					</item>
+					<item ref="6">
+						<name>최소체류일</name>
+						<message>제한없음</message>
+					</item>
+					<item ref="7">
+						<name>최대체류일</name>
+						<message>1 개월</message>
+					</item>
+				</rule>
+				<fareInfos>
+					<fareInfo ref="1">
+						<item name="FareCategory">XES</item>
+						<item name="FareClass">NL1MKR</item>
+						<item name="AdvanceAfter">0D003</item>
+						<item name="AdvanceBefore">0D000</item>
+						<item name="MinStay">0D000</item>
+						<item name="MaxStay">0M001</item>
+						<item name="FareType">RU</item>
+						<item name="BookingClass">N</item>
+						<item name="RuleNumber">AA10</item>
+					</fareInfo>
+				</fareInfos>
+			</ResponseDetails>
+			]]>
+		</RXL>
+		<DXL>
+			<![CDATA[
+			<fare>
+				<IF_SEQNO>1</IF_SEQNO>
+				<FARE_NO>MSP|4|SEL1A0981|KE|8|JP07|B|BHEKJ2|ICN|HND|ADT|RT|F||N|||KE|KE|20140807|99991231</FARE_NO>
+				<FARE_KEY>SELK138ABKEICNHNDADTBJP0720140807BHEKJ2406804</FARE_KEY>
+				<FARE_BASIS>BHEKJ2</FARE_BASIS>
+				<DEPLOY_FARE_KIND>MSP</DEPLOY_FARE_KIND>
+				<RSV_AGT_CD>SELK138AB</RSV_AGT_CD>
+				<FILE_AGT_CD>SEL1A0981</FILE_AGT_CD>
+				<FARE_RULE_NO>JP07</FARE_RULE_NO>
+				<IATA_AIR_CD>KE</IATA_AIR_CD>
+				<AREA_CD>JPN</AREA_CD>
+				<NA_CD>JP</NA_CD>
+				<DEP_CITY_CD>ICN</DEP_CITY_CD>
+				<ARR_CITY_CD>HND</ARR_CITY_CD>
+				<ADT_FARE>600000</ADT_FARE>
+				<ADT_DSCNT_FARE>564000</ADT_DSCNT_FARE>
+				<ADT_BAF>0</ADT_BAF>
+				<ADT_TAX_AMT>2255000</ADT_TAX_AMT>
+				<CHD_FARE>450000</CHD_FARE>
+				<CHD_DSCNT_FARE>423000</CHD_DSCNT_FARE>
+				<CHD_BAF>0</CHD_BAF>
+				<CHD_TAX_AMT>2255000</CHD_TAX_AMT>
+				<INF_FARE>60000</INF_FARE>
+				<INF_BAF>0</INF_BAF>
+				<INF_TAX_AMT>2255000</INF_TAX_AMT>
+				<DEP_WKDAY_IDX>1111111</DEP_WKDAY_IDX>
+				<IB_WKDAY_IDX>1111111</IB_WKDAY_IDX>
+				<CABIN_SEAT_GRAD>M</CABIN_SEAT_GRAD>
+				<PAX_TYPE>ADT0124</PAX_TYPE>
+				<PAX_TYPE_DESC>성인/국민카드할인</PAX_TYPE_DESC>
+				<MIN_STAY_DATE>0D</MIN_STAY_DATE>
+				<MAX_STAY_DATE>12M</MAX_STAY_DATE>
+				<AP_DAYCNT>0D</AP_DAYCNT>
+				<TRIP_TYPE>RT</TRIP_TYPE>
+				<RSV_SEAT_GRAD>B</RSV_SEAT_GRAD>
+				<IB_DATE_ASIN_YN>Y</IB_DATE_ASIN_YN>
+				<COMM_FLAG>R</COMM_FLAG>
+				<COMM>0</COMM>
+				<NO_OF_STOP>0</NO_OF_STOP>
+				<RTG_CITY_NM>ICN~HND~ICN</RTG_CITY_NM>
+				<RTG_AIR_NM>KE-KE</RTG_AIR_NM>
+				<RTG_SEAT_GRAD>B-B</RTG_SEAT_GRAD>
+				<RTG_FLTNO>1-KE****;2-KE****</RTG_FLTNO>
+				<FARE_FLAG1>Y</FARE_FLAG1>
+				<FARE_FLAG2>Y</FARE_FLAG2>
+				<FARE_FLAG3>Y</FARE_FLAG3>
+				<FARE_FLAG4>Y</FARE_FLAG4>
+				<FARE_FLAG5>Y</FARE_FLAG5>
+				<USE_YN>Y</USE_YN>
+				<FARE_CREAT_DATE>20140807</FARE_CREAT_DATE>
+				<OPERT_FLAG>I</OPERT_FLAG>
+				<REG_USR_ID>TOPAS</REG_USR_ID>
+				<REG_DTM>20140818005123</REG_DTM>
+				<UPD_USR_ID>TOPAS</UPD_USR_ID>
+				<UPD_DTM>20140818005123</UPD_DTM>
+				<FARE_DATE>20140807-99991231</FARE_DATE>
+				<SEASON>20140725-20140816/20140905-20140908/20141002-20141003/20141220-20150228</SEASON>
+				<SALE_DATE>20000101-20991231</SALE_DATE>
+				<SITE_NO>2</SITE_NO>
+				- <promotionInfo>
+					- <item>
+						<promotionId>1842</promotionId>
+						<siteNum>2</siteNum>
+						<airCode>KE</airCode>
+						<tripType>RT</tripType>
+						<desAirport>ICN</desAirport>
+						<orgArea>JPN</orgArea>
+						<orgNation>JP</orgNation>
+						<orgAirport>HND</orgAirport>
+						<fareType>MSP/SF</fareType>
+						<cabinClass>Y</cabinClass>
+						<bookingClass />
+						<paxType>ADT</paxType>
+						<commission>0.0000</commission>
+						<fareDiscount>0.0000</fareDiscount>
+						<incentive>0.0600</incentive>
+						<incentiveCode>ADT0124</incentiveCode>
+						<incentiveName>KB국민카드 할인</incentiveName>
+						<fareTarget>성인/국민카드할인</fareTarget>
+						<desDate>20140819-20150819</desDate>
+						<orgDate>20140819-20150819</orgDate>
+					</item>
+				</promotionInfo>
+			</fare>
+			]]>
+		</DXL>
+	</XmlSample>
+</Help>

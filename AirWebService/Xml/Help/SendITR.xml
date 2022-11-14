@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[ITR(E-Ticket) 발송]]></Summary>
+	<Return Type="string"><![CDATA[]]></Return>
+	<Items SubTitle="">
+		<Item Param="OID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[모두투어 주문번호]]></Item>
+		<Item Param="PID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[예약자번호(PTID)]]></Item>
+		<Item Param="EMail" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[ITR을 받을 이메일주소]]></Item>
+	</Items>
+</Help>

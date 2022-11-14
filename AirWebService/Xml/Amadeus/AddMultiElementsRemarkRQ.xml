@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PNR_AddMultiElements>
+  <pnrActions>
+    <optionCode>0</optionCode>
+  </pnrActions>
+  <dataElementsMaster>
+    <dataElementsIndiv>
+      <elementManagementData>
+        <reference>
+          <qualifier>OT</qualifier>
+          <number>1</number>
+        </reference>
+        <segmentName>RM</segmentName>
+      </elementManagementData>
+      <miscellaneousRemark>
+        <remarks>
+          <type>RM</type>
+          <freetext></freetext>
+        </remarks>
+      </miscellaneousRemark>
+    </dataElementsIndiv>
+  </dataElementsMaster>
+</PNR_AddMultiElements>

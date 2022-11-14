@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--## E-Ticket 결과 ##-->
+<!--Repeat:1-->
+<!--@version:(필수)(number) 버전정보-->
+<!--@timeStamp:(필수)(datetime)(YYYY-MM-DD HH:MM) 출력일시-->
+<ResponseDetails version="1.0.0" timeStamp="">
+	<!--예약 기본 정보-->
+	<!--Repeat:1-->
+	<bookingInfo>
+		<!--Vendor-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) Vendor 약자-->
+		<gds></gds>
+		<!--Vendor 예약번호-->
+		<!--Repeat:1-->
+		<!--@pnr:(필수)(string) 알파벳 형태의 PNR-->
+		<!--NodeValue:(필수)(number) 숫자 형태의 PNR-->
+		<bookingNo pnr=""></bookingNo>
+		<!--모두투어 예약번호-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(number) 모두투어 예약번호-->
+		<modeBookingNo></modeBookingNo>
+		<!--모두투어 예약번호(GUID)-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 모두투어 예약번호(GUID)-->
+		<agentBookingNo></agentBookingNo>
+    <!--제휴사 예약번호-->
+    <!--Repeat:1-->
+    <!--NodeValue:(옵션)(string) 제휴사 예약번호-->
+    <allianceBookingNo></allianceBookingNo>
+		<!--예약일-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(datetime)(YYYY-MM-DD HH:MM:SS) 예약일시-->
+		<bookingCreationDate></bookingCreationDate>
+		<!--예약좌석-->
+		<!--Repeat:1-->
+		<!--@code:(필수)(string) 좌석코드(Y:일반석, C:비즈니스석, F:일등석)-->
+		<!--NodeValue:(필수)(string) 좌석설명-->
+		<bookingClass code=""></bookingClass>
+		<!--탑승객이름-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 탑승객이름-->
+		<paxName></paxName>
+		<!--티켓번호-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 티켓번호-->
+		<ticketNumber></ticketNumber>
+	</bookingInfo>
+	<!--여정 정보-->
+	<!--Repeat:1-->
+	<flightInfo>
+		<!--Segment-->
+		<!--Repeat:1~9-->
+		<!--@ref:(필수)(number) 참조번호-->
+		<!--@ddt:(필수)(datetime)(YYYY-MM-DD HH:MM) 출발일시-->
+		<!--@ardt:(필수)(datetime)(YYYY-MM-DD HH:MM) 도착일시-->
+		<!--@mcc:(필수)(string) 마케팅 항공사코드-->
+		<!--@occ:(필수)(string) 운항 항공사코드-->
+		<!--@fln:(필수)(number) 편명-->
+		<!--@eqt:(필수)(number) 기종-->
+		<!--@stn:(필수)(number) 경유 수(기착)-->
+		<!--@rbd:(필수)(string) 좌석 클래스-->
+		<!--@rsc:(필수)(string) 여정 상태 코드-->
+		<!--@eft:(필수)(datetime)(HHMM) 비행시간-->
+		<seg ref="" ddt="" ardt="" mcc="" occ="" fln="" eqt="" stn="" rbd="" rsc="" eft="">
+			<!--출발지정보-->
+			<!--Repeat:1-->
+			<!--@code:(필수)(string) 출발지 공항코드-->
+			<!--@terminal:(필수)(string) 터미널명-->
+			<!--@terminalCode:(필수)(string) 터미널번호-->
+			<!--NodeValue:(필수)(string) 출발지 공항명-->
+			<departureAirport code="" terminal="" terminalCode=""></departureAirport>
+			<!--도착지정보-->
+			<!--Repeat:1-->
+			<!--@code:(필수)(string) 도착지 공항코드-->
+			<!--@terminal:(필수)(string) 터미널명-->
+			<!--@terminalCode:(필수)(string) 터미널번호-->
+			<!--NodeValue:(필수)(string) 도착지 공항명-->
+			<arrivalAirport code="" terminal="" terminalCode=""></arrivalAirport>
+			<!--운항항공사-->
+			<!--Repeat:1-->
+			<!--NodeValue:(옵션)(string) 운항항공사명-->
+			<operatingAirline></operatingAirline>
+			<!--마케팅항공사-->
+			<!--Repeat:1-->
+			<!--NodeValue:(필수)(string) 마케팅항공사명-->
+			<marketingAirline></marketingAirline>
+			<!--기종-->
+			<!--Repeat:1-->
+			<!--NodeValue:(필수)(string) 기종명-->
+			<equipment></equipment>
+      <!--항공사예약번호-->
+      <!--Repeat:1-->
+      <!--NodeValue:(필수)(string) 항공사예약번호-->
+      <airlineRefNumber></airlineRefNumber>
+			<!--요금정보-->
+			<!--Repeat:1-->
+			<!--@basis:(필수)(string) Fare Basis-->
+			<!--@baggage:(옵션)(string) 수하물-->
+			<!--@nvb:(옵션)(datetime, yyyy-MM-dd) 최소체류일-->
+			<!--@nva:(옵션)(datetime, yyyy-MM-dd) 최대체류일-->
+			<!--@seat:(옵션)(string) 좌석지정번호-->
+			<fare basis="" baggage="" nvb="" nva="" seat=""/>
+      <!--예약좌석-->
+      <!--Repeat:1-->
+      <!--@code:(필수)(string) 좌석코드(Y:일반석, C:비즈니스석, F:일등석)-->
+      <!--NodeValue:(필수)(string) 좌석설명-->
+      <cabin code=""></cabin>
+      <!--티켓번호-->
+      <!--Repeat:1-->
+      <!--NodeValue:(필수)(string) 티켓번호-->
+      <ticketNumber></ticketNumber>
+			<!--기착정보-->
+			<!--Repeat:0~1-->
+			<legInfo>
+				<!--기착정보-->
+				<!--Repeat:2-->
+				<!--@dlc:(필수)(string) 출발지 공항코드-->
+				<!--@alc:(필수)(string) 도착지 공항코드-->
+				<!--@ddt:(필수)(datetime)(YYYY-MM-DD HH:MM) 출발일시-->
+				<!--@ardt:(필수)(datetime)(YYYY-MM-DD HH:MM) 도착일시-->
+				<!--@eft:(필수)(datetime)(HHMM) 비행시간-->
+				<!--@gwt:(옵션)(datetime)(HHMM) 기착시 지상 대기시간-->
+				<!--NodeValue:(필수)(string) 도착지 공항명-->
+				<seg dlc="" alc="" ddt="" ardt="" eft="" gwt=""></seg>
+			</legInfo>
+		</seg>
+	</flightInfo>
+  <!--요금 정보-->
+  <!--Repeat:1-->
+  <fareInfo>
+    <!--요금 정보-->
+    <!--Repeat:1-->
+    <!--@amount:(필수)(number) 항공판매가2(fare + tax + fsc + tasf)-->
+    <!--@fare:(필수)(number) 항공요금-->
+    <!--@tax:(필수)(number) TAX-->
+    <!--@fsc:(필수)(number) 유류할증료-->
+    <!--@tasf:(필수)(number) 취급수수료-->
+    <!--@cnc:(필수)(string) 통화코드-->
+    <fare amount="" fare="" tax="" fsc="" tasf="" cnc=""/>
+    <!--지불수단-->
+    <!--Repeat:1-->
+    <!--@cardNo:(옵션)(string) 카드번호-->
+    <!--NodeValue:(필수)(string) 지불수단-->
+    <payment cardNo=""></payment>
+  </fareInfo>
+  <!--담당여행사 정보-->
+  <!--Repeat:1-->
+  <!--@snm:(옵션)(number) 사이트번호-->
+  <!--@anm:(옵션)(number) 거래처번호-->
+  <agentInfo snm="" anm="">
+    <!--여행사-->
+    <!--Repeat:0~1-->
+    <!--NodeValue:(필수)(string) 거래처명-->
+    <company><![CDATA[]]></company>
+    <!--담당직원-->
+    <!--Repeat:0~1-->
+    <!--NodeValue:(필수)(string) 거래처직원명-->
+    <name><![CDATA[]]></name>
+    <!--전화번호-->
+    <!--Repeat:0~1-->
+    <!--NodeValue:(필수)(string) 거래처 전화번호-->
+    <tel></tel>
+  </agentInfo>
+</ResponseDetails>

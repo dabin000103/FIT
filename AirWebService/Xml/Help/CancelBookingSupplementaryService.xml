@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[부가서비스 예약취소]]></Summary>
+	<Return Type="XmlElement"><![CDATA[예약 취소 결과 XML]]></Return>
+	<Items SubTitle="">
+    <Item Param="SNM" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[사이트번호]]></Item>
+    <Item Param="IBN" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[주문아이템번호]]></Item>
+    <Item Param="PID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[예약자번호(PTID)]]></Item>
+		<Item Param="CID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[취소자번호(PTID)]]></Item>
+    <Item Param="CRN" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[취소사유]]></Item>
+    <Item Param="RQT" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청단말기(WEB/MOBILEWEB/MOBILEAPP/CRS/MODEWARE)]]></Item>
+    <Item Param="RIP" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청자IP]]></Item>
+	</Items>
+</Help>

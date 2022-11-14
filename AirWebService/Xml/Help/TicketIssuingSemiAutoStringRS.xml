@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[자동발권(Command)]]></Summary>
+	<Return Type="XmlElement"><![CDATA[자동발권 실행 결과 XML]]></Return>
+	<Items SubTitle="">
+		<Item Param="OID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[모두투어 주문번호]]></Item>
+		<Item Param="PID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[예약자번호(PTID)]]></Item>
+		<Item Param="FT" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[TourCode]]></Item>
+		<Item Param="FM" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[Commission]]></Item>
+		<Item Param="FE" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[Endorsement]]></Item>
+		<Item Param="FV" Type="string" format="" Required="false" DefaultValue="" ExampleValue=""><![CDATA[Validating Carrier]]></Item>
+		<Item Param="FP" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[결제요청정보]]></Item>
+    <Item Param="RQR" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청자번호(PTID)]]></Item>
+    <Item Param="RQT" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청단말기(WEB/MOBILEWEB/MOBILEAPP/CRS/MODEWARE)]]></Item>
+    <Item Param="TIRN" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[발권요청번호(TicketIssuingRequest 서비스의 결과값)]]></Item>
+	</Items>
+	<XmlSample>
+		<FP>
+			<![CDATA[
+        <!--결제요청정보-->
+			  <!--Repeat:1-->
+			  <!--@paxName:(옵션)(string) 탑승객 영문이름+타이틀(ex:KO/JAEYOUNGMR)(전체발권일 경우 공백)-->
+			  <fp paxName="">
+				  <!--전체 발권시 결제요청정보(동일 운임의 성인만 존재시 사용)-->
+				  <!--Repeat:0~1-->
+				  <fullAmount>
+					  <!--항공운임정보(성인 1인 정보)-->
+					  <!--Repeat:1-->
+					  <!--@sellingFare:(필수)(number) Selling Fare-->
+					  <!--@dc:(필수)(number) 할인금액(SellingFare - 항공운임)-->
+					  <!--@fare:(필수)(number) 항공운임-->
+					  <!--@disFare:(필수)(number) 항공할인운임-->
+					  <!--@fsc:(필수)(number) 유류할증료-->
+					  <!--@tax:(필수)(number) TAX-->
+            <!--@tasf:(필수)(number) TASF-->
+					  <!--@price:(필수)(number) 판매가-->
+					  <fare sellingFare="" dc="" fare="" disFare="" fsc="" tax="" tasf="" price=""/>
+					  <!--결제요청정보(성인 1인 정보)-->
+					  <!--Repeat:1~9-->
+					  <!--@gubun:(필수)(string)(CASH|CARD|COUPON|OKCASHBAG|TMEMBERSHIP) 현금/카드/할인쿠폰/OK캐쉬백/T멤버쉽 구분-->
+					  <!--@kind:(옵션)(string) 카드 종류-->
+					  <!--@number:(옵션)(number) 카드 번호-->
+					  <!--@validThru:(옵션)(datetime)(YYYYMM) 카드 유효기간-->
+					  <!--@installment:(옵션)(string)(00|02|03..) 카드 할부기간-->
+					  <!--@currency:(옵션)(string) 통화코드-->
+					  <!--@amount:(옵션)(number) 결제요청금액-->
+					  <item gubun="" kind="" number="" validThru="" installment="00" currency="KRW" amount=""/>
+				  </fullAmount>
+				  <!--탑승객별 발권시 결제요청정보(성인/소아/유아 및 할인쿠폰 존재시 사용)-->
+				  <!--Repeat:0~1-->
+				  <paxAmount>
+					  <!--탑승객정보-->
+					  <!--Repeat:1~9-->
+					  <!--@name:(필수)(string) 탑승객 영문이름+타이틀(ex:KO/JAEYOUNGMR)-->
+					  <pax name="">
+						  <!--항공운임정보-->
+						  <!--Repeat:1-->
+						  <!--@sellingFare:(필수)(number) Selling Fare-->
+						  <!--@dc:(필수)(number) 할인금액(SellingFare - 항공운임)-->
+						  <!--@fare:(필수)(number) 항공운임-->
+						  <!--@disFare:(필수)(number) 항공할인운임-->
+						  <!--@fsc:(필수)(number) 유류할증료-->
+						  <!--@tax:(필수)(number) TAX-->
+              <!--@tasf:(필수)(number) TASF-->
+						  <!--@price:(필수)(number) 판매가-->
+						  <fare sellingFare="" dc="" fare="" disFare="" fsc="" tax="" tasf="" price=""/>
+						  <!--결제요청정보-->
+						  <!--Repeat:1~9-->
+						  <!--@gubun:(필수)(string)(CASH|CARD|COUPON|OKCASHBAG|TMEMBERSHIP) 현금/카드/할인쿠폰/OK캐쉬백/T멤버쉽 구분-->
+						  <!--@kind:(옵션)(string) 카드 종류-->
+						  <!--@number:(옵션)(number) 카드 번호-->
+						  <!--@validThru:(옵션)(datetime)(YYYYMM) 카드 유효기간-->
+						  <!--@installment:(옵션)(string)(00|02|03..) 카드 할부기간-->
+						  <!--@currency:(옵션)(string) 통화코드-->
+						  <!--@amount:(옵션)(number) 결제요청금액-->
+						  <item gubun="CASH" kind="VI" number="" validThru="" installment="" currency="" amount=""/>
+              <!--TourCode-->
+						  <!--Repeat:1-->
+              <!--NodeValue:(옵션)(string) TourCode-->
+              <tourCode></tourCode>
+              <!--Commission-->
+						  <!--Repeat:1-->
+              <!--NodeValue:(옵션)(string) Commission-->
+              <commission></commission>
+              <!--Endorsement-->
+						  <!--Repeat:1-->
+              <!--NodeValue:(옵션)(string) Endorsement-->
+              <endorsement></endorsement>
+					  </pax>
+				  </paxAmount>
+			  </fp>
+      ]]>
+		</FP>
+	</XmlSample>
+</Help>

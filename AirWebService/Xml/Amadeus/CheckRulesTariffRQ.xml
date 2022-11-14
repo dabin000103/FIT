@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Fare_CheckRules>
+	<msgType>
+		<messageFunctionDetails>
+			<messageFunction>712</messageFunction>
+		</messageFunctionDetails>
+	</msgType>
+	<itemNumber>
+		<itemNumberDetails>
+			<number>1</number>
+		</itemNumberDetails>
+		<itemNumberDetails>
+			<number>1</number>
+			<type>FC</type>
+		</itemNumberDetails>
+	</itemNumber>
+	<fareRule>
+		<tarifFareRule>
+			<ruleSectionId>AP</ruleSectionId>
+			<ruleSectionId>TF</ruleSectionId>
+		</tarifFareRule>
+	</fareRule>
+</Fare_CheckRules>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[탑승객별 E-Ticket 조회(PNR정보 이용)(탑승객별 문서출력용)]]></Summary>
+	<Return Type="XmlElement"><![CDATA[E-Ticket 정보 조회 결과 XML]]></Return>
+	<Items SubTitle="">
+		<Item Param="OID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[모두투어 주문번호]]></Item>
+		<Item Param="PID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[예약자번호(PTID)]]></Item>
+		<Item Param="PaxName" Type="string" format="" Required="true" DefaultValue="" ExampleValue="HONG/GILDONGMR"><![CDATA[탑승객명]]></Item>
+    <Item Param="RIP" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요청자IP]]></Item>
+	</Items>
+</Help>

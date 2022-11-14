@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pay:CardApproval xmlns:pay="http://payment.ws.fep.abacus.com/">
+  <CardApprovalRequest>
+    <TYPE></TYPE>
+    <TXN_TYPE></TXN_TYPE>
+    <CARD_NO></CARD_NO>
+    <CARD_EXT></CARD_EXT>
+    <INST_MONTH>00</INST_MONTH>
+    <CARD_TYPE></CARD_TYPE>
+    <AIRLINE_2CD></AIRLINE_2CD>
+    <AMOUNT></AMOUNT>
+    <DEVICE_ID></DEVICE_ID>
+    <PCC></PCC>
+    <AUTH_ID></AUTH_ID>
+    <AUTH_PW></AUTH_PW>
+    <APPR_NO></APPR_NO>
+  </CardApprovalRequest>
+</pay:CardApproval>

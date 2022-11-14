@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResponseDetails ref="" guid="" version="1.0.0" timeStamp="">
+	<flightInfo ptc="" rot="" opn="">
+		<flightIndex ref="">
+			<segGroup ref="" eft="" ewt="" mjc="" cds="" nosp="" aif="">
+				<seg dlc="" alc="" ddt="" ardt="" mcc="" occ="" fln="" eqt="" stn="" etc="" aif="">
+					<seg dlc="" alc="" ddt="" ardt=""/>
+				</seg>
+			</segGroup>
+		</flightIndex>
+	</flightInfo>
+	<priceInfo>
+    <priceIndex gds="" mode="" ptc="" ref="" guid="">
+			<summary price="" fare="" disFare="" tax="" fsc="" disPartner="" tasf="" mTasf="" aTasf="" pvc="" mas="" ttl="" cds="" ucf="" ntf="" sutf="N" cnc="" />
+			<segGroup>
+        <seg>
+          <ref fiRef="" nosp="" stn="" baggage=""></ref>
+				</seg>
+			</segGroup>
+			<paxFareGroup>
+				<paxFare ptc="">
+					<amount fare="" disFare="" tax="" fsc="" disPartner="" tasf="" mTasf="" aTasf=""/>
+					<segFareGroup>
+						<segFare ref="">
+							<fare bpt="" mas="">
+								<cabin rbd="" cabin="" orginCabin="" avl=""/>
+								<fare basis="" ptc="" tkd="">
+									<fareType></fareType>
+								</fare>
+                <corporateId></corporateId>
+							</fare>
+						</segFare>
+					</segFareGroup>
+					<traveler>
+						<ref ind=""></ref>
+					</traveler>
+				</paxFare>
+			</paxFareGroup>
+			<fareMessage></fareMessage>
+      <fareRuleUrl></fareRuleUrl>
+			<promotionInfo></promotionInfo>
+		</priceIndex>
+	</priceInfo>
+</ResponseDetails>

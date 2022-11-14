@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--## 출발지 공항리스트 ##-->
+<!--Repeat:1-->
+<airDiscount>
+	<!--공항리스트-->
+	<!--Repeat:1~999-->
+	<fare>
+		<!--출발도시코드-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 출발도시코드-->
+		<DEP_CITY_CD></DEP_CITY_CD>
+	</fare>
+</airDiscount>

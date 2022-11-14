@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Air_FlightInfo>
+	<generalFlightInfo>
+		<flightDate>
+			<departureDate></departureDate>
+			<departureTime></departureTime>
+		</flightDate>
+		<boardPointDetails>
+			<trueLocationId></trueLocationId>
+		</boardPointDetails>
+		<offPointDetails>
+			<trueLocationId></trueLocationId>
+		</offPointDetails>
+		<companyDetails>
+			<marketingCompany></marketingCompany>
+			<operatingCompany></operatingCompany>
+		</companyDetails>
+		<flightIdentification>
+			<flightNumber></flightNumber>
+		</flightIdentification>
+	</generalFlightInfo>
+</Air_FlightInfo>

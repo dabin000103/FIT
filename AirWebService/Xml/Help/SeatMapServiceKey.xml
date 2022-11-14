@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[실시간좌석배정 인증키(토파스 ASP서비스용)]]></Summary>
+	<Return Type="XmlElement"><![CDATA[실시간좌석배정 인증키 결과 XML]]></Return>
+	<Items SubTitle="">
+		<Item Param="SNM" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[사이트번호]]></Item>
+		<Item Param="PNR" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[PNR번호]]></Item>
+	</Items>
+</Help>

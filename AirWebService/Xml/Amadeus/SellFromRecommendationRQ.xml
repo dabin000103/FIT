@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Air_SellFromRecommendation>
+	<messageActionDetails>
+		<messageFunctionDetails>
+			<messageFunction>183</messageFunction>
+			<additionalMessageFunction>M1</additionalMessageFunction>
+		</messageFunctionDetails>
+	</messageActionDetails>
+	<itineraryDetails>
+		<originDestinationDetails>
+			<origin></origin>
+			<destination></destination>
+		</originDestinationDetails>
+		<message>
+			<messageFunctionDetails>
+				<messageFunction>183</messageFunction>
+			</messageFunctionDetails>
+		</message>
+		<segmentInformation>
+			<travelProductInformation>
+				<flightDate>
+					<departureDate></departureDate>
+					<departureTime></departureTime>
+					<arrivalDate></arrivalDate>
+					<arrivalTime></arrivalTime>
+				</flightDate>
+				<boardPointDetails>
+					<trueLocationId></trueLocationId>
+				</boardPointDetails>
+				<offpointDetails>
+					<trueLocationId></trueLocationId>
+				</offpointDetails>
+				<companyDetails>
+					<marketingCompany></marketingCompany>
+				</companyDetails>
+				<flightIdentification>
+					<flightNumber></flightNumber>
+					<bookingClass></bookingClass>
+				</flightIdentification>
+			</travelProductInformation>
+			<relatedproductInformation>
+				<quantity>1</quantity>
+				<statusCode>NN</statusCode>
+			</relatedproductInformation>
+		</segmentInformation>
+	</itineraryDetails>
+</Air_SellFromRecommendation>

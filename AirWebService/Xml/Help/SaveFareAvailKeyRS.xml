@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help>
+	<Summary><![CDATA[선택운임 및 여정 임시저장 Key 발급]]></Summary>
+	<Return Type="string"><![CDATA[]]></Return>
+	<Items SubTitle="">
+		<Item Param="UniqueID" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[항공운임 고유번호]]></Item>
+		<Item Param="FareID" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[항공운임번호]]></Item>
+		<Item Param="SNM" Type="number" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[사이트번호]]></Item>
+		<Item Param="FXL" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[요금조회 결과 중 선택된 <priceIndex>~</priceIndex> XmlNode(segGroup는 제외)]]></Item>
+		<Item Param="SXL" Type="string" format="" Required="true" DefaultValue="" ExampleValue=""><![CDATA[선택한 여정을 <itinerary>~<itinerary>노드에 삽입한 XmlNode]]></Item>
+		<Item Param="RXL" Type="string" format=""  Required="true" DefaultValue="" ExampleValue=""><![CDATA[요금규정 XmlNode]]></Item>
+	</Items>
+</Help>

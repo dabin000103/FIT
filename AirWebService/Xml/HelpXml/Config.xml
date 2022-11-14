@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--## 항공 환경설정 ##-->
+<!--Repeat:1-->
+<!--@version:(필수)(number) 버전정보-->
+<!--@timeStamp:(필수)(datetime)(YYYY-MM-DD HH:MM) 출력일시-->
+<Config version="1.0.0" timeStamp="">
+	<!--달력 및 날짜관련 정보-->
+	<!--Repeat:1-->
+	<dateInfo>
+		<!--시스템 날짜 정보-->
+		<!--Repeat:1-->
+		<systemDate>
+			<!--시스템 날짜-->
+			<!--Repeat:1-->
+			<!--NodeValue:(필수)(datetime)(YYYY-MM-DD) 날짜-->
+			<date></date>
+			<!--시스템 시간-->
+			<!--Repeat:1-->
+			<!--NodeValue:(필수)(datetime)(HH:MM) 시간-->
+			<time></time>
+		</systemDate>
+		<!--사용자용 날짜 정보-->
+		<!--Repeat:1-->
+		<userDate>
+			<!--출발일 선택을 위한 기준일-->
+			<!--Repeat:1-->
+			<!--NodeValue:(필수)(datetime)(YYYY-MM-DD) 출발일 기준일-->
+			<startDate></startDate>
+		</userDate>
+		<!--서비스 중단 안내-->
+		<!--Repeat:1-->
+		<!--@Use:(필수)(bool) 사용여부(true:서비스 중단예정, false:서비스 중단X)-->
+		<unAvailability use="false">
+			<!--목록-->
+			<!--Repeat:1~99-->
+			<!--@Code:(필수)(string) GDS구분(MODE:서비스 전체, Amadeus:아마데우스만, Topas:토파스만, Abacus:아바쿠스만)-->
+			<gds code="">
+				<!--시작일시-->
+				<!--Repeat:1-->
+				<from>
+					<!--시작일-->
+					<!--Repeat:1-->
+					<!--NodeValue:(필수)(datetime)(YYYY-MM-DD) 날짜-->
+					<date></date>
+					<!--시작시간-->
+					<!--Repeat:1-->
+					<!--NodeValue:(필수)(datetime)(HH:MM) 시간-->
+					<time></time>
+				</from>
+				<!--종료일시-->
+				<!--Repeat:1-->
+				<to>
+					<!--종료일-->
+					<!--Repeat:1-->
+					<!--NodeValue:(필수)(datetime)(YYYY-MM-DD) 날짜-->
+					<date></date>
+					<!--종료시간-->
+					<!--Repeat:1-->
+					<!--NodeValue:(필수)(datetime)(HH:MM) 시간-->
+					<time></time>
+				</to>
+				<!--공지내용-->
+				<!--Repeat:1-->
+				<!--NodeValue:(필수)(string) 내용-->
+				<message><![CDATA[]]></message>
+			</gds>
+		</unAvailability>
+	</dateInfo>
+	<!--고객센터 정보-->
+	<!--Repeat:1-->
+	<customerCenter>
+		<!--여행사명-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 여행사명-->
+		<company><![CDATA[모두투어 해외항공 예약센터]]></company>
+		<!--연락처-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 연락처-->
+		<tel>1544-5252</tel>
+		<!--상담시간-->
+		<!--Repeat:1-->
+		<!--NodeValue:(필수)(string) 상담시간-->
+		<info><![CDATA[평일 09:00 ~ 18:00 (항공권 문의는 평일만 가능합니다.)]]></info>
+	</customerCenter>
+</Config>

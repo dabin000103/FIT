@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--## 부가서비스 ##-->
+<!--Repeat:1-->
+<!--@version:(필수)(number) 버전정보-->
+<!--@timeStamp:(필수)(datetime)(YYYY-MM-DD HH:MM) 출력일시-->
+<ResponseDetails version="1.0.0" timeStamp="">
+  <!--예약정보-->
+  <!--Repeat:1-->
+  <bookingInfo>
+    <!--모두투어 예약번호-->
+    <!--Repeat:1-->
+    <!--@siteNo:(필수)(number) 예약 사이트번호-->
+    <!--@agnetNo:(필수)(number) 예약 거래처번호-->
+    <!--@creationDate:(필수)(YYYY-MM-DD) 예약일-->
+    <!--@rqt:(필수)(string) 요청단말기-->
+    <!--@cancel:(필수)(string)(Y|N) 취소여부-->
+    <!--NodeValue:(필수)(number) 모두투어 예약번호-->
+    <modeBookingNo siteNo="" agnetNo="" creationDate="" rqt="" cancel=""></modeBookingNo>
+    <!--발권항공사-->
+    <!--Repeat:1-->
+    <!--@code:(필수)(string) 항공사코드-->
+    <bookingAirline code=""></bookingAirline>
+    <!--여정-->
+    <!--Repeat:1-->
+    <!--@type:(필수)(string) 여정타입코드(OW:편도, RT:왕복, DT:출도착이원구간, MD:다구간)-->
+    <!--@departureAirport:(필수)(string) 출발공항-->
+    <!--@departureDate:(필수)(datetime)(YYYY-MM-DD) 출발일-->
+    <bookingRtg type="" departureAirport="" departureDate=""></bookingRtg>
+  </bookingInfo>
+  <!--부가서비스-->
+  <!--Repeat:1-->
+  <supplementaryService>
+    <!--부가서비스-->
+    <!--Repeat:0~99-->
+    <!--@code:(필수)(number) 서비스번호-->
+    <service code="">
+      <!--서비스명-->
+      <!--Repeat:1-->
+      <!--NodeValue:(필수)(string) 규정명칭-->
+      <name></name>
+      <!--서비스요금-->
+      <!--Repeat:1-->
+      <!--@amount:(필수)(number) 판매가(1인)(@cost - @discount)-->
+      <!--@cost:(필수)(number) 원가(1인)-->
+      <!--@discount:(필수)(number) 할인금액(1인)-->
+      <!--@quantity:(필수)(number) 신청수량-->
+      <!--@sellingPrice:(필수)(number) 총판매가(@amount * @quantity)-->
+      <price amount="" cost="" discount="" quantity="" sellingPrice="">
+        <!--이벤트명-->
+        <!--Repeat:0~1-->
+        <!--NodeValue:(옵션)(string) 이벤트(프로모션) 명-->
+        <eventTitle></eventTitle>
+        <!--이벤트설명-->
+        <!--Repeat:0~1-->
+        <!--NodeValue:(옵션)(string) 이벤트(프로모션) 설명-->
+        <eventMessage><![CDATA[]]></eventMessage>
+      </price>
+      <!--서비스요약-->
+      <!--Repeat:1-->
+      <!--NodeValue:(필수)(string) 서비스 간략 내용-->
+      <summary><![CDATA[]]></summary>
+      <!--서비스설명-->
+      <!--Repeat:1-->
+      <!--NodeValue:(옵션)(strnig) 서비스 상세 내용-->
+      <description><![CDATA[]]></description>
+    </service>
+  </supplementaryService>
+</ResponseDetails>
