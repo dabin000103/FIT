@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="Fare_InformativePricingWithoutPNR.asmx.cs" Class="AirWebService.InformativePricingWithoutPNR.AmadeusWebService" %>

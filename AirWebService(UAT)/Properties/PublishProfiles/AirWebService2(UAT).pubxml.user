@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+이 파일은 웹 프로젝트의 게시/패키지 프로세스에 사용됩니다. 이 MSBuild 파일을 편집하여 이 프로세스의 동작을
+사용자 지정할 수 있습니다. 이 작업에 대해 자세히 알아보려면 http://go.microsoft.com/fwlink/?LinkID=208121을 방문하십시오. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>S:\ModeWebService2\AirWebService(UAT)</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AbacusAirService.asmx">
+      <publishTime>07/30/2019 14:08:10</publishTime>
+    </File>
+    <File Include="AirService.asmx">
+      <publishTime>07/30/2019 15:55:27</publishTime>
+    </File>
+    <File Include="AirService2.asmx">
+      <publishTime>07/30/2019 16:08:21</publishTime>
+    </File>
+    <File Include="AirService3.asmx">
+      <publishTime>07/30/2019 16:08:21</publishTime>
+    </File>
+    <File Include="AllianceService.asmx">
+      <publishTime>07/30/2019 16:08:21</publishTime>
+    </File>
+    <File Include="AmadeusAirService.asmx">
+      <publishTime>07/30/2019 16:43:50</publishTime>
+    </File>
+    <File Include="App_Data/Config.xml">
+      <publishTime>07/30/2019 16:01:17</publishTime>
+    </File>
+    <File Include="bin/AirWebService%28UAT%29.dll">
+      <publishTime>08/06/2019 16:14:17</publishTime>
+    </File>
+    <File Include="bin/AirWebService%28UAT%29.pdb">
+      <publishTime>08/06/2019 16:14:17</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/13/2019 14:40:30</publishTime>
+    </File>
+    <File Include="clientaccesspolicy.xml">
+      <publishTime>07/30/2019 13:49:39</publishTime>
+    </File>
+    <File Include="crossdomain.xml">
+      <publishTime>07/30/2019 13:49:39</publishTime>
+    </File>
+    <File Include="GalileoAirService.asmx">
+      <publishTime>07/30/2019 16:08:23</publishTime>
+    </File>
+    <File Include="ModeService.asmx">
+      <publishTime>07/30/2019 16:08:23</publishTime>
+    </File>
+    <File Include="Properties/DataSources/System.Xml.XmlElement.datasource">
+      <publishTime>07/30/2019 15:23:30</publishTime>
+    </File>
+    <File Include="QueueService.asmx">
+      <publishTime>07/30/2019 15:42:14</publishTime>
+    </File>
+    <File Include="robots.txt">
+      <publishTime>07/30/2019 13:49:39</publishTime>
+    </File>
+    <File Include="SabreAirService.asmx">
+      <publishTime>07/30/2019 16:08:23</publishTime>
+    </File>
+    <File Include="Services/Abacus/AbacusWebService.asmx">
+      <publishTime>07/30/2019 14:01:09</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Air_FlightInfo.asmx">
+      <publishTime>07/30/2019 16:01:49</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Air_MultiAvailability.asmx">
+      <publishTime>07/30/2019 16:01:49</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Air_RetrieveSeatMap.asmx">
+      <publishTime>07/30/2019 16:01:49</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Air_SellFromRecommendation.asmx">
+      <publishTime>07/30/2019 16:01:49</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Command_Cryptic.asmx">
+      <publishTime>07/30/2019 16:01:50</publishTime>
+    </File>
+    <File Include="Services/Amadeus/DocIssuance_IssueTicket.asmx">
+      <publishTime>07/30/2019 16:01:50</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Fare_CheckRules.asmx">
+      <publishTime>07/30/2019 16:01:51</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Fare_GetRulesOfPricedItinerary.asmx">
+      <publishTime>07/30/2019 16:01:51</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Fare_InformativeBestPricingWithoutPNR.asmx">
+      <publishTime>07/30/2019 16:01:51</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Fare_InformativePricingWithoutPNR.asmx">
+      <publishTime>07/30/2019 16:01:51</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Fare_InformativePricingWithoutPNRRule.asmx">
+      <publishTime>07/30/2019 16:01:51</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Fare_InstantTravelBoardSearch.asmx">
+      <publishTime>07/30/2019 16:01:51</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Fare_MasterPricerCalendar.asmx">
+      <publishTime>07/30/2019 16:01:51</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Fare_MasterPricerTravelBoardSearch.asmx">
+      <publishTime>07/30/2019 16:01:51</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Fare_MasterPricerTravelBoardSearchSoap4.asmx">
+      <publishTime>07/30/2019 16:01:51</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Fare_PricePNRWithBookingClass.asmx">
+      <publishTime>07/30/2019 16:01:51</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Fare_PricePNRWithBookingClassKEPricing.asmx">
+      <publishTime>07/30/2019 16:01:51</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Fare_PricePNRWithBookingClassPricing.asmx">
+      <publishTime>07/30/2019 16:01:51</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Fare_SellByFareCalendar.asmx">
+      <publishTime>07/30/2019 16:01:51</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Fare_SellByFareSearch.asmx">
+      <publishTime>07/30/2019 16:01:51</publishTime>
+    </File>
+    <File Include="Services/Amadeus/FOP_CreateFormOfPayment.asmx">
+      <publishTime>07/30/2019 16:01:51</publishTime>
+    </File>
+    <File Include="Services/Amadeus/MiniRule_GetFromPricing.asmx">
+      <publishTime>07/30/2019 16:01:51</publishTime>
+    </File>
+    <File Include="Services/Amadeus/PNR_AddMultiElements.asmx">
+      <publishTime>07/30/2019 16:01:51</publishTime>
+    </File>
+    <File Include="Services/Amadeus/PNR_Cancel.asmx">
+      <publishTime>07/30/2019 16:01:51</publishTime>
+    </File>
+    <File Include="Services/Amadeus/PNR_Retrieve.asmx">
+      <publishTime>07/30/2019 16:01:51</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Queue_CountTotal.asmx">
+      <publishTime>07/30/2019 16:01:52</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Queue_List.asmx">
+      <publishTime>07/30/2019 16:01:53</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Queue_MoveItem.asmx">
+      <publishTime>07/30/2019 16:01:54</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Queue_PlacePNR.asmx">
+      <publishTime>07/30/2019 16:01:55</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Queue_RemoveItem.asmx">
+      <publishTime>07/30/2019 16:01:56</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Security_Authenticate.asmx">
+      <publishTime>07/30/2019 16:02:22</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Security_SignOut.asmx">
+      <publishTime>07/30/2019 13:49:39</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Ticket_CancelDocument.asmx">
+      <publishTime>07/30/2019 16:47:25</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Ticket_CreateTSTFromPricing.asmx">
+      <publishTime>07/30/2019 16:47:04</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Ticket_DisplayQuota.asmx">
+      <publishTime>07/30/2019 16:47:04</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Ticket_DisplayTST.asmx">
+      <publishTime>07/30/2019 16:47:04</publishTime>
+    </File>
+    <File Include="Services/Amadeus/Ticket_ProcessEDoc.asmx">
+      <publishTime>07/30/2019 16:47:04</publishTime>
+    </File>
+    <File Include="Services/Modetour/InicisWEB.asmx">
+      <publishTime>07/30/2019 17:04:37</publishTime>
+    </File>
+    <File Include="TopasAirService.asmx">
+      <publishTime>07/30/2019 16:08:23</publishTime>
+    </File>
+    <File Include="Web References/com.modetour.webservice.Air.Mode/Reference.map">
+      <publishTime>07/30/2019 16:22:58</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/06/2019 15:40:24</publishTime>
+    </File>
+    <File Include="WebService.asmx">
+      <publishTime>07/30/2019 16:08:23</publishTime>
+    </File>
+    <File Include="Xml/Abacus/GetReservationRQ.xml">
+      <publishTime>07/30/2019 14:06:08</publishTime>
+    </File>
+    <File Include="Xml/Abacus/SessionClose.xml">
+      <publishTime>07/30/2019 14:02:29</publishTime>
+    </File>
+    <File Include="Xml/Abacus/SessionCreate.xml">
+      <publishTime>07/30/2019 14:02:29</publishTime>
+    </File>
+    <File Include="Xml/Abacus/SWSActions.xml">
+      <publishTime>07/30/2019 14:07:55</publishTime>
+    </File>
+    <File Include="Xml/Abacus/TravelItineraryReadRQ.xml">
+      <publishTime>07/31/2019 14:09:15</publishTime>
+    </File>
+    <File Include="Xml/Amadeus/AuthenticateRQ.xml">
+      <publishTime>07/30/2019 13:49:39</publishTime>
+    </File>
+    <File Include="Xml/Amadeus/AuthenticateRS.xml">
+      <publishTime>07/30/2019 13:49:39</publishTime>
+    </File>
+    <File Include="Xml/Amadeus/CommandCrypticRQ.xml">
+      <publishTime>07/30/2019 13:49:39</publishTime>
+    </File>
+    <File Include="Xml/Amadeus/InstantTravelBoardSearchRQ.xml">
+      <publishTime>07/30/2019 13:49:39</publishTime>
+    </File>
+    <File Include="Xml/Amadeus/QueueCountTotalRQ.xml">
+      <publishTime>07/30/2019 13:49:39</publishTime>
+    </File>
+    <File Include="Xml/Amadeus/QueueListRQ.xml">
+      <publishTime>07/30/2019 13:49:39</publishTime>
+    </File>
+    <File Include="Xml/Amadeus/QueueMoveItemRQ.xml">
+      <publishTime>07/30/2019 13:49:39</publishTime>
+    </File>
+    <File Include="Xml/Amadeus/QueuePlacePNRRQ.xml">
+      <publishTime>07/30/2019 13:49:39</publishTime>
+    </File>
+    <File Include="Xml/Amadeus/QueueRemoveItemRQ.xml">
+      <publishTime>07/30/2019 13:49:39</publishTime>
+    </File>
+    <File Include="Xml/Amadeus/RetrieveRQ.xml">
+      <publishTime>07/31/2019 11:44:50</publishTime>
+    </File>
+    <File Include="Xml/Amadeus/SignOutRQ.xml">
+      <publishTime>07/30/2019 13:49:39</publishTime>
+    </File>
+    <File Include="Xml/Mode/CheckRunTime.xml">
+      <publishTime>07/31/2019 11:34:09</publishTime>
+    </File>
+    <File Include="Xml/Mode/Errors.xml">
+      <publishTime>07/31/2019 11:44:03</publishTime>
+    </File>
+    <File Include="Xml/Mode/SessionClose.xml">
+      <publishTime>07/30/2019 13:49:39</publishTime>
+    </File>
+    <File Include="Xml/Mode/SessionCreate.xml">
+      <publishTime>07/30/2019 13:49:39</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

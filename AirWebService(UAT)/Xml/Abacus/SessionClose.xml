@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SessionCloseRQ Version="2003A.TsabreXML1.0.1">
+	<POS>
+		<Source PseudoCityCode="K7M8"/>
+	</POS>
+</SessionCloseRQ>

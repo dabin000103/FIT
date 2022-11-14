@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A3F19F64-93A8-4A48-9A8D-72C27CBC44B7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AirWebService_UAT_</RootNamespace>
+    <AssemblyName>AirWebService%28UAT%29</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebApi\WebApi\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AbacusAirService.asmx" />
+    <Content Include="AirService.asmx" />
+    <Content Include="AirService2.asmx" />
+    <Content Include="AirService3.asmx" />
+    <Content Include="AllianceService.asmx" />
+    <Content Include="AmadeusAirService.asmx" />
+    <Content Include="App_Data\Config.xml" />
+    <Content Include="clientaccesspolicy.xml" />
+    <Content Include="crossdomain.xml" />
+    <Content Include="GalileoAirService.asmx" />
+    <Content Include="ModeService.asmx" />
+    <Content Include="QueueService.asmx" />
+    <Content Include="robots.txt" />
+    <Content Include="Properties\DataSources\System.Xml.XmlElement.datasource" />
+    <Content Include="SabreAirService.asmx" />
+    <Content Include="Services\Abacus\AbacusWebService.asmx" />
+    <Content Include="Services\Amadeus\Air_FlightInfo.asmx" />
+    <Content Include="Services\Amadeus\Air_MultiAvailability.asmx" />
+    <Content Include="Services\Amadeus\Air_RetrieveSeatMap.asmx" />
+    <Content Include="Services\Amadeus\Air_SellFromRecommendation.asmx" />
+    <Content Include="Services\Amadeus\Command_Cryptic.asmx" />
+    <Content Include="Services\Amadeus\DocIssuance_IssueTicket.asmx" />
+    <Content Include="Services\Amadeus\Fare_CheckRules.asmx" />
+    <Content Include="Services\Amadeus\Fare_GetRulesOfPricedItinerary.asmx" />
+    <Content Include="Services\Amadeus\Fare_InformativeBestPricingWithoutPNR.asmx" />
+    <Content Include="Services\Amadeus\Fare_InformativePricingWithoutPNR.asmx" />
+    <Content Include="Services\Amadeus\Fare_InformativePricingWithoutPNRRule.asmx" />
+    <Content Include="Services\Amadeus\Fare_InstantTravelBoardSearch.asmx" />
+    <Content Include="Services\Amadeus\Fare_MasterPricerCalendar.asmx" />
+    <Content Include="Services\Amadeus\Fare_MasterPricerTravelBoardSearch.asmx" />
+    <Content Include="Services\Amadeus\Fare_MasterPricerTravelBoardSearchSoap4.asmx" />
+    <Content Include="Services\Amadeus\Fare_PricePNRWithBookingClass.asmx" />
+    <Content Include="Services\Amadeus\Fare_PricePNRWithBookingClassKEPricing.asmx" />
+    <Content Include="Services\Amadeus\Fare_PricePNRWithBookingClassPricing.asmx" />
+    <Content Include="Services\Amadeus\Fare_SellByFareCalendar.asmx" />
+    <Content Include="Services\Amadeus\Fare_SellByFareSearch.asmx" />
+    <Content Include="Services\Amadeus\FOP_CreateFormOfPayment.asmx" />
+    <Content Include="Services\Amadeus\MiniRule_GetFromPricing.asmx" />
+    <Content Include="Services\Amadeus\PNR_AddMultiElements.asmx" />
+    <Content Include="Services\Amadeus\PNR_Cancel.asmx" />
+    <Content Include="Services\Amadeus\PNR_Retrieve.asmx" />
+    <Content Include="Services\Amadeus\Queue_CountTotal.asmx" />
+    <Content Include="Services\Amadeus\Security_Authenticate.asmx" />
+    <Content Include="Services\Amadeus\Security_SignOut.asmx" />
+    <Content Include="Services\Amadeus\Queue_List.asmx" />
+    <Content Include="Services\Amadeus\Queue_MoveItem.asmx" />
+    <Content Include="Services\Amadeus\Queue_PlacePNR.asmx" />
+    <Content Include="Services\Amadeus\Queue_RemoveItem.asmx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Services\Amadeus\Ticket_CancelDocument.asmx" />
+    <Content Include="Services\Amadeus\Ticket_CreateTSTFromPricing.asmx" />
+    <Content Include="Services\Amadeus\Ticket_DisplayQuota.asmx" />
+    <Content Include="Services\Amadeus\Ticket_DisplayTST.asmx" />
+    <Content Include="Services\Amadeus\Ticket_ProcessEDoc.asmx" />
+    <Content Include="Services\Modetour\InicisWEB.asmx" />
+    <Content Include="TopasAirService.asmx" />
+    <None Include="Web References\com.modetour.webservice.Air.Mode\Mode.disco" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebService.asmx" />
+    <Content Include="Xml\Abacus\GetReservationRQ.xml" />
+    <Content Include="Xml\Abacus\SessionClose.xml" />
+    <Content Include="Xml\Abacus\SessionCreate.xml" />
+    <Content Include="Xml\Abacus\SWSActions.xml" />
+    <Content Include="Xml\Abacus\TravelItineraryReadRQ.xml" />
+    <Content Include="Xml\Amadeus\AuthenticateRQ.xml" />
+    <Content Include="Xml\Amadeus\AuthenticateRS.xml" />
+    <Content Include="Xml\Amadeus\CommandCrypticRQ.xml" />
+    <Content Include="Xml\Amadeus\QueueCountTotalRQ.xml" />
+    <Content Include="Xml\Amadeus\InstantTravelBoardSearchRQ.xml" />
+    <Content Include="Xml\Amadeus\RetrieveRQ.xml" />
+    <Content Include="Xml\Amadeus\SignOutRQ.xml" />
+    <Content Include="Xml\Amadeus\QueueListRQ.xml" />
+    <Content Include="Xml\Amadeus\QueueMoveItemRQ.xml" />
+    <Content Include="Xml\Amadeus\QueuePlacePNRRQ.xml" />
+    <Content Include="Xml\Amadeus\QueueRemoveItemRQ.xml" />
+    <Content Include="Xml\Mode\CheckRunTime.xml" />
+    <Content Include="Xml\Mode\Errors.xml" />
+    <Content Include="Xml\Mode\SessionCreate.xml" />
+    <Content Include="Xml\Mode\SessionClose.xml" />
+    <None Include="Web References\com.modetour.webservice.Air.Mode\Mode.wsdl" />
+    <Content Include="Web References\com.modetour.webservice.Air.Mode\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbacusAirService.asmx.cs">
+      <DependentUpon>AbacusAirService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AirService.asmx.cs">
+      <DependentUpon>AirService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AirService2.asmx.cs">
+      <DependentUpon>AirService2.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AirService3.asmx.cs">
+      <DependentUpon>AirService3.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AllianceService.asmx.cs">
+      <DependentUpon>AllianceService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AmadeusAirService.asmx.cs">
+      <DependentUpon>AmadeusAirService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="App_Code\AbacusConfig.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="App_Code\XmlHelper.cs" />
+    <Compile Include="Model\Abacus\GetReservationRS.cs" />
+    <Compile Include="Services\Amadeus\Ticket_CancelDocument.asmx.cs">
+      <DependentUpon>Ticket_CancelDocument.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Ticket_CreateTSTFromPricing.asmx.cs">
+      <DependentUpon>Ticket_CreateTSTFromPricing.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Ticket_DisplayQuota.asmx.cs">
+      <DependentUpon>Ticket_DisplayQuota.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Ticket_DisplayTST.asmx.cs">
+      <DependentUpon>Ticket_DisplayTST.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Ticket_ProcessEDoc.asmx.cs">
+      <DependentUpon>Ticket_ProcessEDoc.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Modetour\InicisWEB.asmx.cs">
+      <DependentUpon>InicisWEB.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Web References\com.modetour.webservice.Air.Mode\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="WebService.asmx.cs">
+      <DependentUpon>WebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="App_Code\AES256Cipher.cs" />
+    <Compile Include="App_Code\AirConfig.cs" />
+    <Compile Include="App_Code\AmadeusConfig.cs" />
+    <Compile Include="App_Code\Common.cs" />
+    <Compile Include="App_Code\GalileoConfig.cs" />
+    <Compile Include="App_Code\JsonConverter.cs" />
+    <Compile Include="App_Code\LogSave.cs" />
+    <Compile Include="App_Code\ModeConfig.cs" />
+    <Compile Include="App_Code\MWSException.cs" />
+    <Compile Include="App_Code\MWSExceptionMode.cs" />
+    <Compile Include="App_Code\SabreConfig.cs" />
+    <Compile Include="App_Code\SearchFareAvailCabin.cs" />
+    <Compile Include="App_Code\SearchFareAvailCabin2.cs" />
+    <Compile Include="App_Code\SearchFareAvailGrouping.cs" />
+    <Compile Include="App_Code\SearchFareAvailGrouping2.cs" />
+    <Compile Include="App_Code\SearchFareAvailPaxType.cs" />
+    <Compile Include="App_Code\SearchSave.cs" />
+    <Compile Include="App_Code\TopasConfig.cs" />
+    <Compile Include="GalileoAirService.asmx.cs">
+      <DependentUpon>GalileoAirService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ModeService.asmx.cs">
+      <DependentUpon>ModeService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SabreAirService.asmx.cs">
+      <DependentUpon>SabreAirService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Air_FlightInfo.asmx.cs">
+      <DependentUpon>Air_FlightInfo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Air_MultiAvailability.asmx.cs">
+      <DependentUpon>Air_MultiAvailability.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Air_RetrieveSeatMap.asmx.cs">
+      <DependentUpon>Air_RetrieveSeatMap.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Air_SellFromRecommendation.asmx.cs">
+      <DependentUpon>Air_SellFromRecommendation.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\DocIssuance_IssueTicket.asmx.cs">
+      <DependentUpon>DocIssuance_IssueTicket.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Fare_CheckRules.asmx.cs">
+      <DependentUpon>Fare_CheckRules.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Fare_GetRulesOfPricedItinerary.asmx.cs">
+      <DependentUpon>Fare_GetRulesOfPricedItinerary.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Fare_InformativeBestPricingWithoutPNR.asmx.cs">
+      <DependentUpon>Fare_InformativeBestPricingWithoutPNR.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Fare_InformativePricingWithoutPNR.asmx.cs">
+      <DependentUpon>Fare_InformativePricingWithoutPNR.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Fare_InformativePricingWithoutPNRRule.asmx.cs">
+      <DependentUpon>Fare_InformativePricingWithoutPNRRule.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Fare_MasterPricerCalendar.asmx.cs">
+      <DependentUpon>Fare_MasterPricerCalendar.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Fare_MasterPricerTravelBoardSearch.asmx.cs">
+      <DependentUpon>Fare_MasterPricerTravelBoardSearch.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Fare_MasterPricerTravelBoardSearchSoap4.asmx.cs">
+      <DependentUpon>Fare_MasterPricerTravelBoardSearchSoap4.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Fare_PricePNRWithBookingClass.asmx.cs">
+      <DependentUpon>Fare_PricePNRWithBookingClass.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Fare_PricePNRWithBookingClassKEPricing.asmx.cs">
+      <DependentUpon>Fare_PricePNRWithBookingClassKEPricing.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Fare_PricePNRWithBookingClassPricing.asmx.cs">
+      <DependentUpon>Fare_PricePNRWithBookingClassPricing.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Fare_SellByFareCalendar.asmx.cs">
+      <DependentUpon>Fare_SellByFareCalendar.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Fare_SellByFareSearch.asmx.cs">
+      <DependentUpon>Fare_SellByFareSearch.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\FOP_CreateFormOfPayment.asmx.cs">
+      <DependentUpon>FOP_CreateFormOfPayment.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\MiniRule_GetFromPricing.asmx.cs">
+      <DependentUpon>MiniRule_GetFromPricing.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\PNR_AddMultiElements.asmx.cs">
+      <DependentUpon>PNR_AddMultiElements.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\PNR_Cancel.asmx.cs">
+      <DependentUpon>PNR_Cancel.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\PNR_Retrieve.asmx.cs">
+      <DependentUpon>PNR_Retrieve.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TopasAirService.asmx.cs">
+      <DependentUpon>TopasAirService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Abacus\AbacusWebService.asmx.cs">
+      <DependentUpon>AbacusWebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Fare_InstantTravelBoardSearch.asmx.cs">
+      <DependentUpon>Fare_InstantTravelBoardSearch.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Queue_List.asmx.cs">
+      <DependentUpon>Queue_List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Queue_MoveItem.asmx.cs">
+      <DependentUpon>Queue_MoveItem.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Queue_PlacePNR.asmx.cs">
+      <DependentUpon>Queue_PlacePNR.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Queue_RemoveItem.asmx.cs">
+      <DependentUpon>Queue_RemoveItem.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <None Include="App_Code\SearchFareAvailCabin.cs_" />
+    <None Include="App_Code\SearchFareAvailPaxType.cs__" />
+    <None Include="App_Code\Test.cs_" />
+    <Compile Include="App_Code\XmlRequest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueueService.asmx.cs">
+      <DependentUpon>QueueService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Command_Cryptic.asmx.cs">
+      <DependentUpon>Command_Cryptic.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Queue_CountTotal.asmx.cs">
+      <DependentUpon>Queue_CountTotal.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Security_Authenticate.asmx.cs">
+      <DependentUpon>Security_Authenticate.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Amadeus\Security_SignOut.asmx.cs">
+      <DependentUpon>Security_SignOut.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <None Include="Properties\PublishProfiles\AirWebService2%28UAT%29.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Code\SearchFareAvailPaxType.cs_" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://webservice.modetour.com/Air/Mode.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\com.modetour.webservice.Air.Mode\</RelPath>
+      <UpdateFromURL>http://webservice.modetour.com/Air/Mode.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>AirWebService_UAT__com_modetour_webservice_Air_Mode_Mode</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54553</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

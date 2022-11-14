@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<GetReservationRQ xmlns="http://webservices.sabre.com/pnrbuilder/v1_19" Version="1.19.0">
+  <Locator>VVXWDM</Locator>
+  <RequestType>Stateful</RequestType>
+  <ReturnOptions PriceQuoteServiceVersion="3.2.0">
+    <SubjectAreas>
+      <SubjectArea>PRICE_QUOTE</SubjectArea>
+    </SubjectAreas>
+    <ViewName>Simple</ViewName>
+    <ResponseFormat>STL</ResponseFormat>
+  </ReturnOptions>
+</GetReservationRQ>

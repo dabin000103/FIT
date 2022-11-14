@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="MiniRule_GetFromPricing.asmx.cs" Class="AirWebService.MiniRuleGetFromPricing.AmadeusWebService" %>

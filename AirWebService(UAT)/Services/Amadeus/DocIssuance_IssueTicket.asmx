@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="DocIssuance_IssueTicket.asmx.cs" Class="AirWebService.IssueTicket.AmadeusWebService" %>

@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="Queue_CountTotal.asmx.cs" Class="AirWebService.QueueCountTotal.AmadeusWebService" %>

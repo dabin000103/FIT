@@ -1,0 +1,81 @@
+﻿using System;
+using System.Xml;
+using System.Threading;
+using System.Web;
+using System.IO;
+
+namespace AirWebService
+{
+	/// <summary>
+	/// ThreadPool을 이용한 동시조회
+	/// </summary>
+	public class Test
+	{
+		private int ThreadCount = 0;
+		Common cm = new Common();
+
+		public string GetTest()
+		{
+			int TableCount = 3;
+
+			ManualResetEvent[] doneEvents = new ManualResetEvent[TableCount];
+			
+			//멀티쓰레드로 호출할 함수 설정 및 전달할 파라미터 설정
+			for (int i = 0; i < TableCount; i++)
+			{
+				doneEvents[i] = new ManualResetEvent(false);
+
+				object[] objState = new object[] { i, doneEvents[i], HttpContext.Current };
+				ThreadPool.QueueUserWorkItem(MonitoringCallBack, objState);
+			}
+
+			//호출완료 또는 시간초과 체크 후 종료처리
+			int Lop = 0;
+
+			while (true)
+			{
+				Thread.Sleep(500);
+				Lop++;
+
+				if (ThreadCount >= TableCount || Lop > 20)
+					break;
+			}
+
+			return String.Concat("END - ", ThreadCount);
+		}
+
+		public void MonitoringCallBack(Object context)
+		{
+			int index = (int)((object[])context)[0];
+			ManualResetEvent doneEvent = (ManualResetEvent)((object[])context)[1];
+			HttpContext hcc = (HttpContext)((object[])context)[2];
+
+			SaveHistoryToFile(index, hcc);
+
+			ThreadCount++;
+			doneEvent.Set();
+			return;
+		}
+
+		public void SaveHistoryToFile(int n, HttpContext hcc)
+		{
+			try
+			{
+				Monitor.Enter(this);
+
+				XmlDocument XmlDoc = new XmlDocument();
+				XmlDoc.LoadXml(String.Format("<x><i>{0}</i></x>", n));
+				
+				cm.XmlFileSave(XmlDoc, "TEST", String.Format("Test{0}", n), "");
+			}
+			catch (Exception ex)
+			{
+				new MWSException(ex, hcc, "TEST", "Test");
+			}
+			finally
+			{
+				Monitor.Exit(this);
+			}
+		}
+	}
+}

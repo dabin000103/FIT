@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="Fare_SellByFareSearch.asmx.cs" Class="AirWebService.SellByFareSearch.AmadeusWebService" %>

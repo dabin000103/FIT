@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Security_AuthenticateReply>
+	<processStatus>
+		<statusCode>P</statusCode>
+	</processStatus>
+	<session xmlns="">
+		<sessionId></sessionId>
+		<sequenceNumber>1</sequenceNumber>
+		<securityToken></securityToken>
+    <officeId></officeId>
+	</session>
+</Security_AuthenticateReply>

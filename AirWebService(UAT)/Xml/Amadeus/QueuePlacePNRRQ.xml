@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Queue_PlacePNR>
+	<placementOption>
+		<selectionDetails>
+			<option>QEQ</option>
+		</selectionDetails>
+	</placementOption>
+	<targetDetails>
+		<targetOffice>
+			<sourceType>
+				<sourceQualifier1>4</sourceQualifier1>
+			</sourceType>
+			<originatorDetails>
+				<inHouseIdentification1>SELK138AB</inHouseIdentification1>
+			</originatorDetails>
+		</targetOffice>
+		<queueNumber>
+			<queueDetails>
+				<number></number>
+			</queueDetails>
+		</queueNumber>
+		<categoryDetails>
+			<subQueueInfoDetails>
+				<identificationType>C</identificationType>
+				<itemNumber>0</itemNumber>
+			</subQueueInfoDetails>
+		</categoryDetails>
+	</targetDetails>
+	<recordLocator>
+		<reservation>
+			<controlNumber></controlNumber>
+		</reservation>
+	</recordLocator>
+</Queue_PlacePNR>

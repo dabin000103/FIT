@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Queue_CountTotal>
+	<queueingOptions>
+		<selectionDetails>
+			<option>QC</option>
+		</selectionDetails>
+	</queueingOptions>
+	<targetOffice>
+		<sourceType>
+			<sourceQualifier1>4</sourceQualifier1>
+		</sourceType>
+		<originatorDetails>
+			<inHouseIdentification1>SELK138AB</inHouseIdentification1>
+		</originatorDetails>
+	</targetOffice>
+	<queueNumber>
+		<queueDetails>
+			<number>0</number>
+		</queueDetails>
+	</queueNumber>
+	<categorySelection>
+		<subQueueInfoDetails>
+			<identificationType>C</identificationType>
+			<itemNumber>0</itemNumber>
+		</subQueueInfoDetails>
+	</categorySelection>
+</Queue_CountTotal>

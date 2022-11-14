@@ -1,0 +1,23 @@
+D:\MODETOUR.NET\C#\ModeWebService2\AirWebService(UAT)\bin\AirWebService(UAT).dll.config
+D:\MODETOUR.NET\C#\ModeWebService2\AirWebService(UAT)\bin\AirWebService(UAT).dll
+D:\MODETOUR.NET\C#\ModeWebService2\AirWebService(UAT)\bin\AirWebService(UAT).pdb
+D:\MODETOUR.NET\C#\ModeWebService2\AirWebService(UAT)\bin\Newtonsoft.Json.dll
+D:\MODETOUR.NET\C#\ModeWebService2\AirWebService(UAT)\obj\Debug\AirWebService(UAT).dll
+D:\MODETOUR.NET\C#\ModeWebService2\AirWebService(UAT)\obj\Debug\AirWebService(UAT).pdb
+D:\Modetour\SVN_172.20.52.109\AirWebService(UAT)\bin\AirWebService(UAT).dll.config
+D:\Modetour\SVN_172.20.52.109\AirWebService(UAT)\bin\AirWebService(UAT).dll
+D:\Modetour\SVN_172.20.52.109\AirWebService(UAT)\bin\AirWebService(UAT).pdb
+D:\Modetour\SVN_172.20.52.109\AirWebService(UAT)\bin\Newtonsoft.Json.dll
+D:\Modetour\SVN_172.20.52.109\AirWebService(UAT)\obj\Debug\AirWebService(UAT).csproj.AssemblyReference.cache
+D:\Modetour\SVN_172.20.52.109\AirWebService(UAT)\obj\Debug\AirWebService(UAT).csproj.CoreCompileInputs.cache
+D:\Modetour\SVN_172.20.52.109\AirWebService(UAT)\obj\Debug\AirWebService(UAT).csproj.CopyComplete
+D:\Modetour\SVN_172.20.52.109\AirWebService(UAT)\obj\Debug\AirWebService(UAT).dll
+D:\Modetour\SVN_172.20.52.109\AirWebService(UAT)\obj\Debug\AirWebService(UAT).pdb
+C:\Users\jun\Desktop\My Project\FIT\AirWebService(UAT)\bin\AirWebService(UAT).dll.config
+C:\Users\jun\Desktop\My Project\FIT\AirWebService(UAT)\bin\AirWebService(UAT).dll
+C:\Users\jun\Desktop\My Project\FIT\AirWebService(UAT)\bin\AirWebService(UAT).pdb
+C:\Users\jun\Desktop\My Project\FIT\AirWebService(UAT)\bin\Newtonsoft.Json.dll
+C:\Users\jun\Desktop\My Project\FIT\AirWebService(UAT)\obj\Debug\AirWebService(UAT).csproj.CoreCompileInputs.cache
+C:\Users\jun\Desktop\My Project\FIT\AirWebService(UAT)\obj\Debug\AirWebService(UAT).csproj.CopyComplete
+C:\Users\jun\Desktop\My Project\FIT\AirWebService(UAT)\obj\Debug\AirWebService(UAT).dll
+C:\Users\jun\Desktop\My Project\FIT\AirWebService(UAT)\obj\Debug\AirWebService(UAT).pdb

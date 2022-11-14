@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TravelItineraryReadRQ Version="3.10.0" TimeStamp="2012-09-19T10:00:00-06:00" xmlns="http://services.sabre.com/res/tir/v3_10" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dd="http://webservices.sabre.com/dd2">
+  <MessagingDetails>
+    <SubjectAreas>
+      <SubjectArea>FULL</SubjectArea>
+      <SubjectArea>AIR_CABIN</SubjectArea>
+    </SubjectAreas>
+  </MessagingDetails>
+  <UniqueID ID=""/>
+  <EchoToken/>
+</TravelItineraryReadRQ>

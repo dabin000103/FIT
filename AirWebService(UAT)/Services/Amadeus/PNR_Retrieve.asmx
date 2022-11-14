@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="PNR_Retrieve.asmx.cs" Class="AirWebService.Retrieve.AmadeusWebService" %>

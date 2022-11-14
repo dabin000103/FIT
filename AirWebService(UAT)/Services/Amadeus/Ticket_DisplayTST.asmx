@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="Ticket_DisplayTST.asmx.cs" Class="AirWebService.DisplayTST.AmadeusWebService" %>

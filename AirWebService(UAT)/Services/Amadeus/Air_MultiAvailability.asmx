@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="Air_MultiAvailability.asmx.cs" Class="AirWebService.MultiAvailability.AmadeusWebService" %>

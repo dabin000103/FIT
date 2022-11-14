@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="Fare_MasterPricerTravelBoardSearchSoap4.asmx.cs" Class="AirWebService.MasterPricerTravelBoardSearchSoap4.AmadeusWebService" %>

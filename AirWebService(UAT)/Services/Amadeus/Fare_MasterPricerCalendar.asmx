@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="Fare_MasterPricerCalendar.asmx.cs" Class="AirWebService.MasterPricerCalendar.AmadeusWebService" %>
