@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FIT_API</name>
+    </assembly>
+    <members>
+        <member name="M:FIT_API.Global.DictonarysToDataTable(System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.Object}})">
+            <summary>
+            데이터테이블로 변환
+            </summary>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FIT_API.Global.SHA384암호화(System.String)">
+            <summary>
+            비밀번호 암호화
+            </summary>
+            <param name="_value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FIT_API.Global.Alter(System.String,System.String)">
+            <summary>
+            Alternative 
+            </summary>
+            <param name="Expression">string</param>
+            <param name="AlterValue">string</param>
+            <returns>string</returns>
+        </member>
+        <member name="M:FIT_API.Global.Alter(System.String,System.Int32)">
+            <summary>
+            Alternative 
+            </summary>
+            <param name="Expression">string</param>
+            <param name="AlterValue">int</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:FIT_API.Global.Alter(System.String,System.Int64)">
+            <summary>
+            Alternative
+            </summary>
+            <param name="Expression">string</param>
+            <param name="AlterValue">long</param>
+            <returns>long</returns>
+        </member>
+        <member name="T:FIT_API.Helper.PayHelper.SettleBank">
+            <summary>
+            SettleBank PayHelper
+            </summary>
+        </member>
+    </members>
+</doc>
